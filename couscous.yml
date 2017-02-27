@@ -1,0 +1,30 @@
+template:
+    # Name of the directory containing the website template (default is "website")
+    #directory: website
+    # Or if you are using a remote template, you can set the Git URL
+    #url: https://github.com/CouscousPHP/Template-Light.git
+    # Name of the index file (default is "README.md")
+    index: index.md
+
+title: Effective System Analysis
+subTitle: ' '
+
+# The left menu bar
+menu:
+    items:
+        index:
+            text: Index
+            relativeUrl: index.html
+        metoda:
+            text: Metoda
+            relativeUrl: metoda/metoda.html
+            submenu:
+                items:
+                    metodaa:
+                        text: Metoda a
+                        relativeUrl: metoda/metodaa.html            
+                    metodab:
+                        text:  Metoda b
+                        relativeUrl: metoda/metodab.html
+                        
+baseUrl: https://alfons12.github.io/metodika                     

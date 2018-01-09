@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="active">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/01.html">
+                            Business and systems analysis
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/02.html">
+                            Business analysis overview
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="what-is-analysis">What is analysis</h1>
+<blockquote>
+<p>Analysis is the process of observing and breaking down a complex topic or substance into smaller parts to gain a better understanding of it.</p>
+</blockquote>
+<p>In software engineering it is a general term representing all activities on the way from a need definition to a design of a solution to this need or problem.</p>
+<p>The need may represent something very trivial such as changing the color of the webpage background to a very complex problem, for example implementing legal requirement for deleting all bank customers personal data after 5 years which involves changes to dozens of business processes, to almost all bank systems and may lead to a couple of subprojects.    </p>
+<p>From the second example above it is evident analysis can mean two completely different things and depends on context in which anayst works.</p>
+<p>It might be a purely IT context when for analyst it all starts with receiving a request to create a new feature or modify existing application. In this case the analyst is responsible for analyzing what it will mean for the application or system to modify it and for designing the feature. Analyst's responsibility is only to find out what impacts the change will have on the actual system and also on all systems interconnected with the modified. No impacts on current business, processes, laws etc. are considered. This is the case for analysts working on a very small rather standalone applications where the requests are mostly technical changes witho no real business impacts. </p>
+<p>Paradoxically, it also applies to big enterprise teams where the systems or numbers of requests for system modifications are so big that the roles need to be split. Here analyst is rather application specialist who has a deep knowledge of the specific system and its interfaces and focuses mainly on development of this system.     </p>
+<p>On the other hand other analysts work mostly in the business context, dealing with high-level requests, supporting business representatives in their decissions since such analysts often have a larger view of the organisation - they often work on topics which spread across many enterprise departments and unlike business representative who live within boundaries of their department, anlaysts are the only ones able to see the big picture.
+Still, they are very close to IT and they fulfill most of the business needs by introducing new systems to company or by modifiing legacy ones. </p>
+<p>So the context is determined by the input that triggers analyst's work. If it is a high-level business need the most of the analytical work is done with business people therefore in business context.
+If the input is a low-level request for creating a new software feature or modifying the existing one than the analyst works more in IT context. </p>
+<p>The possible solutions to the need are also dependent on the context. For IT context it is mostly implementing a new software or modification of the existing one.
+However, in business context the best solution might simply be to buy new hardware to solve high response times instead of rewriting the legacy system. Or putting those 5 anomaly clients to Excel sheet and handle them manually instead of implementing new module to the existing system. In business context it is all about finding the best solution to solve the business need. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/solutions.png" alt="aa" />  </p>
+<p>TBD blbej priklad, tohle je prave manazerske rozhodnuti, za hranici BA</p>
+<p>Trhoughout the text we will be talking solely about solutions which involves implementing of IT solutions. Therefore we can slightly ignore solutions to business problems such as modifying business processes or upgrading hardware.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-3/chapter-1/index.html">
+                            100+1 ways of system analysis
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-3/chapter-2/index.html">
+                            Hybrid approach
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="">
+                            <a href="http://www.effective-analysis.com/generated/part-1/chapter-2/index.html">
+                                Sparx Enterprise architect
+                            </a>      
+                        </li>
+
+                        
+                                                <li class="">
+                            <a href="http://www.effective-analysis.com/generated/part-3/chapter-2/index.html">
+                                Attlassian Confluence
+                            </a>      
+                        </li>
+
+                        
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-3/chapter-3/index.html">
+                            Reference implementation
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-3/chapter-4/index.html">
+                            Other types of immplementation
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-3/chapter-5/index.html">
+                            Tips
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="hybrid-approach">Hybrid approach</h1>
+<p>proc kolaboracni nastroj <a href="https://community.sparxsystems.com/white-papers/1111-5-reasons-why-web-based-sharing-and-collaboration-is-imperative-for-modeling-teams">https://community.sparxsystems.com/white-papers/1111-5-reasons-why-web-based-sharing-and-collaboration-is-imperative-for-modeling-teams</a></p>
+<p><a href="http://www.productized.co">http://www.productized.co</a> atlassian</p>
+<blockquote>
+<p>I still find it amazing how many people want their tools to drive the way they work, instead of the other way around. - Ambler </p>
+</blockquote>
+<p>This chapter addresses the purpose, structure, and contents of the SRS. We will describe the SRS as being a document, but it doesn’t have to be in the form of a traditional word-processing document. In fact, documents pose numerous limitations:</p>
+<ul>
+<li>It’s difficult to store descriptive attributes along with the requirements.</li>
+<li>Change management is clumsy.</li>
+<li>It’s difficult to retain historical versions of the requirements.</li>
+<li>It’s not easy to subset out a portion of requirements that are allocated to a particular iteration or keep track of those that were once approved but then deferred or canceled.</li>
+<li>It’s hard to trace requirements to other development artifacts.</li>
+<li>Duplicating a requirement that logically fits in multiple places causes maintenance issues</li>
+</ul>
+<p>As alternatives, you might store information in a spreadsheet (which has many of the same limitations as a document), a Wiki, a database, or a requirements management (RM) tool (see Chapter 30, “Tools for requirements engineering”).</p>
+<p>Not everyone agrees that it’s worth the time to document requirements. And on exploratory or highly volatile projects where you’re not sure what solution you’ll end up with, trying to keep up with changes in the requirements details adds little value. However, <strong>the cost of recording knowledge is small compared to the cost of acquiring that knowledge or regenerating it at some point in the future &quot;!!!!!!!!!!!!</strong>. The acts of specification and modeling help project participants think through and precisely state important things that a verbal discussion can leave ambiguous. If you are 100 percent certain that no stakeholders will ever need a specific piece of information beyond the duration of their own short-term memories, then you don’t need to record it. Otherwise, store it in some kind of a group memory.</p>
+<p><strong>VYHODY REPOSITORY</strong></p>
+<ul>
+<li><strong>Jednotné pojmenováni.. Ma to id, přesně ukazujes prstem... Lehké pro nováčky.. Je to zároveň i zdroj informací - popis toho systému, te obrazovky.. </strong></li>
+<li>Výhoda BRules v repo.. Můžu vygenerovat seznam a pak detail každého... Jinak bych měl duplicity v seznam / detail Příklad rulu z CS, koho a kdy notifikovat, že to může být na stránku.. Rule není řádek v tabulce</li>
+<li>Výhoda hybrid.. Můžu si říct jestli to dám do jednoho dokumentu nebo do desíti a tak
+<ul>
+<li>A better alternative for all of these situations is to store the requirements in a requirements management tool, as described in Chapter 30. An RM tool also helps greatly with the problem of whether to create a single SRS or multiple specifications for a project that plans multiple product releases or development iterations (Wiegers 2006). The SRS for any one portion of the product or for a given iteration then is just a report generated from the database contents based on certain query criteria.</li>
+</ul></li>
+</ul>
+<p>Repo může být i jira, jo klidně ale jak nad tím modelovat</p>
+<p><strong>PROC NE wordy a excely</strong></p>
+<ul>
+<li>Příklad Excel na business rules.. Jak tam dáš logiku komu poslat notifikaci - matice udalost/poslat klientovi/poslat externimu partnerovi</li>
+<li>stejne s pozadavky - neni to tabulka s vetickama System shall - pozadavek muze byt complex as hell</li>
+</ul>
+<p>Wiki + CASE</p>
+<p><img src="https://www.lukasvinter.net/wiki/lib/exe/fetch.php?cache=&amp;media=ba:whyhybrid.png" alt="alt text" /></p>
+<p>Wiegers: A better alternative for all of these situations is to store the requirements in a requirements management tool, as described in Chapter 30. An RM tool also helps greatly with the problem of whether to create a single SRS or multiple specifications for a project that plans multiple product releases or development iterations (Wiegers 2006). The SRS for any one portion of the product or for a given iteration then is just a report generated from the database contents based on certain query criteria.</p>
+<p>ZDURAZNIT NA ZACATKU: proc mit takhle oddeleno - <a href="http://blog.perspilling.net/blog/2013/02/13/agile-documentation-with-confluence-and-sparx-enterprise-architect">http://blog.perspilling.net/blog/2013/02/13/agile-documentation-with-confluence-and-sparx-enterprise-architect</a> </p>
+<ol>
+<li>protoze potrebuju moznost editovat verzovat zvyraznovat skrtat a EA je na hovno…</li>
+<li>zaroven ale potrebuju kreslit a trasovat - CASE - proto mix </li>
+</ol>
+<p>Kdyz mam jen ea, hackuju diagramy pro zachyceni textu, kdyz jen word, pisu romany,abych simuloval activity diagram, kterej nemam kde udelat nebo opruz vkladat</p>
+<h2 id="why-enterprise-wiki">Why enterprise Wiki</h2>
+<ol>
+<li>je to public (ambler)
+<blockquote>
+<p>Support collective ownership. Only when everyone has access to a shared collection of artifacts is it possible to capture information in the right place once and
+once only. If some people do not have full access then they are motivated to capture their own version of the information.</p>
+</blockquote></li>
+<li>lehce editovatelne kymkoliv</li>
+<li>verzovani</li>
+<li>audit</li>
+<li>exporty</li>
+<li>commenty
+<ul>
+<li><a href="http://www.slideshare.net/pspilling/agile-documentation-with-confluence-and-ea">http://www.slideshare.net/pspilling/agile-documentation-with-confluence-and-ea</a> slide 4 - verzovani, collaboration, hledani, komentare atd. </li>
+</ul></li>
+</ol>
+<blockquote>
+<p>I highly suggest following the AM practice Display Models Publicly for your architectural models and documents – publish them online at an internal web site and even consider putting up paper versions ofcritical diagrams in their workspaces. A common mistake that I’ve seen architecture groups make is to put their diagrams on the walls within their work areas but not the work areas of the application developers.  Better yet, as I argue below there shouldn’t be separate work areas to begin with.</p>
+</blockquote>
+<ul>
+<li>notifikace o zmene s vyznacenim zmeny</li>
+<li>komentare, verzovani, odkazy, pridani souboru, obrazky apod.</li>
+</ul>
+<h2 id="why-heavyweight-case-tool">Why heavyweight CASE tool</h2>
+<ul>
+<li>We just draw diagrams and paste it into our documentation</li>
+<li>confluence plugin is sufficient, it's perfectly integrated and comfortable to use, everything in one tool
+<ul>
+<li>everything which is universal is bad (auta, motorky, notebook-hry, atd.)</li>
+</ul></li>
+</ul>
+<p>Proc ne jen kreslitko v CNFL jako je: <a href="https://www.gliffy.com/products/confluence-plugin/">https://www.gliffy.com/products/confluence-plugin/</a> VAZBYYY!! Kdyz uz to kreslim.</p>
+<p>nesnasim, kdyz se kresli diagramy jen tak ve visiu (ambler rika ze vetsinu vyhodim, ale kdyz uz to kreslim a aktualizace nezabere hodne casu a rezie, tak to vyuziju) a
+je to jen sprosta bitmapa, ale na druhe strane nemam ambice (zatim) delat spustitelne diagramy (BPM apod.) pac se to ve vetsine nepouziva </p>
+<pre><code> Proč ne jen confluence když tam můžu udělat mapování pomocí pluginu, požadavky do jiry a hezky to funguje?
+
+    mám víc artefaktů a ne všechny budu duplikovat v CNFL
+    např tabulky nebo entity
+    můžu si udělat vazby SCR-TAB, a může to znamenat že třeba SCR je primárním konzumentem tabulky (CRUD)</code></pre>
+<h2 id="concepts">Concepts</h2>
+<p>tady odkazy do frustrace a obecnych konceptu, at se neopakuju..tady jen rict, jak ty koncepty  implementuju, znovu je nepredstavovat</p>
+<p><strong>Identificators</strong></p>
+<ul>
+<li>vse jednoduse, treba u UC jen nazev a scenar, je opruz vsechno vyplnovat, pak to stejne nikdo nedela</li>
+<li>jak s id?
+<ul>
+<li>vsechno ma id a je to primar… slo by pouzit link z CNFL? ten se nemeni..</li>
+<li>vsechno ma id a je stejne jak v cnfl tak v ea..jak zaridit unikatnost a synchronizaci?</li>
+</ul></li>
+</ul>
+<p><strong>Hyperlinks</strong></p>
+<ul>
+<li>Odkazy z UC na BRules nebo ACT nebo screen...
+<ul>
+<li>V Google je to odkaz na heading...</li>
+<li>My ale máme pro každé svou stránku.. ;) Takže ok</li>
+</ul></li>
+</ul>
+<pre><code>   licence je přiřazená k některé z organizací uživatele (viz. Získat licence organizace); - a kde mam cuchat to Ziskat…chci si proste kliknout
+    :!: :!: Vše je objekt, má svou stránku, musí jít odkazovat
+        kdyz mam nekde ze obrazovka spada pod olin, modul uvery, tak hned musi byt proklik na OVW Olin, OVW Uvery
+        znate to z Wikipedie a je to super….a v cnfl je to otazka napsani “[ovw olin….“</code></pre>
+<p><strong>Fixed types</strong></p>
+<pre><code>:!: Všude kde se vyplnuje typ něčeho (datový typ Money, gui artefakt TAble), tak jedině vyplnovat odkazy na vydefinovaný typ.
+
+    Protože pak zauřaduje lidová tvořivost a budou tam psat Miney(24,8), nebo částka, nebo peníze.</code></pre>
+<p><strong>Verzovani analyzy</strong></p>
+<blockquote>
+<p>Pribeh jak prichazi projektak, ze po nem vyjel business, ze dostali 50strankovou sracku a nevi co s tim, ze nemaji nervy to prochazet
+a ted mi teda rekni, co ste zmenili - a je to treba spreadsheet s pravidlama a dvema word dokumentama..che che</p>
+</blockquote>
+<ul>
+<li>IMHO wikis are very good for static information but if you have a project with several different versions you need versioning of the documentation too. So the documentation should flow
+into the branches as the source code does. – schoetbi Nov 27 '09 at 14:27</li>
+<li>@schoetbi, i agree but that is a very specific area of the documentation. I've seen wikis work very successfully when a split happened for different versions of a project. When the split happened, new pages were created to document the individualities of the versions. That is, one page covering the common aspects and then that page is updated with links through to the new pages that are used to specify the specific aspects of the new versions that are different.</li>
+</ul>
+<p>verzovani - dva pozadavky meni jednu obrazovku a treba i jdou v jinych releasech </p>
+<p>Merge do dokumentace</p>
+<ul>
+<li>jedine rucne</li>
+<li>muzou dva CR menit jednu obrazovku a jdou v jednom release</li>
+<li>muze se stat ze o sobe nevi - pokud mam trasovatelnost, tak se podivam do EA, ale to je scifi a jen big projects</li>
+<li>pak holt jeden to tam soupne prvni a druhej musi davat pozor, ze nesahal do toho stejneho</li>
+</ul>
+<pre><code>    business schvalil verzi
+    my na ni pak delame
+    posilame upravy, chteji videt rozdilovku - MUST HAVE
+        typicka otazka „co se zmenilo od posledni schvalene verze“ - jsou s tim jak nemocni
+    vzdycky musi byt videt, co je schvalena posledni verze</code></pre>
+<p><strong>Schvalování businessem</strong></p>
+<ul>
+<li>odstraneni internich veci (commetny se negeneruji)</li>
+<li>export - cnfl umi sablony</li>
+</ul>
+<p>Problem</p>
+<ul>
+<li>interní versus pro komunikaci s klientem - některé dokumenty chci ve dvou verzích, ale hlavně potřebuju oddělit business analýzu od it anlaýzy - nezajímá to klienta, nechci mu
+ukazovat střeva, interní komentáře apod. - co s tím?</li>
+<li>pokud to mám ve wordu, tak to taky nevyřeším</li>
+<li>pokud to mám v EA, taky to není uplně super… můžu si udělat generator pro analyzu, ale s CR se taky bojuje</li>
+<li>v CNFL neudělám pohodlně export jen tohoto CR, jen této branche</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

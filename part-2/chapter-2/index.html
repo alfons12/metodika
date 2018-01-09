@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="concepts">Concepts</h1>
+<p>In this chapter we're going to introduce the fundamental principles on which Effective analysis is built, which if applied correctly lower the analyst frustration, make analytical work more effective and analytical outputs more readable.</p>
+<p>It should be emphasized here that we present what has proved to work in the real life on the real projects and we present it as recommendations in form of practices rather than rules. We don't order rules.</p>
+<blockquote>
+<p>There are no rules, just good practices</p>
+<p>-- someobdy on the internet</p>
+</blockquote>
+<p>You also notice that we say practices. Maybe good practices which doesn't always need to be perfect. You may encounter situation where even our good practices might be non-effective. </p>
+<blockquote>
+<p>Every practice has advantages and disadvantages, there is no such thing as a &quot;best practice.”</p>
+<p>-- Scott Ambler</p>
+</blockquote>
+<p>On the other hand, the reason why the Effective analysis was created was our frustration from all materials telling you &quot;There are many practices available, use the best according to the context&quot;. Even though one size doesn't fit all, we would like to give you at least a basic framework, the minimal feel that you do things right instead of giving you all the possibilitie and letting you alone in it. What are the advices good for if you have a dozens of choices but no guidance when to use which.</p>
+<h2 id="fixed-solid-artifacts">Fixed Solid artifacts</h2>
+<p>Effective analysis is based on principle of building software from a given set of artifacts. By artifacts we mean both analytical and implementation artifacts such as requirements artifacts (requirement, use case, business rule), system components (system, module, UI element), behavioral artifacts (function, interface), data element (data file, table) or outputs (document, report).</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-02.png" alt="aa" /></p>
+<p>Analyzing and documenting systems using such set of artifacts has many advantages</p>
+<ul>
+<li>You have a unified collection of objects where all team members use common terminology and produce common outputs</li>
+<li>Attributes of such artifact can be defined which also contributes to the unification</li>
+<li>It easy to create common vizualization of the artifacts</li>
+<li>It is easy to track relationships between the artifacts</li>
+</ul>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-12.png" alt="aa" /></p>
+<p><strong> Artifacts and instances </strong></p>
+<p>In addition to artifacts, we will use also term artifact instance or just instance throughout the following chapters. Instance is to artifact as car model is to car. Ford Mondeo is an instance of a car. Similarly, &quot;SCR Client detail&quot; is an instance of a &quot;Screen&quot; artifact.  </p>
+<p>Very often we will simplify it and say just &quot;this artifact&quot; instead of an instance because we all work more often with the concrete instances. It will alwasys be clear from context if we mean the general concept of artifacts or concrete instance despite calling it the same. </p>
+<h2 id="multiple-views">Multiple views</h2>
+<p>TBD</p>
+<p>TBD</p>
+<h3 id="different-views---breadth">Different views - breadth</h3>
+<p>Information systems or applications consist of many different parts which are represented by various artifacts. These artifacts are interconnected by relationships and together make a whole system. </p>
+<p>Artifacts has always single purpose, e.g. screen is a part of user interface, database table holds the data, however they may be part of multiple models (views) serving to describe various aspects of the system.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-05.png" alt="aa" /></p>
+<blockquote>
+<p>Multiple Models. You potentially need to use multiple models to develop software because each model describes a single aspect of your software. “What models are potentially
+required to build modern-day business applications?” Considering the complexity of modern day software, you need to have a wide range of techniques in your intellectual modeling
+toolkit to be effective (see Modeling Artifacts for AM for a start at a list and Agile Models Distilled for detailed descriptions). An important point is that you don't need
+to develop all of these models for any given system, but that depending on the exact nature of the software you are developing you will require at least a subset of the models.
+Different systems, different subsets. Just like every fixit job at home doesn't require you to use every tool available to you in your toolbox, over time the variety of jobs
+you perform will require you to use each tool at some point. Just like you use some tools more than others, you will use some types of models more than others.</p>
+<p><em>agilemodeling.com TBD</em></p>
+</blockquote>
+<p><strong> Everything has an id</strong></p>
+<p>Because everything you model in Effective analysis is an artifact, more precisely an artifact instance, it is easy to identify it uniqely. </p>
+<p>Having an unique identificator for each artifact instance during analysis and documentation comes with many benefits. You can always link to a single instance, rack relationships between them, reuse them and avoid duplications.</p>
+<p>The example above shows how the relationships between system may be recorded in many different ways yet the artifacts are reused so no duplication occures. Renaming the Material Management System to jus Material Management will propagate to all views so the change is isolated and is done only on one place.</p>
+<p>The next level is such automation done not only in diagrams but also in textual outputs. This can be also easily done and we will show you how in the next part of the Effective analysis. </p>
+<p>Ale nedelat baliky vrstev, ale seskupovat po oblastech - v oblasti jdu napric vrstvama, aybch videl <strong>kontext</strong></p>
+<ul>
+<li>Tady například opět zafunguje, že to má být po oblastech (Kalkulace - pož., UC, BR atd.), páč pak nemám seznam business pravidel na jedné hromadě, ale vždy jen
+pravidla co jsou k nějaké funkcionalitě - mám kontext LOL LOL jupii </li>
+</ul>
+<p><strong>Don't mix business requirements with implementation details</strong></p>
+<ul>
+<li>proste nemichat bus a impl:</li>
+<li>Dokument lze tisknout jen ke službám, které mají ve splátkovém plánu zadánu mimořádnou splátku Olin/Úvěry/Plán úvěru/Mimořádné splátky</li>
+<li>k tomu mam mit, kde a jak se vyhodnocuje, ze splt. plan ma zadanu mim. spl atd atd</li>
+<li>ale pokud mam v dokumentaci jen ze lze tisknout pokud exc_acts.type_eacts = 's', tak to je lehce nahovno</li>
+</ul>
+<p>i kdyz to je FUC ne UC, tak takhle (v závorkách je WHY viz kapitola):</p>
+<ul>
+<li>při stisku tlačítka se provedou tyto kontroly: věk (vyžadováno zákonem), síla hesla (podle pravidla BR_8 má mít délku 8 znaků), délka jména (…), uloží se profil</li>
+<li>
+<p>pak až jdu na nižší a to kde fyzicky kontroly sou implementovane</p>
+</li>
+<li>Nejde to dělat tak, že po stisku tlačítka se načtou z DB kontroly, které získám tak, že dám select nad tabulkou Kotroly a pak píšu někde dál v dokumentaci..</li>
+<li>pak mám x kapitol a o stránku dál následuje, že požadavky na heslo jsou že musí být 8 znaků dlouhé a kontroluje se při každém uložení profilu tlačítkem uložit</li>
+<li>musim po vrstvach</li>
+</ul>
+<h3 id="different-levels---depth">Different levels - depth</h3>
+<p>Using various artifacts helps analyst describe the system in its breadth, which means to describe system functions, user interface, data structures etc. But besides the analysis of these different views analyst also explores the system from different levels of depth, which is going from abstract description to more concrete, from logical to physical as it is often called.</p>
+<p>At the beginning analyst starts with only a rough abstract idea about the system which is going to be built. As the analysis proceeds the activities go from high-level ideas to concrete designs </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-03.png" alt="aa" /></p>
+<p>Multiple levels are created naturaly during the analysis and helps analyst to go from the surface of the problem to the deeper levels. It is an onion model where analysts peel the layers from the surface to the core. </p>
+<p>But having different levels of detail of the system is not only a natural product of analysis. It is also very beneficial from the documentation point of view. Different audience needs to see the reality from different perspective. You need to take different approach when explaining how the process works to HR manager and different when consulting the technical aspect with the head of development. It may represent the same thing but language is different as ilustrates the image above.</p>
+<p><strong> What's wrong with overlapping layers</strong></p>
+<p>Let's take this example:</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-mix-layers.png" alt="aa" /></p>
+<p>The problem here is that you should be able to discuss such process with both stakeholders and developers. With such model you can't communicate it with none of them. It is neither clear from the model how the business process works nor how it should be implemented from end to end.</p>
+<p>For stakeholders it is not readable because of the implementation details which confuse them and it is likely they will be reluctant to deal with the schema at all.</p>
+<p>For developers on the other hand it is not even clear where the process starts (what is the trigger to call the payment service) and for example what is the screen informing customer about payment failure all about. </p>
+<p><strong> Programming in models TBD </strong></p>
+<p>Another very common scenario which stems from otherwise very positive thing is when analyst is a former or even an active developer - TBD odkaz na druhy analytiku. Such analysts sometimes play god and take the design too far. Instead of focusing on &quot;what&quot; they draw very low-level &quot;how&quot; almost develop the system on paper. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-impl-details.png" alt="aa" /></p>
+<p>To newcomer such model is useless as it has these disadvantages:</p>
+<ul>
+<li>basicaly, it is not easy to find out how the business process works</li>
+<li>contaminating the model with these details makes it unreadable and unmanagable</li>
+<li>because it is such low-level even small change in implementation would mean changing the diagram what obviously nobody will do and the whole thing becomes obsolete</li>
+</ul>
+<p>This is very common for analyst designing some workflow-based system when they even know very well the underlying technology and they want to advise developers how to implement it properly. They don't realize that skipping the high-level description and jumping right into the &quot;code&quot; makes the analysis a total mess. </p>
+<p>And all the stakeholders, newcomers and basicaly anybody who wants to know how the process of car loan works need is something like this:</p>
+<ul>
+<li>There are 3 online checks performed on the asset</li>
+<li>Contract proposal data needs to be available because they are used in the calls </li>
+<li>If the check 1 is possitive, the asset will be in state A</li>
+<li>If the check 2 is possitive, the asset will be in state B</li>
+<li>If the check 3 is possitive, the asset will be in state C</li>
+</ul>
+<p>Whether the checks are done in paralel or one by one is a decision which shoudl be left for developers.</p>
+<h3 id="the-thread">The Thread</h3>
+<p>In the previous sections we described how important it is to see the problem from different views and levels. These levels however must be connected somehow so it is easy to identify that this view is an abstraction of another more detailed view and it is possible to navigate between the levels.  </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-04.png" alt="aa" /></p>
+<p>Having these connections it is then easier to answer the questions such as what system performs this process task, what web service is called when the button is pressed and so on.</p>
+<p>The point is not to have multiple unrelated artifacts or models and create the relationships between them and allow to navigate between diferent levels.</p>
+<p>To accomplish this it is required to store all the information in one repository because it makes the navigability lot easier. If you prepare a level 1 (L1) specification and another analyst breaks it down to level 2 but the output is a different document or the models and artifacts are stored in another repository the linking is complicated.</p>
+<p><strong> Example of The Thread </strong></p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-07.png" alt="aa" /></p>
+<h3 id="tips-for-multiple-views">Tips for multiple views</h3>
+<p><strong> Always start with the process</strong></p>
+<p>TBD <a href="http://www.effective-analysis.com/generated/context/02.html#start-with-a-process">http://www.effective-analysis.com/generated/context/02.html#start-with-a-process</a></p>
+<p>TBD Do začnete procesem zakomponovat že DFDckem</p>
+<p><strong> Tracing requirements </strong></p>
+<p>Even though there is no doubt that traceability is a great servant it should not become a hassle without purpose that nobody wants to do. On large projects there might be hundreds of requirements and if you're not developing a software which is critical TBD there is little benefit in mapping &quot;Screen A should have red background&quot; to &quot;Screen A&quot; in comparison to price you pay for it. Even with the help of a software, event when automated, tracing every single requirement will become pain. This is not recommended.</p>
+<p>Only important artifacts should traced. Which are important? There is no rule but imagine yourself in one year future trying to remember how the parts of the system work. Which one will it be? Those are adepts for proper tracing. </p>
+<p><strong> Artifacts are requirements - tracing requirements to artifacts</strong></p>
+<p>TBD</p>
+<ul>
+<li>nikdo se neprihlasil, ze by mu pozadavky na velkem projektu pak k necemu byly
+<ul>
+<li>usili vlozene do analyzy pozadavku se nikdy nevyplatilo</li>
+<li>proto co nejdriv od pozadavku pryc, viz tento koncept</li>
+</ul></li>
+</ul>
+<p>We admit that this point is be rather controversial. The reason is that we recommend something which you may find really unhelpful and maybe even harmful on your projects. This one simply is not black and white, just take our recommendations and try to apply it in your environment. If it is not suitable, don't do it.</p>
+<p>You were asked to develop a mobile app to manage movies. It should be able to manage list of movies (create, update), download review for each movie from IMDB and mark movie as seen or to be seen. The movie list shall possible to sort the air date and rating (both asc and desc, default is air data desc). </p>
+<p>If the project is mission critical, if the the process is rigid and everything needs to be according to the contract, if you expect arguments about the scope and exact wording of every single requirement or if the stakeholders are not willing to discuss or even sign off anything else but what they said in textual form then you need to take more rigid approach, manage requirements that way and also trace them properly.</p>
+<p>This would result in something which is often called a traceability matrix.</p>
+<p><strong>TBD</strong></p>
+<p>However, this is a waste of time doing it for every single requirement if the project is &quot;agile&quot;, there are good relationships with stakeholders, and both sides are flexible enough to work with requirements during the project. If this is a case the requirements are a living organism and changing both the requirements statements (the textual form) and corresponding artifacts is a useless overhead.</p>
+<p>Another argument in favor is that just the textual requirements will never be enough. Stakeholders don't say all of them - some of the are out of the box for them, some of them are discovered only after you show them a visual artifact and therefore you would need to create a requirement for every single statement they discover looking at the actual design. Sooner or later you end up updating just the model, screen or interface desscription for example (artifacts and models) and give up duplicating the work completely.</p>
+<p>We say that artifacts such as screen or interface and even models (e.g. state diagram represnting states of the order in eshop) are just a form of requirements. It is also reason why we don't like to use the term software requirement and we use feature or capability and constraints instead because it is more natural to say you model system capabilities and constraints rather then user requirements.</p>
+<p>So in the example the textual description of the solution (the requirements) are just a steppingstone, the first iteration, the kick off and these three basic rules apply:</p>
+<ol>
+<li>Once the textual requirements are transformed to artifacts (screens, entities, business rules etc.), they are not used anymore</li>
+<li>Artifacts serves as the communication channel for clarifying the future system capabilities and constraints</li>
+<li>If any requirement which has already been analyzed and transformed to artifacts changes, only the underlying artifacts are changed, not the textual statements   </li>
+</ol>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-08.png" alt="aa" /></p>
+<p><em>Note: We repeat it again. It is not black and white. Try to avoid this duplication but think wisely if you don't lose information you could need in the future. Also, don't apply this principle on high-level descriptions defining the overall scope. This should be still described in text and optionally supplemented by a schema and kept up to date as it is a core of the contract, project, product etc.</em> </p>
+<h2 id="coherence">Coherence</h2>
+<p>The artifacts don’t exist on their own. They live together, cooperate and are interconnected. The example above illustrates this and it is obvious that the button’s behaviout is associated with the function generating the business card and the function needs to know how the card should look.
+One could not work without the other and the same principle applies when the member of the team tries to understand how the system works or should work. It must be possible to get all the pieces from the one place. It is not acceptable to look at the button just to find out that function func_gen_01 is called.</p>
+<p>Keeping related information together is called coherence and it navigating from from one artifact to another smmooth and changing levels of detail is almost unoticed.</p>
+<p>For example if you model the states of an Order (New, Paid, Sent etc.), it is much better to store it &quot;under&quot; the entity Order and not in a &quot;package&quot; State models. Sure, it is easy to create link to it wherever it is if you use the right tool but it is against coherency. In the separate package the state models kind of levitate in the air, lacking context. But under the owning entity the relationship is clear and it works better.</p>
+<p>TBD pokud mám sequence diagram, tak je to zpřesnění operace nadřazeného sequence diagramu nebo zpřesnění kroku procesu apod. Není ve vzduchu. Potřebuju tu nitku.</p>
+<p>An exception are functions which are not related to a single artifact and are rather shared by numerous artifacts.  </p>
+<blockquote>
+<p><strong>Trap - Exaggerated coherence</strong></p>
+<p>A frequent bad habit of many analysts is putting specification of one artifact into the specification of another. Artifact should be atomic, standalone thing which only relates and links to other artifacts but never includes them.</p>
+<p><em>Example: Clicking on the heart icon, the article is saved as favourite. Favourite articles are displayed in the “Favourites” section. Opening favourite article removes it from the “Favourites” section.</em></p>
+<p>At first sight it is nicely documented, it is clear what the button does and there is also a context describing the favourites articles.</p>
+<p>Even though all the information is correct and useful it is a time bomb. It is something what programmers has known for a long time and they even have a name for it - Spaghetti code.</p>
+<p>The key word for the example above is responsibility because it breaks “single responsibility” principle. Looking at the button onclick documentation you expect to learn what the button does. If the action has any side effect it is good to </p>
+<p>Why? There are two problems with this solution. First, imagine you would like to know how the favourites articles work. Where would you instinctively look for the information? Some features overview, in the “Favourites” section description etc, right? You wouldn’t even think of looking for it in the button onclick description. Next, it is unnecessary duplication. You could put the information both to the overview and to the button description to make it easily accessible. But if somebody changes the behaviour of the favourites articles nobody would remember to change it also in the button specification. They wouldn’t even know that the information is duplicated there. The solution is to keep the information in one place and use links.</p>
+<p>Another example antipattern is including a reaction to changing a state of the entity into the state model description. State model should show what states the entity can has and what are the condition for changing particular state. It must not say they if the state changes, an SMS is sent. This should be separated to another model.</p>
+</blockquote>
+<h3 id="structure-supporting-coherence">Structure supporting coherence</h3>
+<p>There might by hundreds of artifacts in a common analysis and to keep them coherent those who are in some kind of relation should be together. This means that it is not a good idea to group artifacts by their types but it is always better to group artifacts by a system or a component. Developers have already realized this and modern frameworks advise to group development artifacts together by a logical components putting different types of artifacts together. </p>
+<p>The same principle applies to analytical artifacts and it contributes to team members can orient more quickly in the project or product documentation.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-11.png" alt="aa" /></p>
+<h3 id="function-is-the-center-of-everything">Function is the center of everything</h3>
+<p>To make multiple artifacts coherent as described in the picture above, you need some kind of glue. Such glue is a system function because it is the core and here is nothing more important from the system perspective than what the system does.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-14.png" alt="aa" /></p>
+<p>During analysis the glue is use case, an equivalent of it or even its single step which can represent a function itself. It helps to connect the key functions of the system with supporting artifacts such as user interface, business rules or documents definitions which the functions produce. Use cases serve as hubs which aggregates other artifacts and should be the backbone of the system specifications. They also has a big role in project planning and progress tracking. If you know the key functions and artifacts they require you can estimate roughly how big the required function is. If you also track what use cases have already been done you have an idea how much work is still left.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-02.png" alt="aa" /></p>
+<p>Functions are also key elements of the system documentation (after the system was built). They should serve as crossroads in the system overview from which a reader can navigate to any artifact related to the selected function.</p>
+<h2 id="traceability">Traceability</h2>
+<p>The thread described in the previous section connects different artifacts both on the same and different levels allowing us to see which artifacts are cooperating together and which artifacts are related such as L1 artifact and its L2 artifact.  </p>
+<p>These connections are called traceability allowing you to trace relationships and dependencies. It great a great job in analysis as it enables us to navigate from from artifact or model to another without complicated searching so it is easy to easy to answer questios, It also helps greatly during impact analysis for questinos like &quot;If I change this function, what it's going to break.&quot; </p>
+<p>Despite the enormous service traceability does it is used very rare in organizations mainly due to fact it is an activity which doesn't contribute to the project goals itself. Writing requirements, analyzing them and modeling system produce real artifacts which will be transformed to working software so add value. Relationships betweeen artifacts are invisible so they are often missed out because &quot;We don't have time…&quot;.</p>
+<p>Until somebody comes with some of these problems.</p>
+<p>Progress tracing</p>
+<ul>
+<li>&quot;Which features have already been implemented?&quot;
+Implementation details</li>
+<li>&quot;When I press this button, customer's previous orders are displayed. From which system they come from?&quot;
+<ul>
+<li>You track from the screen to button, to its business onclick description and then to its implementation detail </li>
+</ul></li>
+<li>&quot;I was told that that the rating of the airlines is calculated as R=(a*b)/c. Is it right?&quot;
+<ul>
+<li>You either take the corresponding business rule and find where it is implemented or you need to find the component which calculates it manually
+Impacts</li>
+</ul></li>
+<li>&quot;If we change the contract of this interface, which systems need to be modified not to break?&quot;
+<ul>
+<li>The answer you're looking for here is what systems use the given interface. When traced properly you get this information instantly.  </li>
+</ul></li>
+</ul>
+<p>Once confroted with these questions you would sarifice your kidney to get these answers fast. Instead you need to kick off a detective action, contacting many people, deal with the contradictory and even false statements and sour faces because you came right before a crucial release and nobody is willing to help you. </p>
+<blockquote>
+<p><strong>Note on agile</strong></p>
+<p>In the first part TBD we talked about the importance for analysts to have a deep knowledge of IT. One would therefore argue why to put insignificant effort to traceability if analysts are able to read code and simply go and find out how it works.</p>
+<p>Do you think that car mechanic disassamble the engine when he wants to change something before he orders the parts? Or do you think that somebody goes through the whole power plant to check what pipes go from the generator when it needs to be fixed?</p>
+<p>Well, no. It is more comfortable to open a model and get the information instantly even at a price of higher effort during the development.        </p>
+</blockquote>
+<p>So why the teams don't do it if they want to barter organs for the information in the future? Tracebality is part of documentation so they share the same symptoms why the software is not documented. We dedicate a whole chapter to documentation so here we name just most evident reason of not having proper traceability.</p>
+<p>We partly mentioned the reason already, it is the effort. Deadlines are tight, team is undersized and you need to deliver. The customer don't care about the documentation and don't understand that omitting the documentation will cost the company more money during developing the changes to the delivered system.</p>
+<blockquote>
+<p>Traceability must be done as part of the analysis, design, implement, test, build and deploy activities rather than as an after thought. Tools should create
+implicit relationships when a workflow is enacted and also make it very simple to create, maintain and utilize explicit relationships <strong>so that traceability
+is a benefit not an overhead</strong>.</p>
+<p>-- somebody on the internet</p>
+</blockquote>
+<p>In the next part we present some Effective analysis approaches which aim to do the tracing proper way while trying to make the associated overhead on the minimum level.   </p>
+<p><em>Note: Tracing needs to be done using some software, database or even spread sheet but tracing can't be done using text. Just putting a note that the elemetn A is tracked to element B is not sufficient because you can't process this information automatically, search in it or even create report of dependecies.</em> </p>
+<h2 id="avoid-duplication">Avoid duplication</h2>
+<p>We’ve already touched the problem of duplication when talking about the coherence and multiple views. We said that the information should be at the most intuitive place and in one place only. You may find this principle under the names of Single source of truth, Once and only once, Don’t repeat yourself.</p>
+<blockquote>
+<p><em>Single source of truth (SSOT), is the practice of structuring information models and associated schemata such that every data element is stored exactly once. Any possible linkages to this data element (possibly in other areas of the relational schema or even in distant federated databases) are by reference only. Because all other locations of the data just refer back to the primary &quot;source of truth&quot; location, updates to the data element in the primary location propagate to the entire system without the possibility of a duplicate value somewhere being forgotten.</em> (Wikipedia)</p>
+</blockquote>
+<p>We also like naming the violation of the principle as WET which stands for &quot;write everything twice&quot;, &quot;we enjoy typing&quot; or &quot;waste everyone's time&quot;. It hits the nail on the head because WET is one of the biggest sources of frustration described here TBD</p>
+<p>Separating the layers each describing different level of abstraction allows analyst to communicate the problem differently with different stakeholders and the team members. Separating different views of the problem helps stakeholders and team analyze the problem thoroughly by observing it from different points of view. However, multiplicity always lead to duplicity so this separation requires another practice to keep the views synchronized and uptodate.</p>
+<p>Duplication stems from two reasons. The first is putting the information where it logically doesn’t fit and copy-pasting it instead of linking to it. We elaborated on this in the sections dedicated to the coherence and the need that artifacts have unique identificators.</p>
+<p>The second reason has also been examined before and it is the need to have multiple views of the problem. Just a reminder you need multiple views because complex systems can’t be described by just one view and because you serve different audiences with different needs you need to use also multiple techniques and models. </p>
+<p>The multiple views can be horizontal and vertical. While the horizontal describes the problem from different points of view yet staying at the same level of detail, the vertical describes the problem from different levels of detail.</p>
+<p>In both scenarios duplications occur and the cause is the need to use the same artifacts, relationships and TBD in different views. The main texhnique to avoid duplications is to reuse artifacts which means having a single repository of all artifacts and in reference them in each view instead of duplicating it.
+This require using  a modeling tool instead of just drawing tool. The modeling tool stores the elements and their relationships in database so you may reuse them, query them and trace them which drawing tools can’t because they don’t know the semantics of what was drawn.</p>
+<p>Other aspects which may cause duplications are specific to whether the duplication occurs in views on the same or different level of detail and are analyzed in the following section.   </p>
+<p><strong> Different levels of detail </strong></p>
+<p>The problem here is that you describe the same thing but each time with different &quot;words&quot;. On the higher level it is more abstract description whereas the lower level is more concrete and can include even physical level where the implementation details are mentioned. </p>
+<p>You can avoid duplicating elements by reusing them at each level but you can’t avoid duplicating the “idea”.
+For example on level 1 you describe button behaviour as “It refreshes the list of orders and selects the first result page.”. On level two as “It calls API endpoint /api/orders, refreshes the TAB1 and selects first page.” You don’t duplicate the screen or the button but if you change the button behaviour you end up changing two descriptions - if the pagination should newly not jump to the first page you need to change it twice for example.</p>
+<p>The duplication here can be minimalized but can't be completely wiped out because it is a text specification and it shares all cons related to the free text format. </p>
+<p>Exactly the same applies if the information which should be broken down from top to bottom is represented with models. The same way the text can be abstract or concrete, the same is with models.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-09.png" alt="aa" /></p>
+<p><strong>Duplication on the same level od detail</strong></p>
+<p>When describing a problem we need to look at it from different perspectives. The elements of the problem are always the same no matter which view you choose which is the source of potential duplication. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-05a.png" alt="aa" /></p>
+<p>In the example above all the sytems and their relationships are stored in repository just once and all models just links to it. This ensures no duplication so if you rename the system, its description or you add a new relationship, change will propagate to all models and as you'll see in the next part even to the textual specifications.  </p>
+<p>The rules to minimize duplication are:</p>
+<ol>
+<li>Don’t duplicate the artifacts, use links</li>
+<li>All artifacts have identificator</li>
+<li>All artifacts have single responsibility</li>
+<li>No artifact includes specification of other artifact  </li>
+</ol>
+<p><strong>More examples</strong></p>
+<p><em>Why should all artifacts not be duplicated and only referenced?</em></p>
+<p>A nice example is a list of systems. If you work in a large enterprise operating dozens of various systems and applications you can't know all of them. Nobody does. they change frequently which often causes people use wrong names,make up their own and struggle to find out the real goal of each system. Having a one place to store all of them, inlcuding their descriptions and relationships is a great benefit for everybody from architects to testers. When you model some problem you simply reference the right system which ensures that everybody knows which system you meant, if it is CRM or CRM+ or CM.</p>
+<p><em>Why business glossary should be unified and the terms just referenced?</em></p>
+<p>We talk about the need of an unified business glossary in the separate chapter, it must be emphasized that the glossary term is an artifact same as the others therefore it is atomic and has an id. Only then could it be stored in onel place and referenced by the identificator. It's then easy to create a &quot;local&quot; glossary for each project because analysts just reuse the terms from the &quot;global&quot; glossary thus avoiding duplication.  </p>
+<p>The same applies for definitions (business rules), algorithms etc.</p>
+<p><strong> Tuning it up</strong></p>
+<p><em>Storing information at one place and one place only</em> (TBD Ambler) is necessary but it is definitely not sufficient. Even thought all business rules are in one place, let's say in Excel and they are all studiously referenced from all other artifacts, working with models in CASE tool, screen mockups in Visio, business rules in Excel etc. requries to switch tools, linking is ackward and the work is not comfortable in general. </p>
+<p>Nothing is more frustrating then reading the specification and stop at the sentence &quot;For more detail please see the chapter 3, section 2 in Z:\ProjectX\Analysis\Payments_v02.docx&quot;. Why all information is here and payments are in the separate file? Is it the final version or is there even v0.3? You simply don't want to work with such mess.</p>
+<p>Having all artifacts in one tool speeds the work up making it smoother and intuitive. We present such solution in the next part.</p>
+<p>TBD odkazat se na tuto practice z implementace EA</p>
+<h2 id="conventions-rules">Conventions, rules</h2>
+<p>Analysis is mostly very creative and nearly detective activity whose ouputs vary greatly from project to project. Whereas during development the only output is code, analysis produce anything from plain text through models to pseudo code. So it is quite hard to set strict rules how the output should look like. This is particularly true during business analysis when the most outputs might be just text.</p>
+<p>However, you quickly realize that if the documentation of the system one is in word and it is in free text, system two documentation is a bunch of use cases and activity diagrams and analysis of the change requests are mostly a list of features in Excel, nobody enjoys raking over it.</p>
+<p>The initial resources such as plain text notes from workshops, excel sheets including various data or scetches need to be transformed to standardized form of artifact so it is easily managable, maintainable and searchable. Analyst is responsible for analyzing the requirements not just storing the raw outputs.   </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-12.png" alt="aa" /></p>
+<p>However, analysis in comparison to development rather anarchy activity and just few organizations have some rules in place to make the outputs of analysis and development organized and readable. Analysis should strive to get closer to development in terms of standardization of its artifacts and its organizations. Another topis is its automatization which is a subject to next section. </p>
+<p>As the complexity of the systems grew developers realized it and came up with techniques and rules to handle the amount of code. Analysts deal with the same amount of information and we don't understand why they do it the same . Why they still write jumbo Word documents mixing everything together, put unreadable small diagrams into it TBD. It might work during development in a mid-sized team but analysts should be also responsible to make the information in the analysis transfarable to a documentation and thus to other people working on the system in the future.</p>
+<p>If the outputs follow the similar structure, stores the information on standard places and include the standard artifacts which common naming, identifications and structure rules, it is then easy to orient in these outputs.</p>
+<p>We already mentioned artifacts, and the whole next chapter is dedicated to it, which sets basic rules. Artifacts should be building blocks of every system specification adn whatsmore they could be compared to prefabricated components within the meaning of its function and basic structure. If all use case desriptions, screen descripitons or business rules description share the same structure and are stored the same way, it greatly imporoves productivity and lowers frustration in the team.</p>
+<p>Another thing which developers do automatically without thinking and is not common in analysis and documentation is naming conventions. Besides having unique identificator, artifact should also be quickly findable by its name. It is not very easy to search use case called &quot;Customer searches meals - use case&quot; or a screen &quot;Show meal list&quot;. It is also not very co nvenient when naming a use case &quot;Customer searches meals - use case&quot; and another &quot;Use case search delivery points&quot;. The naming should be consistent and following de facto standards if they exists. </p>
+<p>For example there is such rule for naming use cases which prescribes to name them like &quot;Order ticket&quot;, &quot;Make reservation&quot; or. In the next chapter we examine each ertifact and we also try to show you the best way to name the artifact.     </p>
+<h2 id="automation">Automation</h2>
+<p>Let's use the comparison of analysis to development again. Developers are able to write the same code just using Notepad and code compiler. But nobody wants to do that. They have a big arsenal of tools such as Integrated Development Environments, Screen designers etc. which not only helps them to write and structure the code but also structure the artifacts they produce so that it is more comfortable to work with a big number of artifacts current systems consist of.</p>
+<p>It is interesting to see that many analysts still use &quot;Notepad and compiler&quot;. Our experience is that most analytical teams' work is rather &quot;manual&quot;, starting managing requirements in Excel, through copying artifacts such as requirements and diagrams manually to Word to exchanging the documents via email, tracking changes by revisions.</p>
+<p>These concepts are outmoded and for analysts to be able to handle the complexity of the systems and scope of the changes to them they need to start using tools which help them to manage the big amount of information, collaborate and communicate it effectively with stakeholders and the whole team</p>
+<p>Analysts' task which take time and should be automated</p>
+<ol>
+<li>Generate a list of artifacts - if you need to see a list of interfaces particular system exposes or want to list system modules to a system overview you shouldn't do it manually. It takes time and it is a duplication.</li>
+<li>Generate elements of user interface - analysts should just desribe their behaviour and should not create manually tables of elements  </li>
+<li>Manually synchronize between overview and detail - when you list for example screens then you duplicate each of them as you store its detail somewhere. Once you change the name of screen you need to change in the list as well which is unmanagable.  </li>
+<li>Create skeletons of documents manually - copypasting 100 times the definition of the use case is not the best way to describe 100 use cases</li>
+<li>Generate and insert models to specifications manually - drawing models in one tool and transferring them to another tool where the system specification is written guarantees that the specification becomes outdated the first tiem the model is changed because nobody knows in which documents it is used</li>
+<li>Storing doucuments on shared folders, versioning them and reviewing them using office tools - analysts shouldn't waste time creating new versions of documents, formatting them or trying to identify the stakeholder's comments added using revisions which makes the specification one big colouring mess </li>
+<li>Find who changed particular artifact - software developers use tools to track changes to the source code so there is no reason why analysts should search changes in Word revisions or anything like that. It should be also possible to revert any version of the artifact from history. </li>
+<li>Synchronize real database schema with database model  </li>
+</ol>
+<p><strong>Example</strong></p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-13.png" alt="aa" /></p>
+<p>The diagram on the left represents CRM system and all its modules. This must be modeled by an analyst.
+Everything you see on the right sight however is automatically generated. This doesn't mean that analysts don't need to do anything. Such automation just streamlines the steps which are repetitive and can be replaced with automatically generated content and ensures that there is no duplicated or outdated information.</p>
+<h2 id="you-need-to-know-why">You need to know WHY</h2>
+<p>While you're analyzing the requirements you help stakeholders come to many decissions which shape the final solution. The atributes of the solution are described but what it is very common that the decissions are not recorded and stays only in the meeting minutes are analyst's  mailbox.</p>
+<p>It is a great shame though. It is not such painful when it is just one anlayst working on the project and the analyst stays in the company even after releasing the solution to help answer quesions and implement change requests.</p>
+<p>It starts to be painful when the analyst leaves the team and a new feature needs impacts a part of the system. It might not be sufficient to now that this list of values is a list of countries and is filled by this webservice. You need to know the business meaning behind it, why it is possible to select only one velue and not multiple values and WHY is it here in the first place - what is the business value of it? </p>
+<blockquote>
+<p>I think the most important things to document are the decisions. This goes for everything from requirements to architectural choices.</p>
+<p>-- Stack Overflow</p>
+</blockquote>
+<p>Of course, writing novels about how the button was supposed to be labeled &quot;Ok&quot; but than it was changed to &quot;Got it&quot; is waste of time. We're talking about business decissions and meanings. For example why Paypal payment is available only for orders above $100. Sure, developers don't care, it is just a rule to be implemented but for analyst this short information pointing to the source of decision and the rationale behidn it can save a lot of time in the future.</p>
+<p>Another example might be absence of the possibility to pay with Paypal at all. It's a paradox that you should document also why something is not implemented. It doesn't make sense at the first sight but trust us having an information why Paypal is not supported or a reference to some business material will be beneficial in the future.</p>
+<p>In general, it is beneficial to record not only why some things are this way but also why some things are not this way. </p>
+<p>Examples when to look for the why:</p>
+<ol>
+<li>If something is labeled out of scope, write why</li>
+<li>If some function is or is not available in some circumstances write why just in these circumstances</li>
+<li>Always include the rationale for business goals and business rules</li>
+</ol>
+<blockquote>
+<p><strong>TRAP</strong> And it is not sufficient to write &quot;See the email converstaion from 1st October 2015&quot;. Nobody is going to search for the email so don't make others mad!!! </p>
+</blockquote>
+<h2 id="examples-and-test-cases">Examples and test cases</h2>
+<p>Knowing why a decision was made or why something works the way it works is obviously very important. At least so important for analyst is to ensure that the statements written are understood correctly. To help with this there is nothing more useful then providing examples. Sometimes analysts write descriptions which are not understable at all. But from the example attached it is quite clear what is going on.</p>
+<p>People in general struggle to imagine complex problems if they are just abstract descriptions so you should always include examples if you're describing such complex problem or process and always ilustrate your thought with examples to ensure that stakeholders understand what you're saying.</p>
+<blockquote>
+<p><strong>REMEMBER</strong> For all non-trivial statements always include an example.    </p>
+</blockquote>
+<p>Examples and tests have more in common than it might seem at first sight. Example is just a kind of test. If we define value <code>X</code> as <code>X = a + b</code> and provide an example where <code>a = 5</code> and <code>b = 6</code> then <code>X = 11</code> we've just provided an example for the given rule and it serves also as a test case.</p>
+<p>The same applies not only on business rules and algorithms but almost all artifacts. Let's have an entity called <code>Campaign</code> which defines relationship between type of financial product and the object which is financed. For example, using Campaign A1 allows to finance only motorcycles through operative leasing.   </p>
+<p>It is even more crucial for business processes. What works very well is to &quot;instantiate a process&quot; which gives you an example to ensure stakeholders understand it. Instantiating means that analyst replaces the general process roles with concrete people and the prowith concrete dates, numbers etc. For example &quot;Sales representative submits a deal of $13000. This is more then $10000 so the $500 bonus is credited to SR's account - it is $500 because for the deals between $10001 and $15000, the bonus is $500&quot;.</p>
+<blockquote>
+<p>My advice to analysts is to learn as much as you can about agile testing and seek opportunities to write your requirements as tests wherever possible.</p>
+<p>-- DAD</p>
+</blockquote>
+<h2 id="decent-level-of-documentation">Decent level of documentation</h2>
+<p><strong>1. Just Barely Good Enough Models and Documents</strong></p>
+<p><a href="http://agilemodeling.com/essays/barelyGoodEnough.html">http://agilemodeling.com/essays/barelyGoodEnough.html</a></p>
+<blockquote>
+<p>I can tolerate a map that is missing one or two streets but I can't tolerate one that is missing three quarters of the streets in my town.</p>
+</blockquote>
+<p>This is exactly it. When you create documentation, be it a specification for development or a documentation of the existing system, it is not that crucial for analyst if the button is red or yellow in the documentation or if its label text is missing. It mostly doesn't even matter if the button is missing ig it's a button which just filters something for example. What is the problem if the button represents a core functionality, some complex algorithm or a calling of a series of web services. It is such waste of time to go from one developer to another invastigating what is its behaviour.</p>
+<ul>
+<li>The goal is no to describe all aspects of the system. It is time-consuming thus expensive.</li>
+<li>The level of &quot;just good enough&quot; must set. Only facts above the level are worth describing. The level might chagne over time though as you realize that some things need to be described in more detail for example.</li>
+<li>If you know information which is important and difficult to obtain, document it because the time you invest now can save multiple times more effort in the future. You are in context, have access to stakeholders, know the structure of the documentation, simply the things which might not be available in the future.</li>
+</ul>
+<blockquote>
+<p>So, I think that a good starting point consist in thinking of your documentation more like something that you may use to introduce new developers to your project than</p>
+</blockquote>
+<p><strong>2. Just enought formality</strong></p>
+<p>We all use UML moreorless, right? Can you tell me which version is the most recent and what are the changes from the previous one. We doubt.
+Your models need to be understandable and forally correct in sense that you don't model processes using use cases. Yes, we saw it.
+So don't focus to have the models 100% correct according to UML, BPMN, Archimate etc. but use what is most valuable for the given purpose under the condition that you know for what purpose the model type was created and you know at least the basics.</p>
+<p>We will give you a basic set of models which we consider most useful with the traps of each of them in the separate chapter TBD </p>
+<blockquote>
+<p>Modelling standards are nice, but more important is to use notation that your audience actually understands.</p>
+<p>TBD Ambler</p>
+</blockquote>
+<p><strong>3. Permanent vs. throw-away artifacts</strong></p>
+<p>During analytical activities a lot of models, prototypes and documents are created but they all don't server the same purpose. Some of them are just helpers to understand or communicate the problem some of them bocome final designs which mirrors the state in the real application. While the formers (throw-aways) can be often disposed after they fulfilled their purpose because there was no intention to keep  the laters (permanents) are valuable even after the system is build because they provide you with the simplified reality which you can check without needing to contact stakeholders or diving deep into the system source code.</p>
+<p>The throw-away artifacts should be created in the most effective way so that they serve the purpose but don't take much time either to create or to understand. They might be just basic diagrams drawn on the whiteboard, scetches on paper or even artifacts produced in some modeling software but without pushing it over with unneeded formality. For example you can tune an algorithm with stakeholders using a computation simulated in Excel because it is quick and all stakeholders understand it. </p>
+<p>On the other hand, the permanent artifacts such as system overviews, high-level process maps, description of system interfaces and integration models or screen behaviour descripiton should be desribed in standardized way, using more formal approach as we talked about it in the section &quot;Conventions etc. TBD</p>
+<p>These artifacts become the official documentation which might end up being the only source of information &quot;for the next genrations&quot; and you want to do your job properly because you also be in the role of the next generation in another company or on another project and it will come back to you as a bumerang. </p>
+<h2 id="checklists-instead-of-templates">Checklists instead of templates</h2>
+<p>You may remember we advised effective teams to set up a fixed set of artifacts having a standardized pregenerated form and to use automatically generated unified documents and now we tell you not to use templates. Let us make it clear.    </p>
+<p>The unified artifacts, documents and conventions are for the sake of consistency so that in ideal world nobody recognizes who created the artifact, it easy to search and navigate between them. Even though there might be some sections for each artifact which remind of template, for example each use case has a Main scenarion section and each screen has a screenshot and a list of UI elements these are just standard defintions of artifacts. These definitions ensure that the artifacts and documents include the minimum to fulfil their purpose and it's then up to analysts how they fill the rest.</p>
+<p>The template on the other hand has a rigid structure with dozens of paragraphs which must be populated. This leads analysts only to fill everything they are asked to even without knowing the goal of each paragraph and the created outputs are total mess. The documents would provide more value if they wrote it in plane text with their own words.</p>
+<p>We instead give you o basic guidlines which documents, artifacts or model to use and when so when you learn it you know how to use it straightaway. We don't say that the system specification must include a list of algorithms or that each use case must include also a sequence diagram. These things differ from project to project and since &quot;one size doesn't fit all&quot; TBD it is not even possible to create such rules.</p>
+<p>However, it is not possible to keep al the information and standards in head so we also provide a checklists for each artifact so you can during your work or after you finish check your outputs against the checklist to ensure that you didn't miss out any important aspect of the artifact.    </p>
+<h2 id="breadthfirstapproach">BreadthFirstApproach</h2>
+<p><a href="http://agilemodeling.com/essays/agileRequirementsBestPractices.htm#BreadthFirstApproach">http://agilemodeling.com/essays/agileRequirementsBestPractices.htm#BreadthFirstApproach</a></p>
+<h2 id="overviews---the-big-picture">Overviews - the big picture</h2>
+<p>In the previous section we claimed that the documentation doesn't need to be 100% perfect. In fact, it can't be.</p>
+<blockquote>
+<p>&quot;All models are wrong but some are useful&quot;. TBD smazat a nechat jen v sekci modelu</p>
+</blockquote>
+<p>Documentation is such model because it never has all the information needed to fully desribe the reality. Why?
+Because &quot;When you construct a model you leave out all the details which you, with the knowledge at your disposal, consider inessential.&quot; TBD citace</p>
+<p>If you forget or &quot;forget&quot; intentionally to document what the particualar button does, it will make somebody from the &quot;next generation&quot; angry, will take his/her time to investigate but in the end the information can be retreived from source code. It is easy to narrow down to a single functionality and realize what's going on there.</p>
+<p>The different story is with the &quot;big picture&quot; whether it is a business process overview, multiple systems integration overview or just single system architecture overview. These overviews are not easy to get because it often requires to connect many parties together to get the whole picture which can be a pain. Whatsmore, these high-level views don't change every day so it is quite safe to document them therefore it is a win-win situation - you get an information which is not easy to find and the information is quite permanenent, so why not to capture it and keep it?</p>
+<blockquote>
+<p>Always create an overview, an &quot;bird’s-eye view&quot;, to introduce a project, business process, system both from business perspective or from architecture perspective etc. It helps in all cases.    </p>
+</blockquote>
+<p>For example for a system overview it would be really helpful if it always included these:</p>
+<ul>
+<li>Textual overview describing the purpose of the system, typical users and usages</li>
+<li>Domain model to understand the business terms and entities which the system processes</li>
+<li>Context and integrations help to understand how the system is integrated with the rest of the world</li>
+<li>Architecture of the system to get rough idea of the whole system structure such as its modules, exposed interfaces etc.</li>
+<li>Key Use Cases presents typical users of the system, and how they benefit from the system</li>
+</ul>
+<p>TBD jen copy paste</p>
+<ul>
+<li>Documentation should be concise: overviews/roadmaps are generally preferred over detailed documentation.</li>
+<li>What would you rather have, 500-page system document that is likely to have a significant number of errors in it but significant details or a 10-page, high-level overview?</li>
+<li>The shorter document very likely wouldn't contain the detailed information you need but it would provide a map from where you could dive into the source code, or other documents, for details.</li>
+<li>You'd be more likely to trust this document because it's shorter, worst case you could easily update or simply rewrite it if you found it to be grossly inaccurate, and because it deals with high-level concepts such as your system architecture which will change more slowly than the detailed minutiae contained in the larger document</li>
+</ul>
+<h2 id="visualize">Visualize</h2>
+<p>It is not recommended but definitely possible to desribe all requirements for the system or even whole system just in text. We've seen it and were not surprised at all that the project was behind schedule, the quality of the product was poor and onboarding of a new analyst was a big challenge. Dozens of Word documents full of complex algorithms described on 2 or 3 A4 format pages, without overviews or process descriptions and completely useless as it was always faster to ask developer or to check the source code. Analyst not able to read C# code would've been lost. It is not possible to find anything in it and nobody will ever maintain such mess, so please just don't do it!</p>
+<blockquote>
+<p>Diagrams communicate certain types of information more efficiently than text can. Pictures help bridge language and vocabulary barriers among team members.</p>
+<p>-- SW requriemetns (TBD) </p>
+</blockquote>
+<p>The common argument fot not using he models is that stakeholders don't understand them. Of course they don't understand every gateway type in business process model or they have no idea what the weird double or tripple lines with circles mean in the ERD diagram. This doesn't mean you need to stop using them and go through infinite textual business process desriptions during requirements workshops. Our experience is that you simplify the notation of the diagrams just to use the basic elements, stakeholders pick it up very quickly. We've never come across stakehodlers who would resolutly refuse to discuss the system functions using diagrams. It is mostly the other way around and the models quickly become the main communication medium in the team.</p>
+<p>We will go through each type of the model in the separate chapter, here we'll show you just a few model examples which were accepted by the non-technical stakeholders and which helped project to move on quickly.    </p>
+<blockquote>
+<p>Apply The Right Artifact(s)</p>
+<p>Each artifact has its own specific applications. For example, a UML activity diagram is useful for describing a business process,
+whereas the static structure of your database is better represented by a physical data or persistence model. Very often a diagram is a better choice
+than source code – If a picture is worth a thousand words then a model is often worth 1024 lines of code when applied in the right
+circumstances (a term borrowed from Karl Wieger's Software Requirements) because you can often explore design alternatives more effectively by
+drawing a couple diagrams on whiteboards with your peers than you can by sitting down and developing code samples. The implication is that you need to know the
+strengths and weaknesses of each type of artifact so you know when and when not to use them. </p>
+</blockquote>
+<p>A great technique is to combine static and behavioral models together because mostly you need both views. The static view desribes the overall relationships between the components whereas the behavioral is more vivid and desribes interactions. Think of it as a static GIF and animated GIF. The animated always grabs more attention and is more powerful in terms of information transfer. The static model shows what components play a role in the problem but it's not until you see a behavior that you fully understand the problem.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-05.png" alt="aa" /></p>
+<p>Visualization are not just models though. Very helpful, even in the very early stages of the analysis, are screen scetches which boost stakeholders imagination and helps uncover additional facts. So present stakeholders with conceptual user interface as soon as possible. It doesn't matter that it is just a handdrawn scetch and that it has nothing to do with the final design that will be done by a professinal designer in a couple of month time You just need to encourage stakeholders to think about the problem differently. If they tell you that the custmer detail page shoudl include name, email and phone, count on that after showing the detail screen to them, even drawn on paper tissue, they will add up more details to it instantly.</p>
+<h2 id="writing-rules">Writing rules</h2>
+<p>No matter how strict you are in following the practices presented in this chapter, you can ruin it all if you use the wrong wording in your analytical outputs. Since analysts write a lot of unstructured freeform text a they often bring a lot of ambihuity to it which frustrates developers and takes time to all team members to clarify it.</p>
+<h3 id="unambigous-words">Unambigous words</h3>
+<p>hned udelat rovnou seznam..krom specifikace pozdavku pred tim nez to uhladim, work in progress</p>
+<p>Words such as “and,” “or,” “additionally,” or “also” in a requirement suggest that several requirements might have been combined. This</p>
+<p>Avoid using “and/or” in a requirement; it leaves the interpretation up to the reader, as in this case:
+The system must permit search by order number, invoice number, and/or customer purchase order number.</p>
+<p>The words “unless,” “except,” and “but” also indicate the presence of multiple requirements:
+The Buyer’s credit card on file shall be charged for payment, unless the credit card has expired.</p>
+<p>If you use a pronoun to refer to something mentioned earlier, make sure the antecedent is crystal clear. Adverbs introduce subjectivity and hence ambiguity. Avoid words like reasonably, appropriately, generally, approximately, usually, systematically, and quickly because the reader won’t be sure how to interpret them.</p>
+<p><strong>&quot;General&quot;, &quot;Common&quot;</strong></p>
+<p>Everytime we see something like &quot;General requirements&quot; or &quot;Common functions&quot; we have to deal with a bunch of unsorted, unrelated artifacts which somebody was too lazy to sort and put . We call it black hole and will get bigger and bigger swallowing everything. Don't start accummulating mess in the black hole by creating such a dump.</p>
+<p><strong>&quot;To process&quot;</strong></p>
+<p>It is an abstract verb which could mean anything so it is always better to replace it with something more concrete. Instead of &quot;System processes the order&quot; analyst can write &quot;System stores the order and marks it as 'New'&quot;.</p>
+<p>To see an exhaustive list of unambigous words and situations please refer to TBD SWR3, Chapter 11</p>
+<h3 id="dont-be-passive">Don't be passive</h3>
+<p>If you want to express that something was done you can use active or passive voice.</p>
+<p>Using active voice you emphasize who performed the acitivity such as &quot;John broke the window yesterday&quot;. </p>
+<p>Passive voice is used in cases that we don't know or don't want to name the actor of the activity. For example &quot;The window was broken yesterday&quot;. We don't know who broke the window. As it might be sometimes useful in the common conversation it is a time bomb in the analysis. &quot;This interface is called to get a list of sold cars&quot; - who calls whom?</p>
+<p>Always use active voice so that it is clear who triggers the acitivity: &quot;Car Management calls this SysCAR's interface to get a list of sold cars.&quot;</p>
+<h3 id="negative-requirements">Negative requirements</h3>
+<p>TBD - jen copy paste wiegers</p>
+<p>People sometimes write requirements that say what the system will not do rather than what it will do. How do you implement a don’t-do-this requirement? Double and triple negatives are particularly tricky to decipher. Try to rephrase negative requirements into a positive sense that clearly describes the restricting behavior.</p>
+<p>Here’s an example:
+<em>Prevent the user from activating the contract if the contract is not in balance.</em></p>
+<p>Consider rephrasing this double negative (“prevent” and “not in balance”) as a positive statement:
+<em>The system shall allow the user to activate the contract only if the contract is in balance.</em></p>
+<h3 id="right-to-the-point">Right to the point</h3>
+<p>The popular Q&amp;A platform stackexchange.com encourage users not to waste others' time by typing unnecessary &quot;Hello&quot;, &quot;I would like to ask you&quot; and go right to the point. It is the same with analaysis. Analytical outputs should follow rules of the proper communication but are not novels. It takes time to go through phrases like &quot;In this section ou can find a list of interfaces provided by the module A of the system B&quot; or &quot;In case you choose the item in this select box...&quot;. Don't describe the context if it is clear - you read the module A specification so it is clear that the interfaces are from this module, or if you describe the behaviour of the select box don't repeat that the item is selected in the select box. </p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

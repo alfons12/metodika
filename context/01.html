@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/01.html">
+                            Business and systems analysis
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/02.html">
+                            Business analysis overview
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="business-and-systems-analysis">Business and systems analysis</h1>
+<p><a href="https://ajiethkumar.wordpress.com/2013/07/24/business-analyst-vs-system-analyst/">https://ajiethkumar.wordpress.com/2013/07/24/business-analyst-vs-system-analyst/</a></p>
+<p>The two contexts described in the previous section are mostly called business analysis and systems analysis. What differentiate these two disciplines is the input.
+Whereas systems analysts start working with a system request (change the currency in the report A12 to EUR), business analyst often starts with a request to solve some business need (new product needs to be introduced in all systems). In theory...</p>
+<p>In the the real world there are not two companies which define the roles the same way. Moreover, sometimes there are not two projects within the same company where the analysts' responsibilities are the same.</p>
+<p>The reason is that it is not simply possible. Every project is different and requires different analytical skills. Each analyst is different with different level of skills. Therefore the line separating business analysis from systems analysis is blur. They almost always overlap.</p>
+<p>Even BABOK is not sure about the line &quot;Requirements are focused on the need; designs are focused on the solution. The distinction between requirements and designs is not always clear.&quot;</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/basa-ratios.png" alt="aa" />          </p>
+<p>It gets even more complicated when we look at how companies call the role of people performing analysis on IT projects.</p>
+<p>It is rather clear for the business analysis, the business analysts is a common term, however business analysis tasks are also often done by people holding these roles business architect, enterprise analyst, process analyst, product manager and requirements engineer.</p>
+<p>The same can't be said for more technically focused role. Across the industry you can come across these names: systems analyst, IT analyst, IT business analyst, business systems analyst, technical business analyst, application specialist.                                                                  </p>
+<p>The most common naming is systems analyst. However, this name might not be accurate for people analyzing only mobile applications or desktop applications.
+Well, we may say that each application is a system of components or even each desktop or mobile application somehow communicates with other applications or systems. In this case systems analyst is very close to the ideal naming.</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A class of software that provide services to other software.</td>
+<td>Software that is primarily designed to be used by people.</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+Another big topic regarding the role of analyst is Agile. In agile methodologies these roles don't even exist, it is in most cases replaced by the product owner. We will talk about analysis and agile in another chapter.     </p>
+<p>Despite the fact that these roles can't be clearly separated and that the responsibilities of these two mix from project to project there are typical activities which differentiate them from each other.</p>
+<p>Example of business analyst activities</p>
+<ul>
+<li>Describes and analyzes high-level business requirements</li>
+<li>Proposes business process changes</li>
+<li>Specifies system features from user perspecitve</li>
+<li>Analyzes business rules and algorithms from the business perspective</li>
+</ul>
+<p>Business analyst has deeper knowledge of the business area and business architecture of the company which he works for (e.g. as an insurance company employee) or which he implements a solution for (e.g. software house employee).</p>
+<p>Example of systems analyst activities</p>
+<ul>
+<li>It says which database procedure is going to be modified</li>
+<li>It says what new user roles needs to be created</li>
+<li>It says which web service will be created</li>
+<li>It defines platform specific user interface design</li>
+</ul>
+<p>Systems analysts, on the other hand has a deeper knowledge of technologies and IT architecture of the company and architecture of the specific systems. They are also often responsible for technical design such as defining system components, designing databases or system interfaces. They do it independently or together with application architects if such roles exists in the company. </p>
+<p>Example</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/basa.png" alt="aa" /></p>
+<p>Intuitively, BA should end on the dashed line - business analyst should stop at the level at which users could see.</p>
+<p>User understands &quot;System shall generate CRS report and send it to email xxx on December 31&quot; but has no idea about Data warehouse, CRON jobs etc.</p>
+<p>However, BAs very often know (and they should know) the systems in the eneterprise and with help of application archtiects (or simply with other IT guys if role of the architect doesn't exist in the enterprise) they can put together a draft of the architecture in early stage of the project which is very desirable (see <a href="http://agilemodeling.com/essays/initialArchitectureModeling.htm">Architecture Envisioning</a>).</p>
+<p>The line is then very often moved deeper into IT teritory and it is specifing software artifacts what makes the line - simply BAs don't specify which web service will be modified, what database table will hold the data or what user interface element will be used for data input. </p>
+<p>Keep in mind though that this applies to enterprises where the role of BA and SA is separated. It is very common that BA and SA is one person doing all activities from requirement workshops to database design.</p>
+<p>If the person can handle both roles this is a great benefit because the outputs of business analysis doesn't need to be handed over to another person. Another benefit is that not only could business anlayst discuss the achitecture but is also able to point out irelevant or unrealistic requirements in early project phase which saves time - they are corrected sooner and no time is wasted on analyzing them.  </p>
+<p>Sometimes business analyst might find a solution without involving IT - manual process or using existing functionality. So some business requirements doesn't need to reach IT departments at all - this is what differenciate business analysis from system analysis.</p>
+<blockquote>
+<p>Don't waste time trying to find the line between the BA and (B)SA. Until you write source code, it is analysis and it just depends at what level of detail you are.</p>
+<p>You just need to know where what analytical activities you are supposed to perform within the enterprise you work for.</p>
+</blockquote>
+<p>For the reasons above, we're going to use just the term <strong>Analysis for Business analysis and Systems analysis&amp;design</strong>.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/basa-ratios-2.png" alt="aa" /></p>
+<p>Note: Implementation doesn't always mean new software. For the purpose of this text we assume that the solution is always creating new or modyfiing existing system.   </p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

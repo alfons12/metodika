@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="active">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/01.html">
+                                Word on requirements
+                            </a>      
+                        </li>
+
+                                                <ul class="submenu nav nav-stacked nav-pills">
+                                                    </ul>
+                        
+                                                <li class="">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/02.html">
+                                Introducing artifacts
+                            </a>      
+                        </li>
+
+                        
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="requirements">Requirements</h1>
+<p>Duvod co me primel dat do BRD i funkcni je, ze oni je reknou, nevim vubec v jakem systemu to bude, ale at to mam kam zaznamenat</p>
+<h2 id="a">a</h2>
+<blockquote>
+<p>We don't like using word Requirement in sofware development.</p>
+</blockquote>
+<p>BUDEME POUZIVAT REQ CO NEJMIN, PAC JE TO ZMATECNE</p>
+<p>Klasika je, ze pozadavky jdou podle miry abstrakce business-stakeholder/user-solution/functional pricemz business a user jsou </p>
+<p>Kdyz vim, ze budu delat system pro evidenci kontaktu, tak b </p>
+<p>Software requirement zacina az sem vybral reseni pomoci softwaru. dodam use cases</p>
+<p>Problem je ze sem vstupuje fáze...ve fázi sbírání business pozadavku mi prichazi i pozadavky funkcni, ktere muzou ovlivnit vyber reseni a nemuzu je tedy ignorovat
+Musim mit vsechny informace potrebny pro vyber reseni - business pravidla, procesy, as, proste vsechno</p>
+<p>Business potreba je prejit z rucniho zpracovnai faktur na nejaky system - Chci system na evidenci faktur. Vydefinoval jsem potrebu, chci tim usetrit dve ucetni. Ted delam stekholder/user a rikaji ze chteji zalozit fakturu, exportovat fakturu. Super to vsechno nam nabizi software ABC. Ale oni nekde videli, ze chteji naseptavac odberatelu, aby to nemuseli cvakat rucne.
+A bohuzel zadna krabice to neumi, tak to musime vyvinout vlastnimi silami...takto low level pozadavek urcil vyber reseni a musel byt zaznamenan.</p>
+<p>Dalsi rozmer je CRS-mam business cil naimplementovat CRS, to muzu udelat nekolika resenima...user pozadavek je pro me nezavislej na technologii, potrebujeme je obeslat .. muzeme delat rucne
+Chci evidovat faktury - jakejkoliv user requirement bude softwarovej </p>
+<p>Druha ve je CRS, tam je to </p>
+<p>V NAZVECH DOKUMENTU NEPOUZIJEME REQ PAC JE TO ZMATECNE
+BRD = RD, ale aby tam nebylo to Requirement - Business analysis document/Vision and scope, funkcni/system specifikace</p>
+<ol>
+<li>A common practice is to refer to objectives, or expected benefits, as 'business requirements.' [1]</li>
+<li>
+</li>
+<li>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Goals, objectives</th>
+<th>Requirements</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Solution
+|
+Software specification</p>
+<ol>
+<li>Business vs Software
+<ul>
+<li>business nezavisle na softwaru, bud jim dam novej system, nebo krabici, nebo upravime proces - solution</li>
+<li>f</li>
+</ul></li>
+<li>BRD obsahuje business req, nehlede na level, ale nezavisle na reseni, nejsou to jen objectives</li>
+</ol>
+<p>&quot;pozadujeme, aby se o zmene klient dozvedel prostrednictvim SMS&quot; - what, BRreq</p>
+<blockquote>
+<p>What we start with sets the limits on what we'll end up with. We're not likely to produce a system that is better than what has been defined as requirements.  </p>
+</blockquote>
+<h2 id="intro">Intro</h2>
+<blockquote>
+<p>People commonly use the term 'requirements' to pertain to the features of the product, system, software expected to be created.</p>
+</blockquote>
+<p>The term requirement is likely to be one of the most ambiguous words in the analysis discipline. We all use it in IT context intuitively to express what a software should do or what atributes it should have: for example &quot;System shall be able to add a new contact&quot;, &quot;System shall be able to list all contacts&quot; or &quot;System shall be able to sort list of contacts by name and address&quot;.</p>
+<p>From the requirements above it is obvious that the customer wants a system and what the system should be capable of. The requirement for sorting contacts is lower level than the other two but it is not a problem and all three are software requirements defining the functionality of the new system.</p>
+<p>However, the the requests from stakeholders are not always that clear and very often look like this: &quot;We need to enable our partners to see online a list of our tenders so that they can decide to apply&quot;.</p>
+<p>People started to call it also requirements which led to confusion and misunderstanding because such requirement can be solved by multiple solutions, may require changing legacy systems and/or implementing new systems.
+The requirement therefore is not tight to a single system.</p>
+<p>It is more confusing when we leave the context of software engineering and start talk about requirements in the context of business analysis. Here the requirement can look like this: &quot;We as a bank need to implementa a CRS regulation. This includes gathering states of tax residency from all new clients and reporting this residency to a regulator.&quot; From the business analyst's point of view it is also a high-level requirement even though the final solution doesn't need to include an IT solution at all - a change in processes or delegating it to a mother company might solve it in the end for example.</p>
+<p>So, how to get out of this? To make it clear a classification of requirements, a hierarchy was developed to put each requirement to the right box. </p>
+<h2 id="classifing-requirements">Classifing requirements</h2>
+<p>There already exists multiple classification schemas. The most popular by presented by BABOK and Karl Wieger's Software Requirements.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/requirements1.png" alt="aa" /></p>
+<p>The BABOK being a business analysis-oriented emphasizes that business needs can be solved by even non-technical solution such as process change, they use the term solution requirements to not dictate a particular solution such as software.
+The Software requirements book focuses rather on technical solution which has just functional requirements and authors of the requirements are its users. </p>
+<h2 id="--alternative">--Alternative</h2>
+<p>It doesn't matter how you call the requirements if you know how to distuiguish each type and structure the requirements properly. We will try to show you this in the chapter TBD</p>
+<p>In fact, we try to avoid calling the types of requirements with name. We simply use just &quot;requirement&quot; when we refer to any stakeholder request.</p>
+<p>Still you need to learn to recognize the type of the requirements.</p>
+<p><strong>1. You need to find out what impacts the requirement is going to have.</strong> </p>
+<p>Low-level functional requirement for example &quot;The default date in the field XXX should be the current date&quot; will probably mean just implementing a minor change request which doesn't requrie much work. On the other hand, requiremnt such as &quot;We want our partners to be able to see our tenders&quot; could lead to a big project developing a new system which will integrate a couple of company's systems.</p>
+<p>Each type also require different action and different type of documentation.</p>
+<p><strong>2. You need to structure the requirements</strong> </p>
+<p>and you should learn </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/requirements3.png" alt="aa" /> </p>
+<h2 id="business-requirements">Business requirements</h2>
+<p>!!!!!!!!!!!!<a href="https://managementmania.com/cs/business-pozadavky-business-requirements">https://managementmania.com/cs/business-pozadavky-business-requirements</a></p>
+<ul>
+<li>Business požadavky (Business Requirements) jsou požadavky organizace nebo zákazníka na produkt, službu či systém. Vyjadřují co je požadováno. Neříkají jak toho dosáhnout.</li>
+<li>Business požadavky v praxi: Je to obvykle sada potřeb, které iniciují vznik nového produktu nebo jej nějak mění. Mají obvykle podobu velmi stručného dokumentu nebo dokonce jen několika stručných bodů. Dokument se někdy nazývá jako BRD (Business Requirements Document) nebo bývá rozpracován do projektového záměru. Business požadavky obvykle vznikají na základě strategického rozhodnutí, požadavků trhu, zákazníků nebo ze zpětné vazby z provozu. Autorem business požadavku může být jakýkoliv stakeholder.</li>
+<li><a href="http://enfocussolutions.com/business-user-and-system-requirements/">http://enfocussolutions.com/business-user-and-system-requirements/</a></li>
+</ul>
+<blockquote>
+<p>A common practice is to refer to objectives, or expected benefits, as 'business requirements.'</p>
+</blockquote>
+<p>Both classifications mentioned before define business requirements as the high-leve goals and objectives. However, there is also a second camp which thinks that business requirement is rather &quot;a requirement of interest to the business&quot;. </p>
+<p>A widely held model claims that these two types of requirements differ only in their level of detail or abstraction — wherein 'business requirements' are high-level, frequently vague, and decompose into the detailed product, system, or software requirements.</p>
+<p>A custom-built solution in not always required for every new set of business requirements. There are often standardized processes and products, which with some tweaking or customization, can serve to address the business requirements.</p>
+<p>They didnt want or need me to specify data models or how the screens should look like, but they were in need of someone achieving clarity about what process steps, calculations, data manipulations, etc. the system was supposed to deliver, so they could get to work and design and produce something that was fit for purpose.</p>
+<p>Podporuje to BRD, ktery ma oboje...</p>
+<p>This opinions contradiction is a prove that the word requirement is simply not well-chosen. There will always be different opinions on this which supports our decision not to use the classification at all.</p>
+<p>To avoid these mis we simply don't use it. requirements a ne BRD</p>
+<p>We can't really go further and deeper with requirements if we don't fix one crucial thing. You've certainly heard manytimes that you should schedule a couple of meetings with business and gather business requirements and put them into BRD (Business Requirements Document). And they were not happy until the BRD included all the details so that the solution could be implemented according to it. This is what they taught you. We worked in many organizations, cooperated with many teams and it is very likely that you've experienced the same.</p>
+<p>But, we are really sad to say that taught you bad thing. They were all wrong. You weren't gathering business requirements and your output was unfortunately not a BRD.</p>
+<blockquote>
+<p>Business requirement is not a requirement which was expressed by a business representative. It is a high-level goal or objective not tied to any particular technical solution.</p>
+</blockquote>
+<p><img src="http://www.effective-analysis.com/generated/resources/requirements2.png" alt="aa" /> </p>
+<p>So if your BRD included that it should be possible to filter products, add profile photo or it included web service interface description, it was not a BRD. Don't be sad though. This is more common than one would expect. Why? Becuse of the word requirement. If it was called Business goals document, nobody would even think of including user interface specification into it.</p>
+<p>Examples of the real business requirements:</p>
+<ol>
+<li>“To reward our high-value advertisers.”
+<ul>
+<li>Business goal. There migh be a business need behind it to pamper high-value advertisers to make them advertise more (business opportunity) or to stop the trend of losing high-value advertisers (business problem).</li>
+</ul></li>
+<li>“To reward our advertisers having spent more than $10.000 last year.”
+<ul>
+<li>Business goal, just little bit more specific.</li>
+</ul></li>
+<li>“To reward our high-value advertisers by giving them $1000 credit for future advertising.”
+<ul>
+<li>Business goal. You may object that the solution was proposed so it is beyond the scope of business requirement, right?  The solution is business solution (how they're going to be rewarded), not saying anything about how it is going to be solved using technology.</li>
+</ul></li>
+<li>“To reward our high-value advertisers by giving them $1000 credit for future advertising. The credit should be topped up the last day of the year.”
+<ul>
+<li>Business goal, just little bit more specific. Topping up a credit could be done in many different ways, even manually if we have just 2 high-value advertisiers, so not tied to any solution.</li>
+</ul></li>
+</ol>
+<p>As you can see business requirements can vary in detail. That's fine, as long as the stakeholder's goal is not associated with any particular solution.</p>
+<p>People very often call business requirement everything they are told to build by business people. Then you end up having one big list of business requirements which is not a good approach.</p>
+<h2 id="user-and-functional-requirements">User and functional requirements</h2>
+<p><strong>Wiegers - System or user perspective</strong> TBD</p>
+<p>From the example provided it's evident that sometimes it's a bit tricky to distinguish to which level the requirement belongs. User requirements and functional requirements <strong>both represents &quot;What a stakeholder wants the system to do&quot;</strong>. The difference is only in the level of detail.</p>
+<p>Let's take the two requirements from the classification schema above:</p>
+<ol>
+<li>Customers can display state of the delivery</li>
+<li>System shall display a date of the last state change</li>
+</ol>
+<p>Both of them represents a capability of the system and it takes a lot of experience to train yourself to distuinguish between those to.
+But why should you distuinguish at the first place? Again, to keep separated different levels of detail.</p>
+<p>The separation by the level of detail looks like this:</p>
+<ul>
+<li>Customers can display state of the delivery
+<ul>
+<li>System shall display a date of the last state change</li>
+</ul></li>
+</ul>
+<p>The first helps you discover basic flows and scenarios in the application. Displaying a date of the last change is part of the flow, likely on a screen displayed when starting the flow of displaying the state.</p>
+<p>It really takes time to become a pro in this but there is a hint to speed up the training.</p>
+<p>If you can write the requirement in form &quot;Actor/System does something&quot; where the &quot;does something&quot; represens a scenario and there is no higher parent scenario, then it is a user requirement</p>
+<ol>
+<li>User creates contact, System exports contacts to PDF - User requirement</li>
+<li>User selects one contact's phone as default - Functional requirement, even though it can have a complicated scenario, it is a child scenario of the Create contact scenario</li>
+<li>The Save button should be disabled by default - Functional requirement, doesn't represent a scenario
+Button shall be red - X - not verb
+Change number of items in the basket - X - ma nadrazeny
+Create contact - OK</li>
+</ol>
+<p>So, as you can see it doesn't make any difference whether we call it user requirement, stakeholder requirement or functional requirement. Your responsibility is just to document them coherently and structure them appropriately. </p>
+<p>This is why we work only with high-level business goals which can be solved by various solutions and after the solution is selected then the functions for each solution are defined.
+The rest is just keeping everything coherent.</p>
+<h2 id="examples">Examples</h2>
+<p>We never use comparison to house construction as it is always misleading. Software development is far more complex and these comparisons never works.
+However in terms of using term requirements we can. Architect never asks customer &quot;What are you requirements for the house?&quot; since he would find out that the customer wants a red roof which is totaly irelevant to him. Good architect asks &quot;How are you going to use the house? How many poeople are going to live in it? How many storages should it have, from what material the roof should be?&quot;. </p>
+<p>After the architect knows these details the output is not a list of &quot;requirements&quot;. The output is a &quot;project documentation&quot; or &quot;specification&quot;.</p>
+<p>Similarily, in software:</p>
+<p><em>Stakeholder: I need to have a database of all employees because our company grew up quickly and my Excel table is not sufficient for managing employees anymore.</em></p>
+<ul>
+<li>Business need/problem: The number of employees is so high that it is not managable in Excel</li>
+<li>Business goal: to have a solution which helps us manage even the big amount of employees effectively
+Note: The word database evokes that the stakeholder is diktating also the solution. Do not take it literally, the stakeholder just wanted to express that some more sofisticated kind of automatization would be beneficial.</li>
+</ul>
+<p><em>Analyst: Ok, we can create a Access database with a couple of forms or we can develop a new module to our internal information system. Do you need to create sophisticated reports of employees, edit the database on mobile etc.?</em></p>
+<p><em>Stakeholder: Access would be sufficient for us for upcoming couple of months or so but with acquisition which is planned for summer we will need  a proper employee management module in our IS.</em></p>
+<ul>
+<li>Solution: new module of the company IS</li>
+</ul>
+<p><em>Analyst: Ok, understood. What you typically need to do with the employees? Search? Add and delete?</em></p>
+<p><em>Stakeholder: We need to see a list of employees, search in it, add, create and delete employees and we need a report - list of employees who joined the company for selected month.</em></p>
+<ul>
+<li>Solution features: search employees, add employee, delete employee, generate report</li>
+</ul>
+<p>Stakeholder: </p>
+<ul>
+<li>Solution features: Generate report - user can select month, generated manually on demand, user can choose where to save it, columns will be first name, surname, employee id, department code </li>
+<li>Technical constraints: CSV format</li>
+</ul>
+<p>As you can see we described the stakeholder's problem and also designed the solution which solves the problem withou using the word requirement at all.
+The word requirement is too abstract for software industry and often contributes to confusions. It is even worse when somebody tries to write a &quot;Requirements documentation&quot; or “Requirements specification”. Is it just a project charter or a high-level solution specification or functional specification ready for implementation?</p>
+<h3 id="traps">Traps</h3>
+<blockquote>
+<p>UC - z pohledu uzivatele, napric systemy, nestrukturovane....potreba analyzovat a nadelet use cases a rozbit do systemu</p>
+</blockquote>
+<p>The first trap is related to the fact that what analysts receives from stakeholders as &quot;requirements&quot; in good faith that it would simplify analyst's work is just a list of wishes which analyst needs to go through, analyze and break down.  </p>
+<ol>
+<li>“To reward our high-value advertisers. To give them $1000 credit for future advertising. To put a note about topping up the credit to our R-12 report.”
+<ul>
+<li>The trap here is that it mixes up the business goal and the request to modify a system function (we assume here that the R-12 report is generated by a system, if it was a manual work this would still be part of the project but not included in the list of software impacts).</li>
+</ul></li>
+<li>“To reward our high-value advertisers. Give them $1000 credit in the system AdvertPartner. We also want the ReportCube system to put a note about topping up the credit to our R-12 report.”
+<ul>
+<li>Great example of how stakeholders can gracefully mix everything together and confuse everybody</li>
+<li>The business goal is still the same, to reward some advertisers.</li>
+<li>The reason why they mentioned the AdvertParner system is just to ensure that advertisers will see the creditted bonus under their profile - this out of the box since all transactions are visible there.</li>
+<li>Then they're mentioning ReportCube. They have no idea that that this system just downloads the reports and shows them to the users. Report is generated in the other system which just confused analyst a bit more.</li>
+</ul></li>
+<li>To develop a portal for high-value advertisers so that they have more accurate data and feel VIP
+<ul>
+<li>This one is tricky. Is developing a portal a business strategy (business solution) to retain high-value advertisers or is it a technical solution to retain them?</li>
+<li>If it was already discussed with IT people and it was decided that the portal is the best way then it is in fact a solution which analysts ay start to analyze.</li>
+<li>But if it is just an initial idea not supported by any analysis or research and it could rather be translated to &quot;To give high-level advertisers a way of getting more accurate data and let them feel VIP&quot; than it is a goal for which possible solutions need to found</li>
+</ul></li>
+</ol>
+<p>The point is that there is no point of puzzling over what is feature, what is function, how it is related to user requirement, is it same as functional requirement etc.</p>
+<p>It is just quibble and whatever naming you choose it will always be just an abstraction and you always find a “requirement” which doesn’t fit, can fit to both categories etc.</p>
+<p>The most important thing is that you simply don’t need to try to get your head around since you simply don’t need to name the requirements.
+Analyst just need to know that there is always a business need driving the project, change request etc. which is a fixed statement which is not further analyzed, it is simply here and analysts just need to design solutions to solve that need.
+They also need to know that to meet business need business representatives need to define business goals. </p>
+<p>So, we’re not going to use the word requirement much here. We will simply say “business goals” referring to something stakeholders need to solve and which has not been decided how it’s supposed to be solved yet, “feature” or “function” when talking about what the solution should be capable of or how it should look and “technical constraint” for technical aspects of the solution such as how fast it should operate or what technology it should use.</p>
+<h2 id="note-on-agile">Note on agile</h2>
+<p>Agile is about the software development process. Regardless the process agile team needs to separate the levels of abstraction to understand the problem and analyze it properly.</p>
+<p>It doesn't matter if you call it a business goal or an epic, if you model user requirements, use cases or user stories, the only thing you need is separating the different levels of information and the actual process is irelevant then.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

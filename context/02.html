@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/01.html">
+                            Business and systems analysis
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/context/02.html">
+                            Business analysis overview
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="business-analysis">Business analysis</h1>
+<p>Business analysis, unlike systems analysis and design, is nowadays considered a standalone well defined disciplined which specifies its main concepts, knowledge areas and techniques. </p>
+<blockquote>
+<p>Business analysis is the practice of enabling change in an enterprise by defining
+needs and recommending solutions that deliver value to stakeholders.</p>
+</blockquote>
+<p>.</p>
+<blockquote>
+<p>!!!!!!!!Business analysis is a research discipline[1] of identifying business needs and determining solutions to business problems. Solutions often include a software-systems development component, but may also consist of process improvement, organizational change or strategic planning and policy development. The person who carries out this task is called a business analyst or BA.[2]
+Business analysts do not work solely on developing software systems. Those who attempt to do so run the risk of developing an incomplete solution.[3]</p>
+</blockquote>
+<p>The whole disciplined is standardized by the International Institute of Business Analysis trough the <a href="http://www.iiba.org/babok-guide.aspx">BABOK Guide</a> (Business Analysis Body of Knowledge).</p>
+<p>According to BABOK the business analyst is responsible for</p>
+<ul>
+<li>understanding enterprise problems and goals </li>
+<li>analyzing needs and solutions,</li>
+<li>devising strategies,</li>
+<li>driving change, and</li>
+<li>facilitating stakeholder collaboration.</li>
+</ul>
+<p>It means that the business analyst is the first who is informed about a business need, asked to analyze the need and propose possible solutions.</p>
+<p>To accomplish this it is very often needed to gather information from various people (within the company or even from the outside), challenge their oppinions by organizing and faciliting meetings and outline possible solutions.</p>
+<blockquote>
+<p><strong>EXAMPLE</strong></p>
+<p>Board of members of the Effecta Bank have decided that the number one strategy for upcoming year is to streamline the product portfolio. The first step is to merge Current account (account on which your sallary goes) with Overdraft (product which allows client to withdraw more money than the amount on the current account). It means that opening a Current account client will automatically can use overdraft without asking for Overdraft product separately.</p>
+<p>This is a huge project which impacts almost all parts of the bank. It will change the process of opening the account for front desk and for digital channels, templates for contracts, methodology and various reports must be altered. All the changes have direct impacts to IT. Front desk system, internet/mobile banking and reporting systems must modified. New marketing campaign and training for employees must be prepared. </p>
+<p>This is the responsibility of business analyst to identify all the impacts, discover possible solutions for these impacts with business representatives and IT and drive the whole process.</p>
+</blockquote>
+<p>From the example above it is clear that the business analyst's daily work is not a walkaway. Business analyst should have a solid understanding of the business area, of the whole organization both from the business perspective (products, processes, operations and limitations) and from the IT perspective (systems and applications, IT architecture and IT processes).</p>
+<p>Should be able to suit up and facilitate a meeting with top management representatives playing high politics hating each other and contrary discuss possibilities for IT architecture with really not easygoing IT guys from the 3rd floor who don't give a damn about some business need, they just need the new server which they applied for 3 months ago and which the bloody business still have not delivered.</p>
+<p>Being SME and IT architect at the same time, switching context, memorizing tons of information from different areas, negotiating and dealing with various people characters, staying high-level and preparing extra-simple presentations for executives who see only the tip of the iceberg on one hand and modeling low-level IT scenarios for gurus from the IT world on the other, that is the BA world.  </p>
+<blockquote>
+<p><strong>FAQ</strong></p>
+<p><em>Is it really business analyst who should be analyzing the need of implementing new law requirement, thus studying business processes and outlining solutions? Isn't it business representatives who know better?</em></p>
+<p>The problem is that in big organizations often there is nobody who knows the whole organization and processes. Each business representative knows only a small portion of it and can't forsee the impacts of implementing the requirement. This is why the business analyst steps in.  </p>
+</blockquote>
+<p>Co se tyce BA, tak tu budou jen me postrehy, poradne to ma BABOK</p>
+<h2 id="business-analysis-good-practices">Business analysis good practices</h2>
+<p>Sekce BA techniky.. Hard a soft.. </p>
+<ul>
+<li>Silné základy modelu, businessu a pak jednání s lidma...</li>
+</ul>
+<p>Ať uživatel vypráví jako by neměl systém..</p>
+<ul>
+<li>Ať říkají cokoliv, ser na to. 'není důležité, neřeš atd' možná pro někoho jiného jo...</li>
+<li>Když nevíš o čem je řeč hned řekni..</li>
+<li>Schrn to klidnědvakrat, at ti odkyvaji ze to rikas spravne</li>
+</ul>
+<h3 id="start-with-a-process">Start with a process</h3>
+<ul>
+<li>Process is the best way of defining context</li>
+<li>BA should always know the context when starting working on a task
+<ul>
+<li>Even if it's a low-level IT request like &quot;Add column Age to the report Clients (data warehouse). Age represents current age of the client in the report.&quot;</li>
+<li>By knowing the impacted process BA can be sure about impacted stakeholders, systems or related processes</li>
+<li>Giving the example with the report, a couple of questions arises</li>
+<li>Is the client's date of birth collected in the company? In what process? Where is the date of birth stored? Who is consuming the report - who is going to be affected by the change?</li>
+</ul></li>
+<li>Knowing the big picture gives BA the certainity that no part of the chain was not ignored.</li>
+</ul>
+<blockquote>
+<p><strong>TIP</strong></p>
+<p>Business process is not sufficient. Knowing just who and in what order performs the task is just part of the reality.</p>
+<p>Working in IT environment BA needs also to know in what system the task is performed.</p>
+</blockquote>
+<p><img src="http://www.effective-analysis.com/generated/resources/bp.png" alt="aa" /></p>
+<p>The diagram shows the process of processing applicant's CV sent using the web form on the company website.</p>
+<p>Analyst works on the task to implement &quot;HR employee should manually add a CV resolver after CV was uploaded to the Documents system. Currently the resolver is set automatically to the user who uploaded the document.&quot;</p>
+<p>Having such a high-level model of the process has several advantages</p>
+<ul>
+<li>Presenting changes to both IT and HR is straightforward. Everybody can quickly see what is going to be changed and how they're going to be affected.</li>
+<li>It is possible to present changes to both parties at the same time and still keep the meeting organized by as each party owns and see its part of the process
+<ul>
+<li>TBD Concept - snmichat je vsechny dohromady, protoze kazdej vi neco a paradne se to doplnis)</li>
+</ul></li>
+<li>Current and future state being presented visually are more understanble and can be compared when presented side by side</li>
+</ul>
+<h3 id="analyze-current-state-and-outline-future-state">Analyze current state and outline future state</h3>
+<p>Similarly to the previous 'tip', the future state proposed by BA should also depict all aspects of the problem.</p>
+<p>All modeling of the current state, be it process description, data flow description or any other model should have a to-be counterpart.</p>
+<h3 id="have-a-high-level-picture">Have a high-level picture</h3>
+<ul>
+<li>During business analysis business analyst can interact with even dozens of people from different areas</li>
+<li>They don't know anything about the project and need a quick yet apt description - an overview</li>
+<li>It is very handy to have a easy to understand scatch depicting the main pillars of the problem
+<ul>
+<li>It can be a model of a process, a model of system and its modules or a model of impacted business areas</li>
+<li>It can display what is current status and where we want to get</li>
+<li>It can display </li>
+</ul></li>
+<li>Having such introductory picture is very handy for introducing the problem and for reminding where are the boundaries/scope   </li>
+</ul>
+<p><img src="http://www.effective-analysis.com/generated/resources/overview.png" alt="aa" /></p>
+<p>Hned se pak vidi, ze se to tyka aml a techto dvou systemu</p>
+<h3 id="learn-how-to-be-structured">Learn how to be structured</h3>
+<ul>
+<li>One of the biggest benefit of business analysts is that they are able of taking a big tangled ball, untangle it ending up with a number of small balls order by a color</li>
+<li>BA needs to be able to analyze a big problem, choose the best criterion by which it would be best to break it down, break it down to smaller pieces and describe the pieces and relationships between them</li>
+<li>BA also need to be able to choose the best way of demonstrating the parts and relationships to stakeholder</li>
+</ul>
+<h3 id="have-a-map">Have a map</h3>
+<p>If the problem BA is solving is relly complicated it is really easy to get lost, forget what is the current state of each part of the problem and what tasks should be done.</p>
+<p>Even if all information is stored in some document by BA, it is very uncomfortable to list through 40 pages of text and diagrams everytime BA needs to refresh what is the current status and what decision have been made.</p>
+<p>Another benefit is that anytime you asked what </p>
+<blockquote>
+<p><strong>FAQ</strong></p>
+<p><em>Isn't it inefficient to put every iformation on two places - in the document and in the map?</em></p>
+<p>It is. For this reason we advise to follow the <a href="http://agilemodeling.com/essays/documentLate.htm">document late</a> practice.
+Following this practice you have a single source (TBD) of truth, you can quickly orient in the amount of information and you will avoid rewriting dozens of pages of text because they became
+out of dated manytimes throughout the analysis as the situation changed. </p>
+</blockquote>
+<p>Note: And if you use online collaborating tools (see the next point) it is easy to link also to pictures or models so finding what was discussed regarding a specific process and showing its model is matter of seconds.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/mindmap.png" alt="aa" /></p>
+<h3 id="stop-using-offline-documents">Stop using offline documents</h3>
+<ul>
+<li>The timees of writing Word documents, sending them via email for review and then rewriting the comments entered by stakeholders from comments are definitely gone</li>
+<li>Use modern collaboration tools like online office suits or wikis</li>
+<li>BA need to be as much effective as possible. Do not send whole documents, send just links.
+<ul>
+<li>Try hard to setup such environment in which both you and stakeholders have access to the same online repository so that you can share and collaborate easily </li>
+</ul></li>
+</ul>
+<h3 id="communicate-face-to-face-or-using-phone-skype-etc">Communicate face to face or using phone, Skype etc.</h3>
+<ul>
+<li>E-mail or instant messangers are slow, don't deepen relationships with stakeholders and the written form may lead to desinterpretation</li>
+<li>Always try to discuss everything face to face or by phone, the results can't be compared to e-mails </li>
+<li>BA need to work hard to get stakeholder's trust. This can't be achieved via e-mail.</li>
+<li>If you are in a corporate environment where everything needs to be recorded in order to prove that it was really negotiated then make a few-sentence summary of what you agreed on</li>
+</ul>
+<h3 id="have-a-communication-log">Have a communication log</h3>
+<ul>
+<li>You can always </li>
+<li>It is also good to connect the log with the map - through some id for example</li>
+<li>Than you always see what was was discussed in the area and what is the current status</li>
+</ul>
+<h2 id="business-analysis-traps">Business analysis traps</h2>
+<h3 id="trap-1-stakeholders-propose-how-the-problem-shoudl-be-solved">Trap #1 Stakeholders propose how the problem shoudl be solved</h3>
+<p>This is not just a fault of stakeholders. Very often it is a fault and a prove of incompetency of business analysts or architects who just rewrite the business problem or idea including the proposed solution.</p>
+<p>The solution, or rather a set of solutions, should always be a result of work of business analyst. Stakeholders mostly don't have the context of the problem, don't know the impacts of the solution because they don't see around the corner.</p>
+<blockquote>
+<p><strong>EXAMPLE</strong></p>
+<p>Head of Customer suport requests following</p>
+<p><em>Each customer inquiry has one of the 5 predefined states. We need a report showing us a number of inquires in each state for the current date, week and months and also the average time the inquiries stay in each state. It is required by the member of board to measure the effectivness of our department.</em></p>
+<p><em>We have a similar report already in place, please see it attached. We want it exactly like this. It was developed by Mark Brown from Operations, very nice guy, he understands the domain and can do it fast. Just please create a short specification and send it to him. He will get data from the data warehouse.</em></p>
+<p><em>Thank you</em>
+<em>Alice, Head of Customer support</em></p>
+</blockquote>
+<p>Business representatives make such traps very often. So why is it a trap? It all looks fine. It is very nicely put what the business wants, why they want it, they even recommended an IT guy who knows the domain, sun is shining, birds are singing.</p>
+<p>Still the trap is waiting to hit analyst hard. What looks like a help and timesaver at the first sight (design technology and even stuff are givenfor free!)  is a trap in fact. It is very often like this when business starts to make implementation decisions.</p>
+<p>What if we tell you that the report created by Mark was developed ad hoc because of some critical deadline and it was considered only a backup plan.
+Next, Operations are not supposed to create reports even though they have a very good relationships with Customer support and from time to time they help with issues regarding IT.
+There is also a dedicated team managing all reports in the company. They have a standardized tools and procedures for creating reports and all reports should be consulted with them.
+Finaly, the data warehouse is by no means data source for reporting data. Data might be inaccurate in the time of generating the report and the company has dedicated analytical database for that purpose.</p>
+<p>What is the lessons learnt from this true story? Whatever stakeholders say it must be verified by business analyst.
+Analyst should understand what is the goal stakeholders need to achieve and why it is crucial for them and come up with a set of solutions.</p>
+<p>In this particular case customer support need to know <em>&quot;the number of inquires in each state for the current date, week and months and also the average time the inquiries stay in each state&quot;</em>.</p>
+<p>Skilled analyst came up with 3 possible solutions:</p>
+<ul>
+<li>There is already similar functionality used by another department - not maintained by Reporting team though</li>
+<li>An ad hoc Excel report might be created as it is expected that requestor of the report will be satisfied when he gets it and will not be interested in it after 2 or 3 months (this is a great example of why Why behind the requirement is crucial as without knowing who really needs it this solution would not be proposed at all </li>
+<li>Dedicated report might need to be created</li>
+</ul>
+<p>It is not up stakehoders to decide. Sure, there might be a lot of politics behind the decision, stakeholders might have such power that their proposed solution will have to be implemented and business anlayst will simply have to follow their decisions. We can't really do much about that.</p>
+<blockquote>
+<p><strong>REMEMBER</strong></p>
+<p>Business analyst is the person in the organization whose responsibility is to connect the dots and see around the corner. </p>
+</blockquote>
+<h3 id="trap-2-lack-of-business-knowledge">Trap #2 Lack of business knowledge</h3>
+<p>Busines analysts usualy work in different environments. They can work in a SW company helping the company implement its solutions for the clients or they can also work on the client's side supporting local business representatives in fulfilling their needs.</p>
+<p>No matter which environment they work in it is crucial for the role to be an expert in terms of knowledge of:</p>
+<ul>
+<li>Business Acumen</li>
+<li>Industry Knowledge</li>
+<li>Organization Knowledge</li>
+<li>Solution Knowledge</li>
+<li>Methodology Knowledge</li>
+</ul>
+<p>(source: BABOK Guide v3)</p>
+<p>This works very well if the analyst has worked in a company or at lest in the industry for years. In pracice however, analysts often change not only organizations but also industry. But even working on different projects within the same company might bring analysts to the role of an absolute beginner in the given area. For example analyst working in an e-commerce company on the projects related to payments and invoices processing can be due to lack of skilled people allocated to a new project to implement new system for operating the storeroom.</p>
+<p>Of course, it is not expected from you to know everything from the day 1 as long she is able to learn on the way.
+However, stakeholders are not going to be patient with you, not that they don't want to but simply they can't. They know the processes and the systems from A to Z and back and they can't simply look at it with your eyes, slow down and explain it the simple way. You just need catch up fast.</p>
+<p>So, it is always better to have some prior preparation to get the needed self-confidence and to be on track from the first minute so you do not miss any important fact and most importantly the right relationship with stakeholder will be established from the beginning. It is not simply possible to build respect and trust with the stakeholder without knowing the basic terminology, systems or processes.
+For this reason, analysts shoudl always insist on getting trainings, workshops and software demonstrations before the actual analysis starts to heat up, get into the problematics, get to know the terminology both the official and slang. Meeting all stakeholders face to face before the analysis starts is also a great benefit.</p>
+<p>It is all not always possible but do everything you need for that as it is going to pay off.</p>
+<h3 id="trap-3-know-the-processes-and-systems">Trap #3 Know the processes and systems</h3>
+<p>This trap is very similar to the previous one and is related to the knowledge of the environment analyst works in.</p>
+<p>Analysts sometimes get caught in a trap where they understand the business need, the process and also what systems stakeholders use and how the systems are integrated but never saw the actual systems, never talked to the people performing the tasks and blindly rely on information they have got. </p>
+<p>A junior analyst knows that in the second step of the process of paying for the goods in the shopping cart, customer may enter a discount voucher whose validity is verified by calling a different system using a specific interface which is going to be changed in the next release and anlayst was asked to create a specification to change the e-shop integration.</p>
+<p>However, as stakeholders know the system by heart they did not pay much attention to details when describing it to the analyst and forgot to tell analyst that customer can also select a type of the voucher which then determines which verification interface is called. </p>
+<p>Assuming that the stakeholders told analyst everything the specification was introduced to the development team. Analyst stood in front of developers like a cold han when the developers asked which integration of the two is going to change. Not knowing such important fact makes every anlayst emberassed in front of the team. Moreover, anlayst then needed to work twice as hard to move on with the current task and rewrite the screwed one at the same time.</p>
+<p>By really touching the systems and processes not only could you discover some new important facts but your brain will look at the task differently. It will become something you know not just a piece of anonymous software you need to fix and this will greatly improve your performance doing the task.</p>
+<h3 id="trap-4-confirm-validate-and-varify">Trap #4 Confirm, validate and varify</h3>
+<blockquote>
+<p><em>Everybody lies.</em></p>
+<p>– House MD</p>
+</blockquote>
+<p>It doesn't matter if intentionally or not. It simply happens and it is analyst's responsibility to confirm the important information no matter from whom the information was delivered.</p>
+<p>Always tend to find another source of information at least for the most crucial facts. In the end you are going to be the to blame to the person who told you. </p>
+<p>If you're not sure you perfectly understand or if it is a really important issue always ask stakeholder the question in different way. You can use these techniques:</p>
+<ul>
+<li>Repeat with your own words what stakeholder just said. If stakeholder said: &quot;Each company has only one sales representative.&quot; and you really want to be sure if the relationship is 1:1, you ask the stakeholder: &quot;Do I understand it correctly that by no means the company has two or more sales representatives? It never happened and will not happen during the lifetime of the information system?&quot;. </li>
+<li>Ask stakeholder to put it differently or ask for an example: &quot;Could you please show me an example of some really big company having only one sales represntative? How does he handle it?&quot;</li>
+</ul>
+<p>Always rely on the confirmed information and ask again and again until you're sure. It's your job!</p>
+<p>We guarantee that in 2/3 of meetings during which you have no clue what is going on, by asking a question to clarify some basic fact you will immediately find out that you're definitely not the only one and sometimes you'll discover that the attendees have no idea what is the goal of the meeting. </p>
+<blockquote>
+<p><strong>TIP</strong></p>
+<p>It is always better to ask stupid question during the meeting where all the stakeholders can help you clarify the issue than spend another day trying to find the answers from each of them and take their time. They're not going to like you.</p>
+</blockquote>
+<h3 id="trap-5-meeting-without-meaning">Trap #5 Meeting without meaning</h3>
+<p>Business analysts use a wide set od tools and techniques to achieve their goals. One of the most common are meetings and workshops where business analysts acts as a person responsible for facilitating the meeting.</p>
+<blockquote>
+<p><strong>REMEMBER</strong></p>
+<p>Facilitating meeting means leading or moderating the meeting.</p>
+</blockquote>
+<p>No matter how frequent meetings are, the quality of a large number of them is poor. It requires many things amongs them organizing appropriate meeting room, inviting the right people, preparing agenda and outlining the desired aoutcome from the meeting.</p>
+<p>This sounds easy in theory but inviting wrong people, not following agenda, not keeping attendees on track and not insisting on focusing on meeting the goals of the meeting may ruin your meeting in minutes leaving you with nothing more than a burnt one hour of time of all participants with no reasonable result.</p>
+<p>How to avoid this catastrophic scenario?</p>
+<ol>
+<li>Invite the right people
+<ul>
+<li>Do a research among people you have already interacted with and ask who would be most appropriate for the meeting. Keep in mind what you need to achieve. Do you need a strategic decision or just an explanation how stuff works. Innvite a manager or a skilled officer accordingly. </li>
+<li>Sometimes all your questions will be answared by the least expected person. You can't influence this but ensuring that you invite both IT and business representatives may help - often they are able together to crate a whole picture.</li>
+</ul></li>
+<li>Create an agenda, attach supporting materials like meeting minutes from previous meetings, diagrams or scetches and send it to attendees prior to meeting to put them in context
+<ul>
+<li>If the attendees of the meeting can prepare for it in advance, thay may discover some interesting facts which may save you a lot of time during the actual meeting</li>
+<li>Prepare a introductory high-level picture of the problem which will be used in the beginning of the meeting to synchronize the view of all attendees 
+<ul>
+<li>Depending on the topic this may be a high-level process, a problem decomposition or a wireframe of the screen</li>
+<li>Start with the current situation so that everybody understands how it works now - current process, current design of the screen. There is nothing worse than having the group discussing the fututre state and all having a different opinion how it works at the moment.</li>
+</ul></li>
+</ul></li>
+<li>Start with introducing the topic and how the meeting should finish if it all goes well - what agreement should be reached, what design should be created etc. - WHAT should be achieved</li>
+<li>Then introduce the agenda - HOW it's going to be achieved </li>
+<li>Always stop the conversation which is not related to the agenda or not leading to meeting the goals of the meeting
+<ul>
+<li>Sometimes there are attendees who just want to take advantage of meeting each other and start to steal your meeting. No matter what position they hold, stop the convesation politely and move on. You are responsible for the meeting and you need the answers. Do what you need to do to ensure meeting the goals.</li>
+</ul></li>
+<li>Finish the meeting by summing up the points where the aggreement was reached, the topics which require a follow-up meeting and the main tasks generated during the meeting for some partcipants </li>
+</ol>
+<blockquote>
+<p><strong>REMEMBER</strong></p>
+<p>Well facilitated meeting means that it runs smoothly, all attendees understand the purpose of the meeting, they fully participate and that all the goals of the meeting are met.</p>
+</blockquote>
+<p>For a nice summary of how to facilitate a meeeting see <a href="https://www.wikihow.com/Facilitate-a-Meeting">this article</a>.</p>
+<h3 id="trap-6-dont-let-them-pull-you-down-into-the-deep">Trap #6 Don't let them pull you down into the deep</h3>
+<p>You as an analyst will very often get into the postion when somebody explains to you how the process or the system works.
+Unless you already have a basic knowledge of the high-level behaviour you very quickly get overloaded by the details.
+It is simply not possible to follow because the speaker often does not have the skill to choose the right level of abstraction and the speaker's great will to tell analyst everything becomes counterproductive and analyst gets lost soon. </p>
+<p>You need to be prepared for this trap and you need to faciliate even your own training.</p>
+<p>First, let the person introduce you the whole business area, independent of the organization you work for, independent of the systems.  </p>
+<p>Then let the person describe first only the high-level overview - business process without any systems involvment, in case of process description, or basic flow of steps without particular screenflow, without calling interfaces or data manipulation.</p>
+<p>In this phase be interested only in the main (happy) path, do not consider any exception or error flow.   </p>
+<p>Next, let the person describe in what systems or on what screens are the activities performed. </p>
+<p>Only after are you confident about the overall process and the systems involved ask for the exceptions and variations to the main path.</p>
+<h3 id="trap-7-never-ending-projects">Trap #7 Never ending projects</h3>
+<p>TBD
+Whether you use waterfall methodology, agile or anything between you as an analyst are responsible for pinpointing the boundaries of the project and more importantly guard the area from intruders, the unrelated features or changes of the scope.</p>
+<p>If  </p>
+<p>As mentioned in more detail in the next chapters, do not rely much on skills of project manager. Projet manager is here to help you assert the scope changes or deal with stakeholders who always insist on putting their new requirements to the scope. They often not posses the skills to guard the scope in terms of deciding which requirements are in or out or ADEPT NA IN NEBIO AHNDLOVANI</p>
+<p>Even if the the scope is increased there shoudl be a big red line, safaty net</p>
+<p>This is solved out of the box in agile methodologies where you simply take the requirements from the top of the stack and don't deal with the frame.</p>
+<h2 id="business-analysis-vs-project-management">Business analysis vs. project management</h2>
+<ul>
+<li>PM is absolutely dependent on BA in terms of scope</li>
+<li>Don't let PM to define the scope</li>
+<li>PM has to manage the scope but only in terms of controlling that all activies are done according to the scope which was marked out by BA</li>
+<li>Most PMs are not as structured persons as BA are, don't know how to describe and structure requirements and very often can't elicit them</li>
+<li>Despite they always try to be in charge in requirements-related activities it is BA's responsibility</li>
+</ul>
+<p>(nekdy to dela PM, ale malokdy to PM zastane spravne, neni v detailu, nezna tak ty stakeholdrey,  nema s nimi takove vztahy, nerozumi jejich reci a dochazi k nedorozumeni)</p>
+<h2 id="business-analysis-vs-agile">Business analysis vs. agile</h2>
+<ul>
+<li>budou se hadat ze se ted razi scatche, stani u tabule a vsechno lightweight.... trikolku postavis agilne a rychle, elektrarnu ktera ma slouzit 20 let a je kriticka fakt ne-e</li>
+<li>neříkám kdy a jak detailně, to je na vás... Neříkám proces (kdy kým jak moc).. Říkám co proč a jak I v agile je dokumentace, kolaborace, i v agile potřebuješ zadání projektu a vědět jak funguje algoritmus</li>
+<li>Proč dokumenty.. Agile hezky ale jsi v bance máš 3 projekty a na každém 7 stakeholderu ;) snaž se</li>
+</ul>
+<hr />
+<p>1 Stakeholder: A party that has an interest in an enterprise or project.</p>
+<p>2 Business need: Business needs are the problems and opportunities of strategic importance faced by the enterprise. An issue encountered in the organization, such as a customer complaint, a loss of revenue, or a new market opportunity, usually triggers the evaluation of a business need.</p>
+<p>3 SME: A subject-matter expert (SME) or domain expert is a person who is an authority in a particular area or topic.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

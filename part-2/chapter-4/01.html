@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="active">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/01.html">
+                                Different types of projects
+                            </a>      
+                        </li>
+
+                                                <ul class="submenu nav nav-stacked nav-pills">
+                                                    </ul>
+                        
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="effective-analysis-in-different-types-of-projects">Effective analysis in different types of projects</h1>
+<p><strong>TBD - kam spada SMART project? Optimalizace procesu za pomocy it s dopady do it</strong></p>
+<p>As the different stakehlder requests come to you you need to recognize them and analyze them accordingly. It totaly changes the game if the customer wants you to implement &quot;Export customer detail to .docx on top of the current .pdf implementation&quot; or &quot;Implement European Union regulation on EU citizens data protection&quot;.</p>
+<p>Depending on the character of the request different approach to analysis shall be taken and the number and format of the outputs will differ. </p>
+<h2 id="you-deliver-solution-for-the-business-need">You deliver solution for the business need</h2>
+<p>The first type of analysis is when the analyst is presented with the high-level opportunity or problem the business is facing. Business analyst is the part of the team from the beginning, examines the need and works closely with the stakeholders to analyze business goals and propose possible solutions.</p>
+<p>Typically analysts gets nothing more than &quot;Compliance department told us there's a new legal requirement we need to fulfil, so schedule a meeting and find out more.&quot;</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/different-projects1.png" alt="aa" /></p>
+<p>Since analyst participates from the very beginning, she knows very well what is the business need and focus on identifying business goals and designing a solution.</p>
+<p><strong> Postup</strong> </p>
+<p>The first step should always include mapping of the current process. This means:</p>
+<ul>
+<li>what are the steps</li>
+<li>who performs them</li>
+<li>whether they're manual or system</li>
+<li>if system in which system the step is carried out</li>
+</ul>
+<p>The reason is that even stakeholders are often puzzled how all the affected processes work, they need to be sure what is the current state to be able to verify the future state.</p>
+<p>If the business goals span across multiple processes and even across various departments it might become complicated to
+Having an overall process where each stakeholder identify their parts simplifies the communication and allows analyst to hold a meeting with various sakeholders at once. It is beneficial to have all of them in on room as they confrontates their opinions and think out of the box. It is sometimes challenging and requires analyst to have strong facilitation skills. It may sound bad idea to consult one step by one, each with different stakeholder but the stakeholders are glad to finally discover the whole process and they can fill the missing gaps even in the process parts they don't own. If it goes well such meeting is very effective and you can be sure you have the whole picture after it ends. </p>
+<p>The output is the BRD and Solution description.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/different-projects1a.png" alt="aa" /></p>
+<p>Next steps are dependent on the selected solution. It may include analysis of a new system which needs to be implemented, it could mean just a minor change to existing system or it may lead to request for proposal (RFP) for a new system which will be developed by an external vendor. Or it could mean all of it together. The solution may require process changes, internal system changes and custom development of a new system by external vendor at the same time. </p>
+<p>Solution may also be split into phases targeting completely different impacts.</p>
+<p><strong>Example:</strong> Automate process of approving templates</p>
+<ul>
+<li>This is a most general case. Analyst starts with only a high-level business need and needs to go through all the phases answering all the questions
+<ul>
+<li>Manual task or automated? Automat</li>
+<li>New feature to some legacy system or a new dedicated solution?</li>
+<li>Internally developed solution, existing 3rd party product or outsourced custom development?</li>
+</ul></li>
+<li>Once it was decided that the new solution will be developed by the internal IT department, analyst put together high-level business requirements to define the scope of the project.</li>
+<li>Based on this requirements a project was outlined, approved and kicked off
+<ul>
+<li>Project charter, business case and other documents were created</li>
+</ul></li>
+<li>New template management system will be developed                                                  </li>
+</ul>
+<h2 id="you-deliver-new-system-or-module">You deliver new system or module</h2>
+<p>The previous example presents the need to build a new Template management system as a part of the overall solution. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/different-projects2.png" alt="aa" /></p>
+<p>Whether you work in a large enterprise such as bank, pharmaceutical company, telecommunications company etc. or in a software house focusing on custom systems development it is very likely that you've worked or will work on such &quot;greenfield&quot; project.</p>
+<p>The system might be built from scratch replacing manual processes or it might be replacement of the existing system which gasps after a decade in service and needs upgrading. It also might be built as a standalone project replacing only narrowly focused part of the overall IT infrastructure or it could be a part of the big project replacing the whole information system and your module is just part of.</p>
+<p>From the analyst perspective it doesn't matter if the system is implemented internally or outsourced to a software house. In this scenario we assume that the business goals were identified and the solution was described properly so the analyst start with the clear vision of the solution, the business processes are set and the work lies mainly in alalyzing functions of the system and designing it.</p>
+<p>So even though the analyst must map the current processes and may discover some imperfections which might be proposed for change, the analysis is mainly focused on the IT aspects which means functions of the system, integrations with other systems and user interface.   </p>
+<p>In this kind of projects analyst no longer investigates impacts of the new solution, this should have been done already. The difference from starting with the business need here analyst knows what the solution is and don't pay much attention to why is it needed or The technical correctness and the smooth development is the aim.</p>
+<blockquote>
+<p>Requirements not impacts</p>
+</blockquote>
+<p>The project starts after the contract is signed with between the client and the vendor, or after the project is approved by the sponsor if the project is developed internally.</p>
+<p>The typical output of the analysis activities is a standard functinal specification which serves as a source of informaton for the subsequent implementation.</p>
+<blockquote>
+<p><strong>TRAP</strong> </p>
+<p>Replacing an existing system with the new one is a quite challenging job to do. Analyst needs to understand the organization (if it is a custom development project), the processes, people and relationships, understand what works well and might be migrated and what was the pain having made the organization to replace the current solution.</p>
+<p>This would much easier if the stakeholders could structure their thoughts and start with the general thing and move to the details very slowly. This is true especially for the end useres. It's not much of a surprise if you realize they have been using the solution for years each end every day, they know the system from A to Z and simply can't start from the topp. They know it all and need to share it with you in the hope you'll fix it everything in the new system.</p>
+<p>You need to recognize the trap and always keep the level of the detail according to the current phase. It very much helps to aknowledge the stakeholders in advance that on the meeting only the high-level business processes or only high-level use case descriptions for the particular part of the system will be discussed and you must always keep the level set no matter what. They won't forget the information, they will tell it to you later, trust us, and you will preserve mental health. </p>
+</blockquote>
+<p>Approach differs with the size of the system or application:</p>
+<ol>
+<li>
+<p>A large project of development an ERP system. It is almost certain that in this kind of project the first thing to model is the business process. A long before even thinking of its functionality, the team must understand the business background. The best UML diagram for this is naturally the activity diagram. Some time after, when the process is clear and the high-level reqs known, the use case modelling can start.</p>
+</li>
+<li>
+<p>A middle sized of relativelly small project, with no complex processes in background (for example a mobile app development) can start directly with use cases, identifying the users and their features. Later on, these can be further refined using activities.</p>
+</li>
+<li>A very small development of some interface, driver of communication gateway, highely technical, where even the user interaction is minimal, the modelling can start with the activities again, showing the concrete algorithm too be implemented. USe cases can be completelly skipped.</li>
+</ol>
+<p><strong>Example: You are an analyst in the software house which builds custom development systems</strong></p>
+<p>Your company won a tender to deliver a system for managing templates in a big insurance company. During the answer to RFP the only input you had was a description of the current process how the templates are managed and how the template approval process works. But the company doesn't aim either to improve the processes or to investigate whether the system fulfils the overall business need. They are here just to implement best quality software. It is because, as shown in the schema above, the system migh be just a single part of the overall solution, so it doesn't need to fulfil the goals itself it just contributes to fulfilling the business goals.</p>
+<p>These questions should’ve been answered during the solution specification where it should’ve been evaluated whether the solution fulfil business goals.
+It is because, as shown in the schema above, the system might be just a single part of the overall solution, so it doesn't need to fulfil the goals itself it just contributes to fulfilling the business goals.
+However, in case of custom development the vendor should always strive to understand the goals and tailor the answer to RFP accordingly to show that they are not just a group of developers implementing what they were asked but that they also understand the business and its goals so that they could be an equal partner and provide the client with advices not only on the technical level but also in terms of their subject matter.</p>
+<p>This phase is then focused mostly on implementation and analyzes what will be delivered in terms of functions and quality. This doesn't mean that the team doesn't need to care about the beenfits and purpose of the solution though. They need to be aware if the system is part of a bigger solution or what benefits or goals stakeholders expect the system to provide. However, they are not expected to examine the benefits, these have been already set.</p>
+<p>Analyst's role is to understand the business domain, stakeholders expectations on the system, context in which the system is demanded and design the system so that it can be build in time and quality.</p>
+<p><strong> Example</strong></p>
+<p>TBD Example udelam v CNFL</p>
+<ul>
+<li>Kazdopadne se tady hezky pouzije SRS sablona - context atd., nema cenu nic vymyslet jinyho, jen tam soupnout vic Business analyzu - procesy atd. - a zduraznim ze prepouzivat, ze pokud je v BRD uz delali, tak prepouzivat a mit spolecnou repo - existuji VPN atd. Nejsme v praveku</li>
+</ul>
+<h2 id="you-deliver-new-featurefunction-to-existing-system">You deliver new feature/function to existing system</h2>
+<p>Once the Template management system was built a significant imperfection was discovered. The frequency of introducing new templates and deleting the old ones is so high that the assumption that deleting them one by one will be sufficient turned out to be wrong and stakeholders now requests deleting multiple templates at once. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/different-projects3.png" alt="aa" /></p>
+<p>Although we're talking purely about IT functions and enhancements they can vary in scope geately, from small change requests such as changing the algorithm of calculating some value through a request to enable clients to enter an order to draw a loan oline in the internet banking.</p>
+<p>It's different when the request is &quot;If the user has a role ABC then the button XYZ should be visible&quot; or &quot;Display customer age on the customer detail screen&quot; comparing to  or &quot;We want the system to allow us to delete multiple calculated commissions at once, currently we need to do it one by one&quot;. </p>
+<ul>
+<li>
+<ul>
+<li>patri to do FS?</li>
+</ul>
+</li>
+</ul>
+<p>The examples in the first category represents concrete solution. As we already mentioned in the previous chapters solutions are always verified by analysts. This means that analyst needs to be sure that the solution is the best one fulfiling the goals. To verify the goals, it is inevitable for anaylyst to know the goals and that is the point. Analyst must know what is the goal behind the the function request: why the button should be invisible and why the stakeholder needs to see the customer age.</p>
+<p>Please note that this category includes also </p>
+<blockquote>
+<p><strong>REMEMBER</strong></p>
+<p>Small change requests doesn't always need to fulfil some business need. The need is often just &quot;To make the work with the system more effective&quot;. </p>
+</blockquote>
+<p>Ask stakeholders for features, not for functions, these are designs, which should be done by IT team. Deleting multiple commissions is a feature and can be done through various functions from different screens at the same time. Here, it is clear what they want to achieve and you help them find the best way to do it.</p>
+<p>Whereas, the first example doesn’t say what the stakeholder wants to achieve. Yes, obviously the stakeholder wants to see the age if the client detail screen is opened but you don’t know why the age should be visible, in what scenario it is going to be used etc. What if the particular stakeholder found out that the age would be beneficial for very limited set of cases and the age will take screen space for the most of time and you will be dropping it from the screen because other stakeholders will hate because they never need the age of the client.</p>
+<p>What if the stakeholder would rephrase it to something like this: &quot;When the customer calls on customer support line we need to quickly find out client’s age to take the right approach.&quot;. Would you still place the aclient age on client detail screen so that it is always visible? Even for people from back-office who almost never need the age? Hardly.</p>
+<p>If you look closer on the provided examples you may spot some similarities with the analyzing the business need. Yes, analyzing the feature request involves exactly the same three steps: Need-Solution-Implementation. The only difference is the context/level of abstraction at which the whole analytical process takes place. In the business context you analyze high-level business need looking for a solution be it technical, process or manual. In IT context you also analyze the need but this need is need for a capability of some system. It might have various solutions but the solution will always mean new function or changing something in the system. However, be careful, even though it is a feature request, the solution may also include impacts the same way the business solution. The impacts here are rather technical.</p>
+<p>Output from the analysis of such requests is function analysis.</p>
+<ul>
+<li>chceme cerpani online v George</li>
+<li>chceme rozhrani, aby se Partners pripojili</li>
+<li>vypada to jako rozmyslena featura, tak to jen naimplementujes a zdar..PIDI SE po tom WHY i u techto technologickych reseni </li>
+</ul>
+<p><strong>Example 1</strong></p>
+<p>It should be possible to delete multiple templates. This is obviously a required system capability and it is clear that the need is to speed up work because deleting templates one by one is legthy process.</p>
+<p>Templates are displayed in the table on the screen and the analysis is likely to by just about adding the possibility to select multiple items, add delete button and some confirmation dialog &quot;Delete 8 items?&quot;. There is also one impact of this solution, creating new service which accepts a set of templates and deletes them.</p>
+<p><strong>Example 2</strong></p>
+<p>&quot;It should be possible to track the status of the order on our portal&quot;</p>
+<p>Currently, after logging in to the portal using the order number and password, the order detail including the order items, price and delivery information can be displayed. New feature should be implemented so the portal displays also the order status such as &quot;New&quot;, &quot;Delivered&quot; or &quot;Canceled&quot;.</p>
+<p><strong>Example 3</strong></p>
+<p>The solution presented in this chapter includes the need to trigger generating document from the Template management system. The only system able to to generate documents is Document generator so it is obvious that this system will expose the interface. </p>
+<p>&quot;Document generator should be able to accept the request to generate a document via interface - input is the document id, ouput is the generated document&quot;</p>
+<p>Even with such a purely IT request the analyst should understand the business goals. Of course there is a business need behind it, it must be. It is an opportunity. Opportunity to offer something more than competition to external partners and to increase sales trough those partners thank to the automation provided by the interface.</p>
+<p>The solution is clear, so the role of the analyst here is just to find the most suitable system in the IT infrasctructure which will expose the interface, define the interface contract, endpoint, from what URLs it could be called and find the source system of the data.</p>
+<p>As you can see all three examples are the same yet different at the same time. All of them are requests for a new capability provided by the IT systems, all of them are very straightforward in implementation options however you must feel that the level of detail is a bit different for all of them. Nevertheless, all of them requires smaller or bigger changes in multiple systems and the analyst is the only person responsible of discovering these impacts and designing the solution and driving the implementation the way that all systems know the context, their role in the overall solution and the dependencies in terms of functions, scope and time.</p>
+<h2 id="you-deliver-an-it-capability">You deliver an IT capability</h2>
+<p>The last scenario is a bit tricky.  </p>
+<p>The outlined solution in the example in this chapter included the possibility to generate documents directly from the Template management system. Imagine you select a template, click generate, system will ask you for a contract id and generates the contract with the data from the database associated with the id. During the solution analysis the impact on Document generator was recorded: &quot;TMS requires an interface to generate documents so Document generator needs to implement the interface&quot;.</p>
+<p>Now let's forget the whole example project and imagine that you open your list of tasks and one of them states: &quot;It should be possible to generate documents from systems by calling an interface&quot;. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/different-projects3a.png" alt="aa" /></p>
+<p>In the example project the overall solution was analyzed, verified that it is inline with the business need and the team responsible for implementing the ahcnage in Document generator didn't need to pay attention whether the change makes sense from the business point of view because this was responsibility of the &quot;cover project&quot;.</p>
+<p>In this case on the other hand you may start with almost the same request but you start at the different level. You're not part of any parent project and you need to analyze the request from scratch.</p>
+<p>It's tricky in the way that it's pure IT request, you won't find any business context in it whatsoever but you still must know the context and the business need in the background. You either find out that you are part of some parent project in fact and realize there is a business need behind the project. Or there is no parent project and the requested chaange in IT system solves the whole business need on its own. The need doesn't always need to be business. Often it is just an IT need such as an architectural change. For example the systems every minute used to send data files to Document generator which . Technologies move forward so the architects decided to make the communication online so the Document generator expose online interface which receives a document id and required input data and sends back generated document.  </p>
+<blockquote>
+<p><strong>TRAP</strong></p>
+<p>There doesn't always need to be a business driver behind a IT change </p>
+</blockquote>
+<p>Since we're talking about a solution, the output is the solution description and one multiple functinal specifications for each impact discovered.</p>
+<h2 id="priklady">Priklady</h2>
+<p>Raptor</p>
+<ul>
+<li>Novy system typicke</li>
+<li>Zduraznit, ze tady je core scope a funkce</li>
+<li>Platak, provize, komunikace s regulatorem</li>
+<li>Nespada tam case management, obalkovani a tyhle veci</li>
+</ul>
+<p>DNU</p>
+<ul>
+<li>Sloucit dva produkty do jednoho</li>
+<li>Zacinam od business need</li>
+<li>Mapovani asis procesu, navrh noveho</li>
+<li>Hodne procesni + navrh reseni a jeho dopady</li>
+</ul>
+<p>Sledování hypo</p>
+<ul>
+<li>Je to business need umoznit sledovat stav</li>
+<li>Solution ma dve faze</li>
+<li>Prvni faze je portal
+<ul>
+<li>Novy portal</li>
+<li>Sluzba pro stazeni stavu</li>
+<li>Sluzba na prihlaseni</li>
+</ul></li>
+<li>Druha faze je sledovani v George
+<ul>
+<li>Nova obrazovka </li>
+<li>Stazeni stavu, sluzby uz existuji</li>
+</ul></li>
+</ul>
+<p>Produkt</p>
+<hr />
+<p>1 RFP - Request fro proposal</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

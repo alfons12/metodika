@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/01.html">
+                            State of the system analysis
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/02.html">
+                            Importance of the analyst
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/03.html">
+                            Analytical minimum
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/04.html">
+                            Frustrated analyst
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="frustrated-analyst">Frustrated analyst</h1>
+<blockquote>
+<p>Vzít joelovu specku a vyřadit se :) Technologie neoddelene od funkci, z každé stránky se kliknutím na logo dostane někam (to má napsáno jen na jedné),
+<a href="https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/">https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/</a></p>
+<p>Tohle je přesně ono <a href="https://www.batimes.com/articles/methods-for-eliciting-not-gathering-requirements.html">https://www.batimes.com/articles/methods-for-eliciting-not-gathering-requirements.html</a></p>
+<p>TRAP
+Requirements gathering vs requirements analýza.. 'připravíme ti to a pošleme'.. NE! musíte to analyzovat</p>
+<p>Why do I hate documentation? Every time I turn around, stakeholder ideas, preferences and decisions change. Now they want to change the name and content of half of the processes already modeled plus the related specs.</p>
+</blockquote>
+<p>protoze dokumentujes kdyz to jeste neni hotove... pokud se to meni hodne, je to v analyze, tak to ma byt.. a kdyz v provozu, tak mas menit overview a takovej je zivot</p>
+<p><img src="http://visiblealpha.com/wp-content/uploads/2016/10/Frustrated-with-earnings-season.jpg" alt="" /></p>
+<ul>
+<li>Frustrovan nejsem kvuli tomu, ze se pozadavky meni... to chceme - agilisti</li>
+<li>ani kvuli tomu, ze obcas je ve zdokumentovanem procesu nepresnost</li>
+<li>ale to, ze nekdo uznal, ze je dobre mit tak slozity proces popsany, ze fakt neni dobre se schovavat za to, ze se to porad meni, tak to dokumentovat nebudeme, a pak to sepsal do 2 A4ek bordelu</li>
+<li>tady odkazy na amblera - zvolit dobre nastroje, document late atd.</li>
+</ul>
+<p><a href="https://i.pinimg.com/736x/74/37/81/74378188c3b76e6f2cc0f06ae9b5659a.jpg">https://i.pinimg.com/736x/74/37/81/74378188c3b76e6f2cc0f06ae9b5659a.jpg</a></p>
+<p>Jak jsem rekl v introduction</p>
+<pre><code>    co je na tom tak složitého, že se v tom musím vždycky tak dlouho plácat
+    vždyť je to deterministické, není to gamesa, real time system, ani neuronová síť
+    jen obrazovky, data, vstupy, vystupy, pořád dokola
+    staci tak malo a mam vse hned.. vidim funkci, vim kde se to zadava, vidim validace, vidim kam to ukladam, vidim proc to v aplikace je a kdo to chtel
+    tak to pojďme dělat jako lidi
+    thats all</code></pre>
+<p>Proč to celé píšu?</p>
+<ul>
+<li>Každý projekt zkapal na tom, že není baseline, že nejsou kostičky (nebo že infrastruktura, nove technologie)</li>
+<li>ale většinou to je o analýze, analýze scope atd. - není seznam use casů, stavebních bloků, infrastrukur. požadavků atd.!!!!!
+nemůžu to pak hezky odhadnout, testovat - nemůžu to měřit a řídit..kolik UC funguje, kolik zbývá atd.</li>
+<li>vychazi to z kvality lidi (dale) a kvality vystupu/artefaktu (dale)   </li>
+</ul>
+<blockquote>
+<p><strong>nejbrutalnejsi hlaska:</strong>
+found a bunch of requirements sprinkled throughout the document about the status changes, but I couldn’t tell whether any were missing. A couple of requirements seemed to conflict.”</p>
+<ul>
+<li>nitka - tady narazi na to, ze mam mit stavovy diagram, ale taky to narazi na to, ze mam informace davat k sobe</li>
+</ul>
+</blockquote>
+<p><strong>Kvalita a forma dokumentace - HOW</strong></p>
+<ul>
+<li>není úvod do problematiky, systému (a tady se dostáváme do klští - business uvod do 3 systémů bude stejný, všechny jsou cutting tools, takže to není o úvodu do systému jen)</li>
+<li>věci rozfrcané po wordech, excelech, casech, visio atd.</li>
+<li>nejde hledat napric, spojovat informace</li>
+<li>neni jeden guide - neni to jednotne</li>
+<li>duplikuji se algoritmy funkce pojmy</li>
+<li>Tobias
+<ul>
+<li>michani bus a impl</li>
+<li>dokumentace smichana s pozadavky  - an. vs. dok.</li>
+</ul></li>
+<li>Textove specifikace - diagram 1024 slov
+<ul>
+<li>“It looks like this document doesn’t tell us everything we need to know about the system. I’ll create some diagrams to help us
+visualize the requirements and see whether that clarifies these problem areas.</li>
+<li>Diagrams communicate certain types of information more efficiently than text can. Pictures help bridge language and vocabulary barriers among team members.  </li>
+<li>priklad IPS - proces + monster use cases + activity testove</li>
+</ul></li>
+<li>neni dobre ze vedouci analyzy je ten kdo je nejdyl v pfcs… vi nejvic o businessu, ale nema potuchy o taxonomii pozadavku, dokumentaci apod. (viz dalsi bod Kvalita lidi)</li>
+<li>The book is called “Adrenaline Junkies and Template Zombies.” It’s a collection of patterns and anti-patterns for IT. So, one of the anti-patterns is template zombies;
+those are people who just fill in templates and making sure it’s filled out. Whether or not it makes sense, just fill it out. Whether or not it’s even the right template,
+but I have a template, I’m going to fill it out. It’s just a novel waste of time. A lot of wastage in general…
+<ul>
+<li><a href="http://www.modernanalyst.com/Resources/Articles/tabid/115/ID/536/Agile-Business-Analysis-Interview-with-Scott-Ambler.aspx">http://www.modernanalyst.com/Resources/Articles/tabid/115/ID/536/Agile-Business-Analysis-Interview-with-Scott-Ambler.aspx</a></li>
+<li>predepsane, co maji vyplnovat a pak je to tuna sracek</li>
+</ul></li>
+<li>textove specifikace
+<ul>
+<li>Apply The Right Artifact(s). Each artifact has its own specific applications. For example, a UML activity diagram is useful for describing a business process,
+whereas the static structure of your database is better represented by a physical data or persistence model. Very often a diagram is a better choice
+than source code – If a picture is worth a thousand words then a model is often worth 1024 lines of code when applied in the right
+circumstances (a term borrowed from Karl Wieger's Software Requirements) because you can often explore design alternatives more effectively by
+drawing a couple diagrams on whiteboards with your peers than you can by sitting down and developing code samples. The implication is that you need to know the
+strengths and weaknesses of each type of artifact so you know when and when not to use them. Note that this can be very difficult because you have Multiple Models
+available to you, in fact the Agile Models Distilled page lists over 35 types of models and it is by no means definitive.</li>
+<li>ale hned rict B - udrzba stoji prachy, neduplikovat, mit jen jednu verzi atd.</li>
+</ul></li>
+<li>nejde dohledat co kdo zmenil</li>
+<li>neni nitka seshora dolu</li>
+<li>chybi WHY - viz dale</li>
+<li>veci v dokumentaci nejsou
+<ul>
+<li>hlavne ne analyza per huba - nemusi byt vsechno pintlich v dokumentaci, ale neexistuje si neco rict mezi sebou a pak to nikde neni..aspon kurva veticku do toho OVW</li>
+<li>zalozit to na tom, ze vetsinou to neni proto, ze by se nestihalo, to je kec....</li>
+<li>dat nekam poznamecku, ze zmenil jeden IF je minuta </li>
+<li>je to o tom, ze to neni lehke najit kam to dat, neni to primocare, je kolem toho hrozne kroku a je to opruz</li>
+<li>a neni kontrolor, kterej rekne, jestli kod je in sync s analyzou</li>
+</ul></li>
+<li>je to ve wordu nebo podobnym sracovi
+<ul>
+<li>nic ve wordu - ani ty pitomy CR nemit ve Wordu - svadi to k revizim, posilani mailem atd. Neudrzis v tom poradek </li>
+</ul></li>
+<li>chybi why nebo business pozadi je jeden extrem, chybi techn. popis je druhy (vazba na IT artefakty, WS, procedura, techn. specka) 
+<ul>
+<li>Jen business popis bez vazeb na technický popis</li>
+<li>nebyl čas :-D</li>
+<li>casty argument - popisu to obecne, pak kdyz se pozadavky meni, tak to zustava platny</li>
+<li>dalsi argument muze byt, ze vyvojari uz to maji najety, znaji jak to funguje, takze hned pochopi jak obecny pozadavek naimplementovat</li>
+<li>ano, pokud budu mit porad stabilni team a jedu, tak si to tak mejte</li>
+<li>pokud ale pocitam s tim ze mam fluktuaci (cmon sme v IT), pokud kdyz prijmu noveho clena, tak ho nechci frustrovat, ze nevi, kam se ma podivat</li>
+<li>hlavne pokud chci delat impact analysis, pokud chci vedet, kdyz neco zmenim, co mi to muze rozbit - tak potrebuju vazbu na IT artefakty</li>
+</ul></li>
+<li>ukecane o nicem, vem si priklad z Soverflow
+<ul>
+<li>Get client address... Operace pro obdržení...:D  Jsem v katalogu operaci nepíšu že je to operace... Vrací adresu... Co dá volajícímu je důležité</li>
+</ul></li>
+</ul>
+<p><strong> ciste textove specifikace </strong></p>
+<blockquote>
+<p>Apply The Right Artifact(s). Each artifact has its own specific applications. For example, a UML activity diagram is useful for describing a business process, whereas the static structure
+of your database is better represented by a physical data or persistence model. Very often a diagram is a better choice than source code – If a picture is worth a thousand words then a model
+is often worth 1024 lines of code when applied in the right circumstances (a term borrowed from Karl Wieger's Software Requirements) because you can often explore design alternatives more effectively by
+drawing a couple diagrams on whiteboards with your peers than you can by sitting down and developing code samples. The implication is that you need to know the strengths and weaknesses of each type of
+artifact so you know when and when not to use them. Note that this can be very difficult because you have Multiple Models available to you, in fact the Agile Models Distilled page lists over 35 types of
+models and it is by no means definitive. - See more at: <a href="http://agilemodeling.com/practices.htm#IterateToAnotherArtifact">http://agilemodeling.com/practices.htm#IterateToAnotherArtifact</a></p>
+</blockquote>
+<p><strong>volne pohazene obrazky bez contextu a pravidel</strong></p>
+<p>For example, instead of creating a detailed architecture model using a software-based modelling tool, co-located agile teams will often prefer to create whiteboard sketches which they leave on their workroom walls.
+Yes, a pretty architecture model would be nice to have. But the whiteboard sketch gets the job done, it is much easier to evolve, and much less expensive to create. Dát jako příklad...
+<strong>Je to maluvka kterou už nikde nenavazbim</strong></p>
+<p>diagram je bud high level kontext pak v OVW, nebo proces nebo musi byt na UC, SCR, ACT, INTF apod.</p>
+<p><strong>nejsou standardy</strong></p>
+<ul>
+<li>!! Budte pečliví, vše pojmenujte intuitivně a dejte na intuitivní místa!! </li>
+<li>je jedno jestli UC, nebo user story a dalsich tisic nazvu... hlavni je granularita..BREQ-UREQ-FREQ a pak si tomu rikej jak chces - vic sekce Pozadavky</li>
+</ul>
+<blockquote>
+<p>priklad s denikem Metro - neni tam stojan, hodim to do odpadaku...nevim, co s tim mam delat, nebo nemam efektivni nastroj, tak to prasim.kdyz tam je stojan hned po ruce, dam to tam a delam to spravne vicemene bez prace</p>
+</blockquote>
+<p><strong>passive voice</strong>
+kdo to vsechno nedoporucuje, predstaveni, lehce co to muze zpusobit, detailne to mam v konceptech... anebo z konceptu vyhodit? je to koncept? nebo to jenom tady  nechat jako DONT DO THAT</p>
+<ul>
+<li>pokud sedite v bance, pojistovne, u operatora, sw housu a znate systemy zpameti, nic vam nechybi a mate se dobre, sypete CRka, rozumite si s businessem a dokumentaci neresite</li>
+<li>veci se ale meni, chodi novi lide a hlavne slozitost systemu, legislativy atd. roste a uz to vsechno v hlave nedate</li>
+</ul>
+<blockquote>
+<p>FRUSTRACE loveni z CR
+nemam dokumentaci, mam jen system a k nemu prilepky, ze kterych se to lovi :-(</p>
+</blockquote>
+<p><strong> Ambigous words </strong></p>
+<ul>
+<li>Neexistuje slovo General.. General requirements.. Co to je? Černá díra, bordel.. Pryč s tím
+<strong>WHY</strong></li>
+<li>je dobre vedet, proc ktera vec v systemu je.. samozrejme ne proc tlacitko se jmenuje A ne B, ale zakladni veci, casto jen odkaz na OVW, BRule a tak</li>
+</ul>
+<p><strong>Kvalita lidí</strong></p>
+<ul>
+<li>analytik toho dnes musí zmáknout hodně a BABOK je jen teoretické povídání - viz popis role</li>
+<li>tim jak neni jednotny pristup, kazdy to bastli jinak</li>
+<li>tim jak pochazi z ruznych luhu a haju a kazdy se na to diva jinak - byvaly programator a byvaly businessak delaji na jedne specce a peklo</li>
+</ul>
+<p><strong>Nejsou business rozhodnuti/pozadi</strong></p>
+<ul>
+<li>NENI OVERVIEW + NENI WHY - POZADI, DECISSIONS ATD</li>
+</ul>
+<p><strong>Proc nejsou standardy (kvality) jako u SW vyvoje?</strong></p>
+<ul>
+<li>delaji to 100+1 zpusoby - chapter 7</li>
+<li>dělat analýzu ve wordu a vkládat do toho obrázky z EA je jako programovat v notepadu, kompilovat v příkazové řádce a verzovat kod tak, že ho zabalím do zipu a nahraju na Sharepoint</li>
+<li>Programátoři se snaží snižovat technologický dluh, refaktorují, vylepšují, analýza má kupu Wordů a jedou si spokojeně dál. </li>
+</ul>
+<p>hezky, ze mam class diagram se systemy a rozhranimi, ale pokud nemam jednotnou formu, jak je popsat, nemaji ID a fakticky je mam popsane na jednom visiu a s klientem v nejakem
+excelu, tak je mi na hovno<br />
+<img src="https://www.lukasvinter.net/wiki/lib/exe/fetch.php?cache=&amp;media=ba:intfr_cls.png" alt="alt text" /></p>
+<blockquote>
+<p>Similarly, in object-oriented and component-based design you want to build cohesive items (components, classes, methods, and so on) that fulfill only one goal.
+If this is ok for your system design, shouldn't it also be ok for your software development artifacts? We clearly need to rethink our approach</p>
+<p>PŘESNĚ!! vse jen jednou, odkazovat, organizovat jako sw projekt, jako kod!!!!</p>
+</blockquote>
+<p><strong>Predepsane vystupy, slepe plneni sablon</strong></p>
+<ul>
+<li>Predepsane sablony, „pro kazdy UC delej sekvencak“, vsude bordel - porusuje „Agile models provide positive value“</li>
+<li>popsat priklad ze sme museli udelat proces, uc, sekv., interni use case (uz jenom tohle byla picovina - nestandardni, jejich vymysl)</li>
+<li>bud linej a delej jen ten diagram, co k necemu bude VS. kapitola Artifakty - standardni set musi byt</li>
+</ul>
+<p><strong>single source</strong></p>
+<ul>
+<li>chapter concepts</li>
+</ul>
+<p>**Jedna Linka</p>
+<ul>
+<li>chapter concepts </li>
+</ul>
+<p>Analyza versus dokumentace, samostatna chapter</p>
+<p><strong>Just enough good</strong></p>
+<ul>
+<li>I can tolerate a map that is missing one or two streets but I can't tolerate one that is missing three quarters of the streets in my town.
+<ul>
+<li>ano, nevadi mi, ze tlacitko je vlevo a ne v pravo v dokumentaci, ale sere me, ze nevim, jak ws se zavola, kdyz ho zmacknu !!!!!!!</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>Note on agile</p>
+<ul>
+<li>nechci hledat po developerech, a uz vubec ne si to simulovat..tlacitko muze byt videt jen v okrajovych pripadech a simulovat to pulden neni me hobbyy :!: :!: :!:</li>
+<li>Ja uplne chapu, ze agilisti jedou svoje story a frci vyvoj..ale pak prijdou change, zmeni se dva analytici a jak zjistim jak to funguje..takze vic je to o te dokumentaci po vyvoji..a ze uzka vazba se stejkholdery a ti reknou jak to fungujue…c'mon, lidi maji dost prace a nikdo nebude nic dohledavat…a ze je to funkce dokumentace..cmon, uz to nekde videls ze by byla dodana uzivatelska prirucka? a i kdyby, tak po vyvoji a novy analytik ji potrebuje ted</li>
+</ul>
+</blockquote>
+<h2 id="real-world-antipatterns">Real world antipatterns</h2>
+<ol>
+<li>Kapitola seznam atributů která má i jejich validace.. pak obrazovka a atributy a validace viz ten seznam.. Ne</li>
+</ol>
+<h2 id="aaa">aaa</h2>
+<p>specifikaci rozhrani nebo tabulek nikdy nedelat rucne, vzdycky generovat!! Pac potrebuju tridu s atributy abych na prvni pohled videl jak interface vypada a pak detail..nechci synchronizovat prehled s detailem, to je peklo</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

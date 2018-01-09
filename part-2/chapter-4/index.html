@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/01.html">
+                                Different types of projects
+                            </a>      
+                        </li>
+
+                        
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="effective-analysis-phases-and-outputs">Effective analysis phases and outputs</h1>
+<p>In the previous chapters we presented different views on how stakeholders present their needs and goals in terms of software development. These views vary in the level of detail and the information elicited at each level need to be stored appropriately. </p>
+<p>We will not present the concrete way of storing the information, this is introduced in the next part of the material, here we will show only how to structure the information. Also note that if we talk about a document or a specification, we talk about one of the views on the solutions. In fact, we are not in favor of producing hundred-pages-long Word documents which serves only as an alibi for stakeholders and are useless in tems of communicating the final solution with both stakeholders and development team. There are better ways to produce specifications as we show you in the next part. </p>
+<p>The following schema depicts how the initial idea is elaborated from the high-level business need down to the detailed description of each individual system function and displays typical names of the documents holding the information at each level.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases1.png" alt="aa" /> </p>
+<p>You certainly remember how we kindled about mixing levels of abstractions. As there are different levels of requirements there are also different containers containing them. One could ask why do we need a material describing high level requirements when we already moved on and we know how the system will be desgined, what are the main features and so on. </p>
+<p>This has a reason. You target multiple audiences at the same time. There are stakeholders who are only interested the business goals and the outcome from the whole activity. Sure, it would be nice to have one specification covering everything because it would all be nicely coherent and no need to jump here and there. However, it wouldn't be bloated with details unneccessary for specific audience.</p>
+<p>But as we stated above, specification doesn't mean a single document. Since it is an abstract container whose responsibility is to keep the different levels of requirements separated, it doesn't matter if it is a real document, chapter in the document or something else as ilustrated on the following schema:</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/documents.png" alt="aa" />  </p>
+<p>You've probably come across a couple of the names of the artifacts presented above and you've might googled for the advice what exactly should be included in the documents. Well, there is absolutely no agreement as to which document should contain which information and to what extent of detail. The even worse news is that each organization even each team call the artifacts differently and regardless of the name they put different things into it.</p>
+<p>Our goal is not to dictate how organizations should call their analytical outputs, we just want to make sure that there is a clear agreement what kinds of artifacts exists in terms of the level of abstraction and what are the approximate boudaries regarding what can be its content and what is yet beyond artifact's scope.</p>
+<h2 id="vision-and-scope-brd">Vision and Scope, BRD</h2>
+<blockquote>
+<p>TBD Business Requirements Document</p>
+<dl>
+<dt>A Business Requirements Document is a requirements package that describes business requirements and stakeholder requirements (it documents requirements of interest to the business, rather</dt>
+<dt>than documenting business requirements).</dt>
+<dd>D :D :D</dd>
+</dl>
+</blockquote>
+<p><a href="https://ajiethkumar.wordpress.com/2013/07/24/business-requirements-document/">https://ajiethkumar.wordpress.com/2013/07/24/business-requirements-document/</a></p>
+<p><a href="https://ajiethkumar.wordpress.com/2012/03/16/business-requirement-document-vs-functional-specification-document/">https://ajiethkumar.wordpress.com/2012/03/16/business-requirement-document-vs-functional-specification-document/</a></p>
+<ul>
+<li><strong>This document generally does not have solution for the requirement in it.</strong> </li>
+</ul>
+<p>Sometimes the analytical work starts with only high level idea (implement legal requirement), sometimes very concrete function of the system is presented to analyst, both depending on the project and the analyst role. Regardless of the input, it must always be clear why the change should be done,  what are business goals, limitations, assumptions and risks or for example how the success of meeting the business need will be measured. Answers to these questions are included in the most high-level artifact called Vision and scope or Business requirements document</p>
+<p>The benefit of having such document is that it is clear to everybody involved in analysis or subsequent activities what is the driver, why is all happening, to help understand that implementing a input text box on the screen is related to a high level need from the business.</p>
+<p>It should include description of the problem the business is facing or the opportunity they would like to use and the context of the opportunity or problem but it may present current situation which will undergo change and a high-level vision of the future state. </p>
+<p>Because of the mentioned rule that business requirements are not anyhow related to paricular solution, the future state shouldn't say how the business goals will be implemented in much detail. However, very often business people have a basic idea what the solution should be like so a draft/the vision of the solution could be included but this doesn't mean that the step of designing possible solutions by anlayst and thei evaluation can be skipped.</p>
+<p>To get readers quickly on board it is also very beneficient to include a description of the current situation such as current process or the current overall solution. The vision of the solution can then refer to how the current situation is going to change.</p>
+<p>The artifact often includes also rather project management sections such as success matrics, business risks, assumptions and constraints.</p>
+<p>Often the business goals are not implemented all at once. The document shoudl also reflect it so that it is obvious for the the audience what comes first what second. It also explicitely lists what is not in scope.</p>
+<blockquote>
+<p><strong> Trap</strong></p>
+<p>In many organizations the &quot;business requirement&quot; represents a general term for anything from a high level wish to a request for the color of the button on the screen. From the previous text you know that it is not like that. Similarily, very popular format of the Business requirements document (BRD) is often used as an overall container holding business goals, solution description and the functional specification together. </p>
+<p>Don't mix different levels into one.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases2-nobrd.png" alt="aa" /> </p>
+</blockquote>
+<p>Sometimes you work with stakeholders from the beginning and the only thing you get is the business need. Sometimes you are a part of the big project and you even don't know the business goals behind it. It depends in which context of the analysis you're currently working (more IT or more business) and what kind of project you're working on (TBD see next chapter) but regardless of the environment you shouldn't ignore the background of the solution and you must be aware why the solution is being built because only this way you can be sure that you bring a value to the stakeholders.</p>
+<blockquote>
+<p>BRD should contain what is the subject of the analysis, why we do the change, what is the current state and its current imperfections and are the goals of the future state and its motivations </p>
+</blockquote>
+<h3 id="checklist">Checklist</h3>
+<ol>
+<li>What is the background?
+<ul>
+<li>What is the business opportunity we would like to use / What is the business problem we’re facing</li>
+<li>What are the goals which supports the business need</li>
+<li>What is the business motivation and benefits</li>
+<li>The goal of this part is to introduce the topic, provide context, high-level description of the current state and why and how should be improed</li>
+<li>We don't dictate any particular chapters, they are counterproductive. People then focus on dividing the information to the right drawer instead of focusing on the content.</li>
+<li>Especially the BRD is kind of art where the analyst needs to introduce the topic very quickly and effectively and mostly the free text wth the story of the business need suits best.</li>
+<li>Don't spend much time meditating about what is the nee, goal or objective, describe what is the problem.</li>
+<li>This facts in this part are nothing what the analyst creates, these are business intentions and decisions which analyst just summarizes and introduces to the audience</li>
+<li>Examples</li>
+<li>Competition has something we don’t have</li>
+<li>We are required to implement new legal requirement</li>
+<li>There’s opportunity to attract new customers - uver po netu</li>
+</ul></li>
+<li>How we’re going to measure the success of meeting the business goals
+<ul>
+<li>Zasilka - 70 proc. Lidi se podiva ja sledovani</li>
+<li>Legal - odejdou vcas reporty podle legislativy</li>
+</ul></li>
+<li>Vision - the vision is just a high-level summary which will lay out the boundaries of the project or product based on the business goals mentioned in the previous point.</li>
+<li>Are there any BUSINESS risks
+<ul>
+<li>Zasilka - </li>
+<li>Legal - constraint - olin se bude nasazovat (neni business!!)</li>
+</ul></li>
+<li>Are there any BUSINESS assumptions, dependencies and constraints?
+<ul>
+<li>Assumptions</li>
+<li><a href="https://pmstudycircle.com/2012/10/assumptions-and-constraints-in-project-management/">https://pmstudycircle.com/2012/10/assumptions-and-constraints-in-project-management/</a></li>
+<li>For example we assume that the bill will be passed in Q3 this year and we ajdust the development according to this</li>
+<li>Dependencies and constraints - Examples are pending industry standards or government regulations, deliverables from other projects, third-party suppliers, or development partners.</li>
+<li>We can start analyzing customer data and report them to the regulator only after another project focusing on collecting the required data finishes.</li>
+<li>We can't report 1/3 of data required by our owner company because the local regulation don't allow us to send this data abroad</li>
+<li>Are there any important deadlines or milestones?</li>
+<li>For example the objective might be to implement it all before the 1st January next year because the new law will start to apply on this date </li>
+</ul></li>
+<li>What is the business scope?
+<ul>
+<li>For example we need to speed up the process of approving new versions of template documents in the company. But it is not needed to do it automatically for all the templates, only those in the group A needs to go trough the process. </li>
+<li>Or it might be the case that not all business goals need to be fulfilled in one go. They could be slotted into phases/releases. </li>
+<li>Zasilka - prvni faze na webu, druha faze SMSky</li>
+<li>Legal - v prvni fazi se obeslou stavajici, v dalsich se checkuji novi</li>
+</ul></li>
+<li>Current vs. future state - it is always better to help reader to orientate in the text by introducing how the business and processes works and how the implementing the business goals will change them.</li>
+</ol>
+<p>We provide examples for each type of project separately in the next chapter - TBD odkaz na CNFL template</p>
+<blockquote>
+<p><strong>TRAP</strong></p>
+<p>The BRD is not a temporary document for collecting ideas. It is a final document describing decisions made and analyzed. Therefore, it shouldn't include things like the initial ideas how the final solution migh look or guesses and speculations. </p>
+<p><strong>TRAP</strong> -
+<strong>Business requirements document created by stakeholders</strong></p>
+<p>&quot;We need to implement these features and to save you time we wrote a short summary so you can just hand it over to programmers, it will be easy for them because it's all there&quot;.</p>
+<p><em>Commission module changes</em></p>
+<p><em>1. We need a new button for each calculated commission which enables us to add a tagged value &quot;Suspicious=true&quot; to the commision</em></p>
+<p><em>2. We would like to</em> TBD </p>
+<p><em>Screen mockup:</em>
+<em>...</em>
+<em>...</em></p>
+<p>Well, the road to hell is paved with good intentions. The stakeholders don't know about GUI manual and how to design user interface, they don't know that the tagged values are not supported anymore and that the process they proposed would be very epensive to implement. They see only the tip of the iceberg and so their &quot;designs&quot; are accordingly short-sighted.</p>
+<p>Always take such materials just as an indication what the project might be about but forget every technical designs in it. You simply can't skip the first two levels and jump right into the technical specification. You will miss the context and in the end you'll spend more time on the task than if you started from the beginning.</p>
+<p>You need to understand the intention and design the appropriate solution. You need to tech stakeholders this rule and teach them that you need to understand the &quot;Why&quot; to be able to help them design the solution.</p>
+<p>Sometimes the trap is even more hidden because the preliminary analysis was done by project manager. They do project charters and goals and risks and stuff like that on the daily basis so they know how to write the BRD sou you can use it, right? No, it's a trap. They don't know the overall business architecture of the company, they don't know all the systems and design constraints. Don't fall into this trap and treat the input from project manager the same way as from stakeholders. Maybe even more carefully. Don't jumm on the running train, stop him if possible, pull it back to the station, approach the stakeholders and use your analytical skills to find out the business need and do the job properly.</p>
+</blockquote>
+<h2 id="solution-description">Solution description</h2>
+<p>The business overview can lead to many alternatives which all could solve the high-level business problem. Reminding the example from the previous chapter.
+Fulfilling a legal requirement to report all customers spending more than a million dollars a year should to the ministry of finance, can be solved by a couple of solutions. Either a sophisticated module to the legacy information system could be implemented in case of almost all our customers are going to be reported and stakeholders need a robust solution with many features beyond the call of duty dictated by the law or just a small database utility or even manually run DB procedure selecting a few records and preparing the CSV file.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases5-multiplesystems.png" alt="aa" /> </p>
+<p>The main parts of such solution description may include:</p>
+<ol>
+<li>Context and the main features
+<ul>
+<li>How the solution realizes the business goals</li>
+<li>Which business goals will be realized by manual steps and which will be done by systems</li>
+<li>Which legacy systems will be involved, shall new systems or applications be developed?</li>
+<li>Scope of initial release</li>
+<li>Scope of subsequent releases</li>
+<li>Limitations and exclusions </li>
+</ul></li>
+<li>High level IT architecture
+<ul>
+<li>Context diagram, data flow or integrations etc.</li>
+</ul></li>
+<li>Impacted processes
+<ul>
+<li>New processes</li>
+<li>Changed processes
+2.Impacted applications</li>
+<li>Detailed ellaboration of the impacted applications</li>
+<li>What should be changed in the legacy systems</li>
+<li>Main features and functions of the new systems or applications </li>
+</ul></li>
+<li>IT security impacts</li>
+<li>Migration and deployment considerations</li>
+</ol>
+<p>Evaluating the options and selecting the right solution can be a lengthy process which might involve considering feasibility of each solution with the impacts the solution could have on the current state of the organization.
+These individual steps are described it following sections. </p>
+<h3 id="feasibility-study">Feasibility study</h3>
+<p>Feasibility study should be performed for the solution which might be risky in aspect such as price (financial), implementation (technical), schedule, legal or resource. TBD </p>
+<h3 id="impact-analysis">Impact analysis</h3>
+<p>Each change, be it altering current processes or introducing new one goes with consequences of such modification. These impacts are then part of the solution desscription. TBD</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases4-feasimpact.png" alt="aa" /> </p>
+<p>Tím že mám všechny objekty v DB (scr, tab, act apod.), tak můžu udělat hezkou impact analyzu viz zde:</p>
+<ul>
+<li><a href="https://www.visual-paradigm.com/tutorials/impactanalysiswithanalysis.jsp">https://www.visual-paradigm.com/tutorials/impactanalysiswithanalysis.jsp</a></li>
+<li>hezkej obrazek ala mind mapa a super</li>
+</ul>
+<h2 id="functional-specification">Functional specification</h2>
+<p>What you should have on your mind is that that even though business goals are solved by only selected and evaluated solution, the solution might consist of implemnting or modifying multiple systems. This means that during requiremetns elicitation activities user express functions which would need from the system but it is analyst's responsibiltiy to route them afterwards to the existing systems or those which need to be newly developed.</p>
+<p>It depends on context whether the analysis is about a completely new information system or a business change which impacts many different systems in the organization. This means, that analysis of the proposed solution may be just a one document descibing one information system but it also may lead to multiple systems, so multiple system specifications need to be created for multiple teams.  </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases6-onefuncspecs.png" alt="aa" />
+<img src="http://www.effective-analysis.com/generated/resources/phases6-multiplefuncspecs.png" alt="aa" /></p>
+<h3 id="content">Content</h3>
+<p>One of the Effective analysis principles states that the use case or function is the core which interconnects everything else TBD link. This should be reflected in a functional specification so the Effective analysis recommends to build  up the specification on the use cases and functions.</p>
+<p>For example, if it is required the system should integrate with an external system and send some data to it, it is a function. In Effective analysis functional specification there is no section called &quot;Interfaces&quot;. There is also no section &quot;Screens&quot;. You go through use cases one by one and you have everything coherently connected to the use case.</p>
+<p>The exceptions are domain models, data models, glossaries, algorithms and rules for the user interface which are not related to any particular system function and go across most of them. The rule that the save button shall be always green is common for all the screens in the system. Similarly, the algorithm which counts if the customer is older than 21 is likely to be shared between many functions and will be placed under business rules.</p>
+<p>You also won't find any section called state diagrams as states are always related to an entity.  </p>
+<pre><code>1. Introduction
+1.1 Purpose
+1.2 Document conventions
+1.3 Project scope
+1.4 References
+
+2. Overall description
+2.1 Product perspective
+2.2 User classes and characteristics
+2.3 Operating environment
+2.4 Design and implementation constraints
+2.5 Assumptions and dependencies
+
+3. System features
+3x System feature X
+3.x.1 Description
+3.x.2 Functional requirements
+
+4. Data requirements
+4.1 Logical data model
+4.2 Data dictionary
+4.3 Reports
+4.4 Data acquisition, integrity, retention, and disposal
+
+5. External interface requirements
+5.1 User interfaces
+5.2 Software interfaces
+5.3 Hardware interfaces
+5.4 Communications interfaces
+
+6. Quality attributes
+6.1 Usability
+6.2 Performance
+6.3 Security
+6.4 Safety
+6.x [others]
+
+7. lnternationalization and localization requirements
+8. Other requirements
+Appendix A: Glossary
+Appendix 8: Analysis models</code></pre>
+<h3 id="software-artifacts-vs-requirements">Software artifacts vs. requirements</h3>
+<p>Unlike business goals and solution description, functional specification includes concrete artifacts which are ready to be implemented such as screen, function, interface etc. Some artifacts were specified according to what stakeholders said such as &quot;The customer detail should display his full name, age, phone and mail&quot;, others emerged from technical constraints like underlying technology, security etc. - &quot;UI Standard: The save button must be always green.&quot; or &quot;Security standard: Each web service call must be performed using secure HTTPS connection.&quot;. Btw. given the example with the save button, do you see why we are not fans of the word &quot;requirement&quot;?</p>
+<p>The problems come when the requirements start to change. If you're not working in purely agile environment when you analyze just in time (TBD odkaz) you end up having the same requirements in two different forms - which brakes one of the main principles of Effective analysis to store the information at the only one place (TBD odkaz). You have the requirement to include the name of the customer on the client detail screen and simlutaneously the same information is presented in the form of the screen mockup. This is not good because once the stakeholder realizes that actually the full name sshould never contain middle name you have to change this in the requirement and also in the screen specification.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases6-duplication.png" alt="aa" /></p>
+<p>Possible solutions include</p>
+<blockquote>
+<p>In many organizations, the requirements are first documented as a list of &quot;... the system shall ...&quot; type statements and then the functional ones are also documented using use cases.  This is can be a waste of effort and a source of confusion.  Ideally, there should be only one documented source of requirements not multiple or else you need to worry about keeping them in synch.  You also run the risk that the requirements as documented in the requirements list vs. use case are different (or can be interpreted in different ways). </p>
+</blockquote>
+<ol>
+<li>Keep both the textual form and the artifacts
+<ul>
+<li>This way every single requirement is stored in the repository and can be tracked so it is easy to manage</li>
+<li>However, the information must be synchronized which proved to be almost impossible and frustrates analysts - see the &quot;Synchronization&quot; arrow in the schema above</li>
+</ul></li>
+<li>The specification of the label displaying customer full name will only link to the requirement.
+<ul>
+<li>This prevents from duplication however it is not very readable for developers</li>
+<li>Either each granular statements can be linked to elements or only a overall requirements can desribe it. The former leads to what we call requirements explosion which ends up having hundreds of small statements which are unmanagable. The latter is problematic also because the statements are not atomic enough so the reader needs to search the concrete statement for the concrete element which the requirement is linked to.</li>
+<li>This also won't work for the case the requiremetn becomes a use case scenario step: &quot;When the mistake is found in the night batch of data, email is sent to the administrator.&quot;. You can't put a link instead of the use case scenario step. If stakeholder changes mind and SMS should be send instead of email, the requirement and the step must be changed which is impossible in the real world.</li>
+</ul></li>
+<li>Once the requirement is transformed to an artifact or part of the specification of some artifact, the requirement is no longer updated and is considered outdated
+<ul>
+<li>In this case textual specifications serves only in the process of requirements elicitation but not during requirements analysis and mangement</li>
+<li>The information is stored at the one place only, it is coherent as the all info is placed near to the related artifact</li>
+<li>With the right tool even the tracking, history etc. can be done quite comfortably</li>
+<li>Might be TBD in really rigid environments where there is a high risk of confrontation with stakeholders about if the function was requested or not and where it is better to have each requirement formally managed and signed off</li>
+<li>TBD ! In many organizations, the requirements are first documented as a list of &quot;... the system shall ...&quot; type statements and then the functional ones are also documented using use cases. This is can be a waste of effort and a source of confusion. Ideally, there should be only one documented source of requirements not multiple or else you need to worry about keeping them in synch. You also run the risk that the requirements as documented in the requirements list vs. use case are different (or can be interpreted in different ways). </li>
+</ul></li>
+</ol>
+<p>The recommended rule is that you try to iterate to software artifacts as soon as possible and describe requirements with artifacts rather then with the textual form. The artifacts can be demonstrated to stakeholders more easily as they see something real such as a screen, a algorithm or a scenario how they're going to use the software.</p>
+<p>Once you have the artifacts the requirement management should be done on artifact level so the changes are not updated back to the requirements. Only very crucial or conroversial statements should be kept separately where the history and confirmation of agreements can be tracked.
+For the most of the requirements elicitation, negotiation and confirmation may proceed in the form of the artifacts supposing you have the right tool which enables you to track artifact changes, associate various so that it easy answer questions such as &quot;Who decided to remove this process step?&quot;, &quot;Has the agreement regarding whether to send email when new order arrives been already made and when?&quot; etc. even though you don't manage the abstract textual requests and you manage just the functional specification artifacts. </p>
+<blockquote>
+<p><strong>TRAP -
+User requirements and functional specification</strong></p>
+<p>&quot;We want the system to have user roles so we can restrict deleting customer only to specific role.&quot;</p>
+<p>We need to distinguish between features and functions.</p>
+<p><em>Feature is one or more logically related system capabilities that provide value to a user.</em> TBD Wiegers</p>
+<p><em>Function a is a behavior of the system TBD doladit</em></p>
+<p>Supporting user roles by the system is a feature, add a user role to the user is a function. Features are kind of containers of system functions. Features are not what you primarily describe in the functional specification but they structure the functions.</p>
+<p><strong>TIP - applies to all kinds of specifications</strong></p>
+<p>We've broached already the topic of documentation and descibed how endless documentation updates may frustrate analysts. When you write specification no matter if its high level BRD or the functional specification it is not a good practice to start writing it before the basic pillars are not stable. If you're analyzing business goals make just notes, mind maps and other temporary outputs (TBD odkaz temporary ambler) which are easy to change and provide high-level view.</p>
+<p>To learn more read about the document late practice and document continously TBD odkazy </p>
+</blockquote>
+<h2 id="outputs-and-projects">Outputs and projects</h2>
+<p>Except for the development of a software product the analytical activities take place within a project. Just as the analysis may have different shapes also the project is run in various context.</p>
+<p>The project may start right after the business problem has been identified. Imagine that a new regulatory requirement in a bank was discovered and needs to be implemented. The regulation needs to be analyzed and the solution needs to be designed. There are two possible scenarios.</p>
+<p><strong>1</strong>
+There is no dedicated department which would drive the implementation. Even though there is a department responsible for assuring that all regulatory requirements are met (Compliance) they just get fammiliar with the problem roughly, sets the goals and when it is evident that the requirement will have a lot of impacts on IT a team let by business analyst and project manager is assembled and the project is started.</p>
+<p>This is a frequent scenarios in large enterprises where a lot of business changes are going on which have a lot of impacts. Such changes require extra phase to just understand it, map the current situation and outline possible solutions and impacts.</p>
+<p><strong>2</strong>
+There is group of people responsible for analyzing the business goals and they do it outside of any project. These people very often hold a reole of business architects or business analysts and they work is the fire for new projects to start. They analyze the business need, outline the possible solutions and after the solution is selected the project is started to implement it.</p>
+<p>Custom software development very often starts at this stege where the the first phase is usually done by the customer itself or is outsourced to a third company. The implementator often doesn't analyze the need for the new system, they analyze the system and they just build it.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/phases3-projects.png" alt="aa" /></p>
+<p>The illustration above aims to disprove the very frequent statement that business requirements documents are based on project charters. This stems mainly from the fact that different people use the term BRD differently. With our definition of BRD presented in this chapter it si clear that...  </p>
+<blockquote>
+<p>... the project charter is not a prerequisite of BRD.</p>
+</blockquote>
+<p>In fact, it is very often the other way around.</p>
+<p><strong>Individual implementation projects</strong></p>
+<p>No matter which scenario applied once it is clear what systems will be involved in the change the imdividual system changes may run in separate subprojects with their own goals and flows such as own low-level analysis etc.
+These separate teams then create functional specification for each system.  </p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

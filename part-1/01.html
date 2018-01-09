@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/01.html">
+                            State of the system analysis
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/02.html">
+                            Importance of the analyst
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/03.html">
+                            Analytical minimum
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/04.html">
+                            Frustrated analyst
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="state-of-the-system-analysis">State of the system analysis</h1>
+<blockquote>
+<p>Computer system analysis is like child-rearing; you can do grievous damage, but you cannot ensure success</p>
+<p>-- Tom DeMarco</p>
+</blockquote>
+<p>Systems analysis is rather new discipline. It is important to note that it is newer than programming as in the early ages the role of analyst didn’t even exist. It was common that It was possible due to the fact that software was not as complex as it is today. Unfortunately, it is still common in many organizations.</p>
+<p>Writing a simple utility application in a team of one or two programmers did not require special skills. However this area is already a past. Systems are complex, integrated with each other, implementing complex workflows and business processes.</p>
+<p>It is simply not possible just to leave your favourite Java IDE a go ask “What do you want us to develop?”. Nowadays, the question should always be “What do you want to achieve in your business?”. Only after then can we decide what kind of software will fulfil the business need best as we discussed in the previous chapters.</p>
+<p>Even if the software solution was chosen, analytical works continue. What are the legal constraints, what are the technical constraints, what are the integrations with other systems? </p>
+<p>Analysis evolved to its own discipline, it becomes complex task and it simply can’t be done ad hoc, we, analysts, need to do it effectively.</p>
+<h2 id="why-we-cannot-ensure-success">Why we cannot ensure success</h2>
+<p>It is not the analysis tasks which are difficult, it is the interactions which make the whole discipline complex. It is not hard to draw a process which needs to be changes, it is the impacts the change would cause.
+And in corporate environment each such change could have enormous number of impacts: on people which needs to understand it and give their approval, on numerous systems whose owners need to  </p>
+<p>Otherwise the analysis itself is a deterministic, cause-effect activity. If you implement this, it will mean this and this. Now it works like this, if we change it, it will do this.</p>
+<p>There is only finite set of artifacts, such as process, system, function, screen, button etc. If you're able to descibe these artifacts in a sensible way, capture relationships and interactions between them  </p>
+<p>The problem is that:</p>
+<ul>
+<li>Before the analysis of the future state can start, the current state needs to be reverse-engineered. Very often there is nobody who knows the overall end-to-end process.</li>
+<li>There is no common language in analysis.
+<ul>
+<li>There are modeling languages such as UML or BPM, there are tehniques such as use cases which introduces kind of standardized approach of gathering what shoudl the system do but you can't find two specifications or documentations  even within the same company which look alike.</li>
+<li>This implies worse knowledge transfer, steep learning curve for new analysts and higher project expenses.</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong> TIP </strong><br />
+Analysis is nothing like mathematics or programming, it is a creative activity which can't be defined by some formal rules or language.
+However, the outputs can!!</p>
+</blockquote>
+<p>The process of analysis is simply like writitng a novel. It is impossible to standardized it. What you can do, is to unify the language of all novels, wrap up them in the same wrapping and always put list of chapters on the second page and thank you section on the third page. Going back to the analysis world, it is not convenient to describe two screens in natural language and another two in a table. This frustrates people TBD link.
+The Effective analysis outlines such pillars, main concepts which if applied contributes to that analysis and documentations are understandable, readable and when speaking unified languge all team members can orient quickly including new commers.</p>
+<p>It should be easy to find out where the information is and to understand the form of capturing the information and all relevant information related to it. </p>
+<p>wiegers - As with so many aspects of requirements engineering, there is no simple, perfect solution to managing business rules that works in all situations</p>
+<ul>
+<li>but no matter what methodology you use (rigorous, agile, etc.) there are key pillars of system analysis which should be built</li>
+</ul>
+<blockquote>
+<p>&quot;One size does not fit all.&quot;</p>
+<p>No, you can't use my shoes but if we both use the same running shoes it is very easy to share the experience and the chances are we will run through the finish line together. </p>
+</blockquote>
+<p>Software development is inherently complex. Keep things as simple as you can while still delivering successfully - ambler</p>
+<p>Another problem is skills...</p>
+<h2 id="skills-matter">Skills matter</h2>
+<p>With the increasing complexity of the systems analysis gains more and more importance in IT projects. Analysts are domain experts, negotiators, IT architects and sometimes programmers while also managing development tasks all at the same time. They bridge all the pieces of software engineering to ensure the success.</p>
+<p>Having said that, there are a lot of skills analyst should possess, from requirements gathering and meeting facilitation through systems modeling to basic knowledge of IT technologies.</p>
+<p>Gaining these skills is a long and slow process requiring a lot of motivation to learn and willingness to improve. </p>
+<p>Some skills are soft and will come with time, e.g. the more meetings you facilitate the better you’ll be in facilitating them if you learn the basic rules and work on applying them in your meetings.</p>
+<p>However, there are also hard skills which analysts can learn only by studying or learning from somebody who already has the skills. Here the problems arises.</p>
+<p>We saw many talented analysts knowing the domain being able to communicate effectively but lacking the knowledge of the hard skills.</p>
+<p>There two reason for this.</p>
+<ol>
+<li>These skills are often taught in subjects related to IT and many analysts are recruited from non-IT people so they don't even know what techniques they should use. There is no analytical minimum to know.</li>
+<li>The number of techniques is high (from process models, requirements engineering to UML, use cases and screen descriptions)
+<ul>
+<li>Avarage analyst don't use all of them on daily basis so if they suddenly need it they not profficient at it and do mistakes</li>
+<li>That is why Effective analysis lists only the essentials techniques and the most important aspoects of each of them. The details are not required in the real life anyway.</li>
+</ul></li>
+<li>All resources show abstract concepts not the actual steps, outputs and techniques</li>
+<li>Analysts don't work on their skills
+<ul>
+<li>There are countless developers meet ups, podcasts, webinars etc. Developers share the knowledge, they build up methodologies and best practices. They need to work on theirselves otherwise they can't keep up and their value decreases.</li>
+<li>Anaysis on the other hand is kind of rigid, anlaysts are not forced to study and keep as writing crappy use case specification in Word and drawing in paint dont' require any special skills.</li>
+</ul></li>
+</ol>
+<p>This all the Effective analysis aims to change that too.</p>
+<p>As mentioned in the beginning, despite the huge progress in technologies, software development methodologies etc., analysis is still in its infancy. Comparing the analysis world to the fast-pace development world progress made every year, analysis looks like in stoneage.</p>
+<p>Developers already realized decades ago, that without guidelines, rules and, most importantly, automating common tasks, it is not possible to write complex systems. They use IDEs, the compile the code during development and assembly and deploy the software with one mouse click. On the other hand it is still so common that analysts draw their artifacts in Paint copypasting them into Word documents and sending it via email for review.</p>
+<p>This can be compared to developers writing internet banking in Notepad compiling the source code using command line.
+Navic ani neexistuji nastroje.nekdo dela formalne requirementy, nekdo dela formalne  use casy..jak provazat, co obrazovky, jak volani sluzeb, traceability atd atd</p>
+<p>The Effective anlaysis’ gole is to fill these gaps, equip analysis with all the principles and techniques and give them an arsenal of tools they will need in every-day war.</p>
+<h2 id="the-motivation">The motivation</h2>
+<p>Despite the analysis is a creative task which cannot be unified and measured the merit of the Efeective analysis is based on that &quot;the same values, principles, and practices are equally applicable to any software project when thoughtfully adapted, scaled, and timed so as to enable the project to achieve its objectives&quot; (TBD Wiegers).</p>
+<p>So it can be unified to some level and the same applies to analysis artifacts.</p>
+<p>All materials dealing with analysis, requirements, design etc. describe how the process model looks, what is a use case, the advantages of prototyping and that the documentation should be light-weight.
+What these materials mostly lack however, is the real world integration:</p>
+<ul>
+<li>What is the light-weight documentation, you ask. It depends on your project is the common answer. No surprise that the outputs created by analysts has no ground rules, break basic rules and principles and it is hard to read them.</li>
+<li>You learned how to draw a business process model. Apparently from your diagram the &quot;Book hotel&quot; step is done by a general manager assistant. But once the project manager asks in what system the step is done you start confusingly search throw your Word documents because &quot;It must be somewhere!&quot;.</li>
+<li>Or you ar an expert on effective use case specification. You're really good at it. But once your use case have been implemented to the the real system, you start to be bombarding with questions like &quot;What role do I need to have to perform this task?&quot;, &quot;What web service is called if i press this button?&quot; etc. Then you realize that the use cases were fine during the early phase of the analysis but after the low-level system specification was created by another team you are lost and you need to connect a lot of documents to get a whole picture of what you actually designed yourselve - which costs you time. </li>
+</ul>
+<p>Effective analysis describes skills, techniques, tools and principles which are transfarable between projects, are quickly adaptable and contribute to the project smooth flow.</p>
+<p>davame best practices pro ruzne typy projektu viz kapitola different kinds of projects</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

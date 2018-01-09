@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/01.html">
+                            State of the system analysis
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/02.html">
+                            Importance of the analyst
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/03.html">
+                            Analytical minimum
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/04.html">
+                            Frustrated analyst
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="frustrated-analyst">Frustrated analyst</h1>
+<p>We have worked on many various projects in many different roles including developers, analysts, testers etc.</p>
+<p>While it is natural that starting working on any project requires going through supporting materials and accustom to them we quite often struggeled to read the matterials effectively at all.</p>
+<p>Many times, we were presented with a bunch of unrelated documents, diagrams and other materials which instead of helping to orient ourselfs in the domain, process or software leeaving us desperate.</p>
+<p>You may ask how the legacy member of the team worked with the supporting materials. Did they use it at all.</p>
+<p>Yes they did because even when there is a junior team or a team with no deeper knowledge of analysis (trends etc TBD) the team just believe that the approach to analysis and documentation which was presented to them in the beginning is the right one and get used to it.</p>
+<p>Another aspect in this is time. After spending a couple of months even years on the project or product people simply learn the domain, the processes and the whole application. The poor documentation then becomes a help only in case of complicated processes or algorithms. They are helpful to the team even when the information is buried in the document called FS20170526-A.23 and desribed only in text taking 2 A4 pages.</p>
+<p>And of course as the old analysis which now became a documentation also the new analysis, change requests or project charters are produced in the same quality. </p>
+<p>However, for people like us who often hold a role of a consultants moving from one project to another this represents a inexhaustible source of frustration.  </p>
+<p><img src="http://visiblealpha.com/wp-content/uploads/2016/10/Frustrated-with-earnings-season.jpg" alt="" /></p>
+<h2 id="sources-of-frustration">Sources of frustration</h2>
+<h3 id="poor-documentation">Poor documentation</h3>
+<p>Note: By documentation we mean all artifacts which are produced during or after analysis such as overviews, models, pseudo codes etc. whose purpose is to abstract from low-level details and provide simplified view of the problem to help understand it. We don't mean technical documentation describing source code artifacts like classes, methods or procedures. </p>
+<p>Have you ever seen a software documentation which is not poor? We neither. Does it mean we are condemned to frustration forever? Definitely not.</p>
+<p>To choose the proper way of handling documentation problems the cause must be identified first.</p>
+<ol>
+<li>Missing documentation
+Solution: Start document software, processes and other artifacts. </li>
+<li>Inconsistend documentation
+Solution: Introduce at least basic rules to follow when documenting artifacts, train analyst so that they know about them and do quick reviews.</li>
+<li>Documentation is vague or too general
+Solution: TBD</li>
+</ol>
+<p>We will tackle all three scenarios in the next part (TBD).</p>
+<p><strong> Reasons to have documentation </strong></p>
+<p>We are not fans of documenting. Nobody is. So why should we do such unpleasant activity at the first place?</p>
+<ol>
+<li>Knowledge tranfer - it must be easy for new members of the team or anybody to orientate in adn to undersand the problematics (process, system)</li>
+<li>System features - it must be easy to find out how the system works without digging into source code</li>
+<li>
+<p>Architecture - It must be easy to <strong>automatically</strong> see the architecture, integrations and dependencies of the systems </p>
+</li>
+<li>System documentation - it mmust be easy to orientate in the sysem fast (what are the main modules, screens, how the system integrates with other systems)</li>
+<li>In general - it must be easy to  </li>
+</ol>
+<p><strong>Missing documentation </strong></p>
+<p>Let's elaborate a bit why so many teams create very poor documentation or even no documentation. </p>
+<ol>
+<li>
+<p>It is a drag to create it
+Finding the place where the documentation should be takes a long time. It is poorly written, it is not clear how to document the information, there are no rules and it seems that nobody cares at all.</p>
+<p>We believe that we are able to demolish most barriers with Effective analysis.</p>
+<p>We believe that proper specifications and documentations are not written not because of analysts are lazy but because <strong>nobody helps them to create it fast, intuitively and effectively</strong> and nobody requries them to do so. The quality of software corresponds with that fact. </p>
+</li>
+<li>
+<p>Source code only
+It is because of the misunderstanding what agile community says that documentation is not needed. People often disinterpret agile manifesto in the way that there's no need for the documentation because source code is enough.</p>
+<p>Don't get us wrong, we are fan of agile and we try to do our projects the agile way. What's wrong with agile is that in hands of people who didn't get the point of agile it might be dangerous for everyone. </p>
+<p>What agile say, is <strong>&quot;Working software over comprehensive documentation&quot;. Over, not instead.</strong></p>
+<p>Everytime we come across a team saying that they don't need documetation because source code is the documentation, we start to smile.</p>
+</li>
+</ol>
+<p><em>Source code only - why not</em></p>
+<p>We already talked about generalized specialists. Those people know how to proceed with analysis and are able to read source code at the same time (simplified). In teams consisted only of these people it should be ok to have just soruce right as everybody understands it, right?</p>
+<p>Unfortunatelly not. With the complexity of current applications and systems it is simply not possible to be effective without any simplification and abstraction. Teams simply need model and overviews to abstract from low-level details. </p>
+<ol>
+<li>It is certainly faster to locate a model or a function overview to find out information than to search through the source code. Whatsmore, source code can be written very bad, it can't give you high-level view etc.</li>
+<li>Source code says how the application works not how it is supposed to work
+&quot;That's your problem, it should've been tested...&quot;. Yes, it shoul've been, we're not living in the ideal world though.</li>
+<li>Source code documents only the system it represents. Documentation descibing how the system are integrated, how the communication flows and what are the dependecies can't be read out of source code in reasonable time. </li>
+</ol>
+<p><strong> Too general documentation</strong></p>
+<p>Story we hear very often is that the documentation is only high-level because this way it stays up to date even when some detail changes.</p>
+<p>Have you ever heard saying &quot;The devil lies in detail.&quot;? You don't want to mess with the devil.</p>
+<p><strong> Verbal specification </strong></p>
+<p>Another frequent story we hear is that documentation was not create because developers know the system so well that it is just enough to tell them what to implement and they'll do it.</p>
+<p>Well, no problem there as long as at least a rough description of the functionality is put somewhere so that it could be tracked who required such functionality and why it even exists.</p>
+<p>What is a problem though is mixing the specification for development wih the documentation. Basicaly, if the software process where the instructions for developers are provided only verbally works, then ok. However, it will strike you back once the half of the team needs to be replaced.</p>
+<h2 id="duplications-inconsistencies">Duplications, inconsistencies</h2>
+<p><strong>Information sprinkled throughout various documents</strong></p>
+<p>Use case description in Word document, decision table required by the use case in the linked Excel sheet, use case realization in activity diagram drawn in CASE tool.</p>
+<p>Impossible to search using one single query and uncomfortable to navigate between artifacts.</p>
+<p>It is not possible to find information with one single search, it is needed to join various sources</p>
+<p><strong>Information can be found on many different places</strong></p>
+<p>Even worse is that the information found on many spots is also often  contradictory, e.g. two versions of algorithm description, system is sometimes called CRM sometimes only CM.</p>
+<p><strong> Each software artifact desription or model looks differently</strong></p>
+<p>There is no rule how business need description, use case or screen specification should look.
+It is then harder to read the documentation as one needs to search for the particular information instead always going to the same place.
+Since there are no rules each analyst invets hisown which makes the specifications and documentation total mess. </p>
+<h2 id="incoherence">Incoherence</h2>
+<p>By incoherence we mean that all related information can be found at the single place. The location of information should be predictable.</p>
+<p>Example:<br />
+We saw a screen specification which included a wireframe and a list of user interface elements like buttons, inputs etc. However, the detailed desription of each field (default values, validations etc.) were kept in separate Excel sheet.</p>
+<p>It was so frustrating when investigating the wireframe to open separate sheet and search for the element everytime a single button functionality was needed.</p>
+<p>Coherency here means that you get all you need to understand the screen in one specification. The same applies to ather artifacts like diagrams for example. When going through a process diagram you should not need to rebound to a separate material to read the details about each step. It should be coherently place together. </p>
+<p>We also don't like if there is a standalone list of business rules. Coherence for us means that the things are put into context. Reading just business rules without the context where they are applied is useless. Coherency is if the rules are also attached to business process step or system function where it is applied.</p>
+<h2 id="text-only-specification">Text-only specification</h2>
+<p>Following example shows how the functionality of ordering a plane tickets from the previous chapter would be described by a non-experienced analyst who is not familiar with the modeling and other vizualization techinques.</p>
+<p>You certainly have seen a specification like this once:</p>
+<pre><code>UC Buy plane tickets
+
+1. Customer visits the website and chooses "Buy tickets" in the dropdown menu
+2. In displayed search form customer enters
+   - date of departure - element InputDate, minDate=1/1/1970
+   - number of passengers - element InputNumber, minValue=1, maxValue=9
+   - luggages - element InputNumber, minValue=0, maxValue=99
+   - ...
+   - ...
+   - prefered seats
+3. System searches for the tickets according to the data provided in the search form
+   - System searches for United airlines tickets by calling a service at https://united.com/api/getTickets using GET method
+   - System searches for United airlines tickets by calling a service at https://aa.com/tickets using GET method
+   - The connection is secured using HTTPS protocol
+4. Customer selects flight and presses "Proceed to payment"
+5. Customer selects payment method
+   - There are 3 choices: Mastercard, Visa, Paypal
+   - If Paypal is selected customer is redirected to Paypal
+   - If Mastercard od Visa is selected customer is redirected to the paymeny gateway 
+   - Tests remark: Don't forget to test canceling the transaction at the gateway
+
+   Discounts:
+   - If it is United Airlines and Paypal or Visa is used, customer gets 2% discount
+   - If it is United Airlines and Mastercard is used, customer gets 1.9% discount
+   - If it is Amaerican Airlines and Paypal is used and at least 3 tickets are selected, customer gets 1% discount
+   - If it is Amaerican Airlines and Paypal is used and no luggage is selected, customer gets 1% discount 
+   - If it is Amaerican Airlines and the departure date is 24/12, all tickets customer gets negative bonus -2% discount   
+6. If the customer selected checkbox "Email delivery" in the right bottom corner, system creates 
+   - iText Java library is used
+   - the ticket is black and white
+   - the ticket looks like this - [attached PDF of the ticket]
+7. After the tickets are purchased they are stored in the database in the table plane_ticket
+   - Implementation remark: Table "provider" doesn't have a primary key
+8. When the new ticket was paid and stored in the database, customer support is informed
+   8a. They need to check the order to prevent bla bla bla
+9. Bla bla bla
+10. The memories from the past projects are so vivid, can't continue writing the specification...</code></pre>
+<p>The example of the specification above is typical Text-only specification. Such specification is cluttered and not easy to read for anyone. Textual form makes it huge, it is hard to find the information and modifying it time-consuming.</p>
+<p>It is very tempting to create such specifications as it is very easy to start with it. You open notepad and in a few minutes process description is born. However how the process grows and gets complicated, analysts starts adding bullet points, conditions, branches, numbering.
+Reading and mainly modifying of such descriptions is pain, which steals time from your reader and yourself.</p>
+<blockquote>
+<p>Our time is valuable enough to create textual specifications</p>
+</blockquote>
+<p><strong> Correction example </strong></p>
+<p>We converted the example of the plane ticket discounts calculation to a decision table. You say what form you prefer.</p>
+<pre><code>   Discounts:
+   - If it is United Airlines and Paypal or Visa is used, customer gets 2% discount
+   - If it is United Airlines and Mastercard is used, customer gets 1.9% discount
+   - If it is Amaerican Airlines and Paypal is used and at least 3 tickets are selected, customer gets 1% discount
+   - If it is Amaerican Airlines and Paypal is used and no luggage is selected, customer gets 1% discount 
+   - If it is Amaerican Airlines and the departure date is 24/12, all tickets customer gets negative bonus -2% discount  </code></pre>
+<p>Decision table:</p>
+<table>
+<thead>
+<tr>
+<th>United</th>
+<th>American</th>
+<th>Paypal</th>
+<th>Visa</th>
+<th>Mastercard</th>
+<th>#Luggage</th>
+<th>Dep. date</th>
+<th>Bonus (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>0</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>24/12</td>
+<td>-2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mixing-abstractions">Mixing abstractions</h2>
+<p>In the previous chapter we demonstrated how analyst go through different levels of detail starting with the process, ending with the data model.</p>
+<p>This separation of detail is natural during the analysis phase as the ongoing analysis uncovers more and more detail of the problematic. This is actually the aim of the analysis to start with a high-level problem and to refine it to artifacts which are understandable, desriptable and implentable.</p>
+<p>What is not natural for many analysts is to keep the levels of detail separated. </p>
+<p>Mixing all information together ends up having jumbo specifications which are not either understandable nor maintainable.</p>
+<p>Apt example of this common mistake is a <a href="http://www.drdobbs.com/use-cases-of-mass-destruction/184415814">&quot;use case of mass destruction&quot;</a>. It doesn't need bo exclusively a use case it can be simply any artifact whose description mix up information from different level of abstraction or details.</p>
+<p><strong> Example </strong></p>
+<p>In the previous example describing ordering plane tickets we also commented on the inappropriate decision to describe it all in the text.
+But it also represents a jumbo use case and clearly demonstrates problems associated with mixing different levels of details and different views on the problematics.
+It describes the process, it also describes user interface details and even low-level implementation details such as interface URLs and integration specifics.</p>
+<pre><code>1. Customer visits the website and chooses "Buy tickets" in the dropdown menu
+...
+3. System searches for the tickets according to the data provided in the search form
+   - System searches for United airlines tickets by calling a service at https://united.com/api/getTickets using GET method
+   - System searches for United airlines tickets by calling a service at https://aa.com/tickets using GET method
+   - The connection is secured using HTTPS protocol
+...
+7. After the tickets are purchased they are stored in the database in the table plane_ticket
+   - Implementation remark: Table "provider" doesn't have a primary key
+8. When the new ticket was paid and stored in the database, customer support is informed</code></pre>
+<p>What such specification doesn't give you:</p>
+<ul>
+<li>Quick high-level overview of the process of buying a plane ticket online</li>
+<li>Understandable description of what is going to be build which is readable even for the stakeholders so that they can comment on it or formally sign off if needed</li>
+<li>Clear software artifacts which would serve as a specification for developers</li>
+<li>Specification which is easy to maintain - iamgine you want to change checkbox Email delivery to a two-state button. You need to change it in wireframe and go through the whole jumbo specification and change it also here. Cruel.</li>
+</ul>
+<p>Instead, it represents almost all previously desribed frustrations plus the new one &quot;Text-only specification&quot;.</p>
+<p>Such specification is cluttered and not easy to read for anyone. Textual form makes it huge, it is hard to find the information you need, readers are distracted by implenetation details, it uses inappropriate approaches, for example  decision table could be used to determine the discount to make it easier to understand and so on. </p>
+<h2 id="tell-me-why">Tell me Why!</h2>
+<p>Sometimes even the precise specification is no use for analysts if the goal of the task is to find out if the specific requirement, process branch or input field is needed.
+We ended up frustrated so many times when the “Why” came.</p>
+<ul>
+<li>Manager approaches an analyst asking why it is not possible to pay for goods on the client’s website via Paypal anymore. There was a end-customer complaint registered and a new project manager on client’s side is desperate</li>
+<li>It is a common feature of our software and it works for all other clients and nobody know why this particular client has the feature blocked.</li>
+<li>This analyst is not responsible for the analysis of this particular client and unfortunately the main analyst responsible for analysis of the issues for this particular client left company month ago and there is still noreplacement.</li>
+<li>Luckily a high-level description of the change was found in the shared folder. It describes in detail what stopping offering payments via Paypal means and what parts of the solution is affected.</li>
+<li>However there is no mention who initiated the change and what was the business need behind it.</li>
+</ul>
+<p>After 2 days filled with frustration on all sides - client PM, vendor PM and analyst, a contact on the owner of the request was found and on the scheduled meeting the reason was finally uncovered.</p>
+<p>If only the company had a list of change requests describing the not only the functionalities but also the business needs and which led to implementing the functionalities.</p>
+<h2 id="auditing">Auditing</h2>
+<p>Let’s be realists, it is not often easy to find out the what is behind the requirement or software artifact. If the application requires user to enter his date of birth it is very rare that it is clear from any document why the application needs it and how it is processed once it is entered.</p>
+<p>But analyst can always ask someone, right?. However, if it is also not possible to identify who is the author of the newly added paragraph, who was the main analyst of the change requests impacting my project then it is very frustrating when our work changes from analysis to puzzle playing. </p>
+<p>If only the changes were audited…</p>
+<h2 id="ms-word-rules-the-world">MS Word rules the world</h2>
+<p>You’re reading a rather well-written system specification. It is stored on a shared disc and it is written in Word. Well, the images are of a bad quality and don’t fit on the screen properly, navigating in the document is inconvenient since cross-reference are often broken in many cases. You also pull your hair off when you need to open multiple documents located on different locations as one of them describes user interface and the other integrations which are called when a button on the user interface is pressed. But still could be worse...</p>
+<p>The hell comes when you are asked to analyse a change request. This requires editing these documents and  collaborating on them them  with another 3 analysts. We all know that it is impossible to effectively collaborate in Word. Discussing the outputs with stakeholders is also pain because after a couple of rounds nobody knows which version is the newest which analyst discussed which version and so on.</p>
+<p>You probably also want to avoid creating purely text specifications as it is a great source of frustration - see above. This means you want to create diagrams, tables, wireframes etc. Including them and formatting them in the documents is bigger time gob TBD than &lt;put your favourite social network/game here&gt;.</p>
+<p>The level of frustration can be lowered by online office tools. Office 365, G Suite and others improve the effectivity rapidly, cleaning up the some of the complaints mentioned above.</p>
+<p>What you realize by the time is however that the frustration never disappears until you get rid off the documents and start creating pages instead.</p>
+<h2 id="diagramsdrawings-with-no-description">Diagrams/drawings with no description</h2>
+<p>Having models which streamline understanding of the problem is great however they might be also a source of frustration.</p>
+<p><strong> Example 1 </strong></p>
+<p><img src="http://www.effective-analysis.com/generated/resources/missing-description-class1.png" alt="aa" /></p>
+<p>This model tells us that there's a Person in our domain having two Contacts. Perfect. But what are the contacts, why exactly two, how do they differ? Who knows.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/missing-description-class2.png" alt="aa" /></p>
+<p>Well, that's better. So the Person has two Contacts, primary and secondary, both are mandatory for each Person and can't be shared between people.</p>
+<p>But what if you are an analyst, first week on the new project, having received a task to study the domain of customer contacts. All other analysts are ill so you go ask developers. Their response is: &quot;Each customer has two contacts, it is called Primary and Secondary contact on the screen where the customer enters contact details. I think it's phone number, both of them, but am not sure. I have to go now, I'm already late for the meeting, bye.&quot;</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer</td>
+<td>A person or a company who has already submitted at least on order in our system</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td>An individual's private or personal information by which another person, business, or entity can use to reach the individual. For customers this represents phone number or email.</td>
+</tr>
+<tr>
+<td>Primary contact</td>
+<td>Prefered contact</td>
+</tr>
+<tr>
+<td>Secondary contact</td>
+<td>Backup contact</td>
+</tr>
+</tbody>
+</table>
+<p>Superb, now it's clear.</p>
+<p><strong> Example 2 </strong></p>
+<p><img src="http://www.effective-analysis.com/generated/resources/missing-description-activity.png" alt="aa" /></p>
+<p>Any idea how the correct phone number should look?</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number format correct?</td>
+<td>Validation succeeds if the phone has this format: XXX-XXX-XXXX</td>
+</tr>
+<tr>
+<td>Save number to database</td>
+<td>Saves the number to table 'phone_numbers' to column 'number'</td>
+</tr>
+</tbody>
+</table>
+<p>Perfect.</p>
+<blockquote>
+<p>It is so frustrating that somebody spent valuable time, created great diagrams which are unfortunately almost useless in the end.</p>
+</blockquote>
+<h2 id="this-should-not-frustrate-you-its-life">This should not frustrate you, it's life</h2>
+<p>You’ve certainly encountered many of the frustrations we have described so far yourself. There are also things in analyst’s life which might look as a source of frustrations but they’re natural things which always be there it is just a matter of approach which dictates whether you can handle them and live with them or if they irritates you every day.</p>
+<p><strong> Changing requirements</strong></p>
+<p>This is an inseparable part of the software development. People always tried to fight them, fixed them and locked them. After decades of fighting analysts found out that they can’t win. Instead, they take it as a natural thing and it became a one of the core principles of the agile manifesto:</p>
+<blockquote>
+<p>Responding to change over following a plan</p>
+</blockquote>
+<p>So it should not be about fixing requirements but rather about taking such approach and use such techniques and tools to be prepared for the changing requirements. Automatization, avoiding duplication and other approaches described in Effective analysis do a great job in handling the changing requirements.</p>
+<p>Many people complain that they hate documentation because the stakeholder ideas, processes, systems etc. change so rapidly that it is hard to keep everything up to date and consistent.</p>
+<p>We hear people crying very often over the documentation.  </p>
+<ul>
+<li><a href="http://agilemodeling.com/essays/documentLate.htm">Document late</a>
+<ul>
+<li>Document only things which are already deployed</li>
+<li>Everything else don't consider documetation and don't insist on the same qiality as the documentation must have</li>
+</ul></li>
+<li>Avoid duplication, <a href="http://agilemodeling.com/essays/singleSourceInformation.htm">single source information</a> 
+<ul>
+<li>If the information is in one place only it is easy to maintain the information</li>
+</ul></li>
+<li>Don’t mix different level of detail
+<ul>
+<li>If the use case description is separated from screen description it's easier to identify the place where the information must be changed</li>
+</ul></li>
+<li>Apply automation
+<ul>
+<li>If artifacts are generated automatically and they partialy correct themselves, documenting is less uncomfortable task</li>
+</ul></li>
+<li>Have solid artifacts
+<ul>
+<li>TBD</li>
+</ul></li>
+</ul>
+<p><strong>Not 100% perfect documentation</strong> </p>
+<p>We need to distinguish between missing documentation documentation which is impossible to read or modify, documentation which includes things which are crucial and are not correct anymore from the documentation which is consistent, easy to follow and useful but doesn’t include every detail. </p>
+<blockquote>
+<p>I can tolerate a map that is missing one or two streets but I can't tolerate one that is missing three quarters of the streets in my town.</p>
+<p>-- Scott Ambler</p>
+</blockquote>
+<p>It is obviously not a problem if the button is red instead of blue or if it is not explicitly said that the default sorting of the table is by the Client name ascending. You simply run the app and see it.</p>
+<p>What is problem though is that you have no idea what the button does, why it is there and from what external system it gets data. You can’t reverse engineer every application, you can’t spend hours looking to the source code or ask developers to find out every time you need it.</p>
+<h2 id="prevent-frustration">Prevent frustration</h2>
+<p>First we should all try to not frustrate other team members, current or anyone joining the team in the future.</p>
+<p>This means to produce consistent, easy to read artifacts which comply with common rules across all products and projects. </p>
+<p>What is that hard on producing high quality specifications and documentations and not spending ages on them? It is just about a couple of rules, educating team and introducing the right tools which make the process effective and automates the common task. It can be so easy and effective you wouldn't believe.</p>
+<p>In the next part of Effective analysis we present practices which leads to lowering frustration and more effective work.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

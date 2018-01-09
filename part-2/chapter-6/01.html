@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="active">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/01.html">
+                                Documentation in different environments
+                            </a>      
+                        </li>
+
+                                                <ul class="submenu nav nav-stacked nav-pills">
+                                                    </ul>
+                        
+                                            </ul>
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="documentation-in-different-environments">Documentation in different environments</h1>
+<p>Although the documentation of common &quot;business&quot; systems should consists of standardized artifacts, techniques and tools so that it is easy to share the knowledge without learning different documentation styles the way the documentation is done is also dependent on the environment you work in.</p>
+<h2 id="from-the-project-point-of-view">From the project point of view</h2>
+<p>First aspect which might influence your approach to documentation is the type of the project.</p>
+<h3 id="developing-new-system---green-field-project">Developing new system - green field project</h3>
+<p>Developing a new product is from the documentation point of view the most straightforward case.
+If there's no prescribed rules of specification issued by the customer the development team is basically free to choose how the documentation will look. This applies both to the system specification and documentation of deployed system.</p>
+<p>The team creates the most appropriate artifacts which are most beneficial for the given type of project and which specifies the system best for the implementation. Example of these artifacts are textual requirements, use cases, business rules and various diagrams.</p>
+<p>However, despite developing the system from scratch it is more than likely that it won't operate in isolation and it will integrate with other systems. It will either use external interfaces or expose its own intrface to the world. </p>
+<p>To keep the documentation of all interfaces consistent the interfaces consumed by the systems need to be described the same way as the internal interfaces. For example if the system being developed calls a service to get the tickets from Paris to New York, the specification must be obtained from the airlines and transformed to the standard interface artifact so it could be used in specification and documentation </p>
+<p>Moreover, these external interfaces might be consumed by multiple products so their specification can't be part of any of these products and should be shared among them.    </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/principles-02.png" alt="aa" /></p>
+<h3 id="developing-new-system-on-platform">Developing new system on platform</h3>
+<p>A lot of software companies don't do custom development from scratch but rather build their solutions on existing platforms. This includes customized versions of popular ERP or CRM systems or building systems on platforms such as Sharepoint or JIRA for instance.</p>
+<p>Regarding requirements in the early stages of the project it doesn't matter if some platform will be used or not because the requirements are independent on the technology.</p>
+<p>However, analytical artifacts are mixed from those provided by the platform and will just be customize and those which will be created from scratch. For exapmle if there is a Contact detail screen in the CRM system which is going to be deployed to the customer and two custom fields will be added to it, the there needs to be a artifact &quot;Contact detail&quot; created in the system specification to mamke it clear what fields in which particular screen the change should be done. The important message is that you  need to partly document the platform functions. But only those parts for which you change its standard behaviour which you reference in your documentation as the standard platform behaviour should be desribed in its documentation provided by the vendor. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-08.png" alt="aa" /></p>
+<p><strong> Custom software multiple deployments </strong></p>
+<p>A specific case of a &quot;platform&quot; can be your company's own product.</p>
+<p>Custom developed software for a customer was a typical green field project. After it was deployed another company approached you with the request for the same software. Of course the implementation will never be 1:1 so the solution needs to be customized more or less. Your product becomes a platform and the documentation approach is exactly the same as if it was external platform. The scope of the documentation is bigger though. Since you company is the owner of the product/platform you need to document it as a whole.   </p>
+<h3 id="modifying-existing-system---brown-field">Modifying existing system - brown field</h3>
+<p>When adding new features or altering existing ones it depends whether the system was developed by the company implementing the change or the system was developed by a third party.</p>
+<p>If the company is modifying system which it developed it can use its own documentation. If it's a third party system the main features need to be mapped and at least artefacts related to the changed parts need to be created.</p>
+<p>In general as far as the documentation is concerned there shouldn't be any difference between the system developed intrnally or a third party system in terms of style, extent and quality of the documentation. If the company wants to build new features to the system it needs the documentation regardless of who is created the system. The documentation can be created in cooperation with the author of the system but it needs to be created anyway.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-09.png" alt="aa" /></p>
+<h2 id="from-the-organization-type-point-of-view">From the organization type point of view</h2>
+<p>Appart from the project type a kind of organization operating the systems influences the of work with documentation. </p>
+<h3 id="software-house">Software house</h3>
+<p>Software development companies aka software houses implement custom developed IT solutions for various entities. These solutions could new systems built from scratch, using a platform, they can modify existing solutions both theirs own or taken over from another vendor or they can just integrate existing solutions.</p>
+<p>For big software companies this means keeping documentation of dozens of systems for different customers each having multiple versions plus documentation of external system and its interfaces which the internally developed communicates with.</p>
+<p>Developing a software for customer can from the documentation point of view mean a documentation duplication as both sides, the vendor and the customer, need to know how the system works and tend to create their own version of documentation.   </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-06.png" alt="aa" /></p>
+<h3 id="internal-it-department-of-an-organization">Internal IT department of an organization</h3>
+<p>Large banks, insurance companies, pharmaceutical companies or engineering companies they all have their own IT departments responsible for operating their systems or even custom development. Such companies operates dozens of systems for various vendors. They are in role of both customer and vendor so it is very common for them implementing projects which impacts systems developed internally and from two or three vendors at the same time.</p>
+<p>For analysts this is quite challenging because analysis involves communication with different entities. Not having a single standardized documentation across the systems therefore implies  analyzing tons of documents, asking dozens of people which turns analyzing activities to detective activities which is both frustrating and time-consuming. Also creating specifications is hard if the artifacts for all systems are not desribed and could not be reused in the specifications.  </p>
+<p>These institutions thus need to manage documentation of their own internally developed systems, systems delivered by the vendor, systems developed using some platform, external systems exposing interfaces etc. There should be a single place listing all applications and their integrations. Each system shoudl have a overview describing its goals, basic functionalities, intergrations etc.</p>
+<p>On top of that, organizations of this size operates in many domains so there should be a solid domain model desrbing the business, products, basic processes, operations etc. Otherwise it is very hard for analysts who are not dedicated to one problem subdomain to switch when new project from different domain starts. </p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-07.png" alt="aa" /></p>
+<h2 id="governors-vs-invaders">Governors vs. invaders</h2>
+<p>There are also two different types of people writing documentation which has a great influence on the quality of documentation. </p>
+<p>First are people who maintain the legacy systems - <strong>the governors</strong>. They work with the system and its documentation on the daily basis and tune it to almost perfection because it has an impact on their day to day performance and comfort. They govern the documentation protecting it from any intruders who might do something wrong with it. </p>
+<p>The downside is that these governors know the system from A to Z and they don't care how the information is documented. It is only important for them that it is documented and since they know the structure and rules of the documentation by heart they don't have troubles find it anywhere in it no matter the form.</p>
+<p>This sreriously impacts newcomers who try to take over the documentation and they feel lost. Governors don't understand how could be possible that the new people can't keep up and work effectively if they can.</p>
+<p>Governors should be trained how to structure the documentation, how to model information systems and they should try to standardize the documentation with governors of other systems so that it is easy to change the camp and start governing another camp very quickly.</p>
+<p>The opposite to governors are <strong>invaders</strong>. They don't care about campsm or villages, they were ordered to invade a teritory and build up a wooden cottage house to test whether it is possible to live in the teritory at all. Deadline in 3 weeks, no plans needed. </p>
+<p>Invaders are teams asked to build a concept or a prototype but quickly. The problem is that invaders conquere the land and leave. The deadline and features have the priority, agile development is an alibi for not documenting anything and in the end the company ends up having a undocumented prototype which survives next couple of years in production.</p>
+<p>The advice here is to plan at least little time for documenting at least high-level information, architecture and decisions so that it is put on paper when it is fresh making the governors' live easier when they take over the teritory.   </p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

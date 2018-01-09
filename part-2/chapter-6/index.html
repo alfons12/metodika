@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-1/index.html">
+                            Overview
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-4/index.html">
+                            Phases and outputs
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-2/index.html">
+                            Concepts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-3/index.html">
+                            Artifacts
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-7/index.html">
+                            Models
+                        </a>
+                    </li>
+
+                    
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/index.html">
+                            Specification vs. documentation
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                                <li class="">
+                            <a href="http://www.effective-analysis.com/generated/part-2/chapter-6/01.html">
+                                Documentation in different environments
+                            </a>      
+                        </li>
+
+                        
+                                            </ul>
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="specification-vs-documentation">Specification vs. documentation</h1>
+<p>When talking about documentation people often don't make difference whether they talk about a documentation (or specification) which will be used as in input for development team or if they mean a system documentation in a sense of reference. Whereas the former is just a temporary material which becomes oudated with the first change made to the sytem, the second is a permanent description of the system architecure and behaviour and needs to be kept up to date.</p>
+<p>Since both types of documentaion serve different purpose they naturaly need to look differently. The system specification is a core material for developers. They need to understand what they're asked to build. </p>
+<blockquote>
+<p>Specification (interim documentation) is what analyst prepare for developers so that they can build the system</p>
+<p>Documentation (deliverable) is where you look when you need to learn what is the deployed system's purpose and how it works </p>
+</blockquote>
+<p>The biggest difference between these two types of documentatin is that the amount of information included in the specification for development is dependent on the software development process. If the team works more in the waterfall style the amount of documentation is obviously bigger (the high ceremony specification). Contrary, agile teams produce significantly less documentation in less formal format (low ceremony specification)</p>
+<p>Documentation of the released system on the other hand is the same no matter what software process was used. If you want to know what interfaces the system exposes or what format has a report R-12 you don't care if the system was developed in classic sodtware process envirinment or in the agile way.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-01.png" alt="aa" /></p>
+<p>This chapter talks about the deployed systems documentation, the amount of it and what it should include. Although the documentation used before and during development activities is also important, the ammount of this documentation is greatly dependent on chosen software development approach, size and collocation of the team, size of the project etc. There are a lot of resources talking about this (TBD AM) which you can read.</p>
+<p>The after-deploy documentation is less dependent ...</p>
+<h2 id="understand-that-you-need-a-documentation">Understand that you need a documentation</h2>
+<p><strong>1. Project finishes, product lives</strong> </p>
+<blockquote>
+<p>People come and go on project teams, and of course the product continues to exist long after the development project is done.</p>
+</blockquote>
+<p>Analytik už tady není, půlka businessu už tam není, ostatní sou už přetížení a otrávení…  (viz introduction)</p>
+<p>je drahe zaucit noveho cloveka</p>
+<p><strong>2. Record it when you know it</strong> </p>
+<blockquote>
+<p>We believe the cost of recording information is small compared to the cost of acquiring that information.</p>
+</blockquote>
+<p><strong>3. People don't remember everything</strong></p>
+<blockquote>
+<p>There is considerable merit in creating a persistent group memory in written form because human memories are incomplete, are inconsistent, and decay with time.</p>
+</blockquote>
+<p><strong>4. People are not available all the time</strong></p>
+<ul>
+<li>kdyz je to pet lidi na webu tak mozna ne..ale v bance, kazdej rika jak nema cas a furt se ptat zdrzuje.mrknu a vidim</li>
+</ul>
+<p><strong>5. Relationships as part of the documentation</strong></p>
+<p>Documentation is not just processes, artifacts and diagrams. To be effective analysts we need also relationships which tell us what dependencies we need to deal with, what impacts our proposed changes might have on the current systems and the organization in general and what entities are important to us when performing a change.</p>
+<p>With the growing trend of adopting agile practices teams finally learn to stop creating huge specifications which are not read by anybody, they start using collaboration online tools for both writing and modeling, create lightweight sketches instead of perfect standard-compliant UML monsters etc. So far so good.</p>
+<p>Unfortunately, agile documentation often confuses the analysis phase with the documentation phase after the release. If you’re in the agile environment and your team consists only of great t-skilled professionals able to manage the project without tracking relationships then it is great and you’re all be very effective. It is obviously faster to draw a sequence diagram accompanied with some basic notes than a fully-fledged UML diagram. If you’re agile, you don’t need to use the fully-fledged version because you communicate more, you tell developer how it should work and it is very likely that you do have nothing more than just a photo of the sequence diagram drawn on the whiteboard in the meeting room.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-04.png" alt="aa" /></p>
+<p>However, when documenting the system with only such “drawings” you lose a lot of beneficial information. The model is not just the rectangles and lines, the true value lies in the relationships behind.
+So even if you use lightweight tools for analyzing software projects, and it is highly recommended to do so, the documentation should be more heavyweight. The documentation should be able to tell the dependencies, connections, impacts.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-05.png" alt="aa" /></p>
+<h3 id="agile-traps">Agile traps</h3>
+<p><strong>&quot;Working software over comprehensive documentatione&quot;</strong></p>
+<p>To get an idea what we think when we are told &quot;Documentation? No, just read the code... it's all pretty straightforward.&quot; see <a href="https://www.twitter.com/jakevdp/status/847859811823767552">this tweet</a></p>
+<p>Analysts and developers having started adopting agile approaches got to like one of the Agile manifesto statements saying 'Working software over comprehensive documentation' and got impression that it means that from know the less documentation they write the better because the code is the single source of true and no duplications and incosistenciees can occur.</p>
+<p>They can't be farer from truth and it is nothing which is worth following. Of course, it depoends on many aspects but if you work on a at least mid-sized project, integrating a couple of applications, neither cna ypu have all the systems ready for debug on your machine nor but above all you don't have time to do it. This is true for both the specifications and documentations.</p>
+<p>Do you think that car mechanic disassamble the engine when he wants to change something before he orders the parts? Or do you think that somebody goes through the whole power plant to check what pipes go from the generator when it needs to be fixed? Well, no. It is more comfortable to open a model and get the information instantly even at a price of higher effort during the development.</p>
+<blockquote>
+<p><strong>Mam kamarada co dela projektanta v jaderce, pak to vsechno dokumentuje podle realizace.. my nejsme elektrarna, ale stejne jak oni chteji vedet, kam vede potrubi, aniz by tam chodili (drahe), tak my
+chceme vedet, jake rozhrani se vola, aniz bych se podival do zdrojaku (drahe)</strong> </p>
+</blockquote>
+<p>Also, the less documentation you have during development, the less of it is left afer deployment. So it is common that on agile project you are likely to find no documentation whatsoever.
+We like agile, we consider ourselves agilists but this misunderstanding caused by agile manifesto is really dangerous and have cost organizations a lot of money already.</p>
+<p>Last but not least, code will not give you the helicopter view.TBD</p>
+<ul>
+<li>We have been using the practices and principles of Agile Modeling with our software development team and found that the most important role of models is to visually communicate the “Big Picture” or the “Bird’s-eye View” of the system design, which is difficult to accomplish via code alone</li>
+</ul>
+<p><strong>&quot;The primary goal is to develop working software not to write documentation&quot;</strong></p>
+<p>How many times we've heard this. This frequently used alibi to not write specification and documentation properly is completely out of context. We've already mentioned that the project doesn't end with release and maintaining and extending the solution is equally important as its development. </p>
+<p>It is very nicely put by AM and we couldn't agree more: </p>
+<p><em>Working Software Is Your Primary Goal</em> </p>
+<p>Te goal of software development is to produce high-quality working software that meets the needs of your project stakeholders in an effective manner. The primary goal is not to produce extraneous documentation, extraneous management artifacts, or even models. Any activity that does not directly contribute to this goal should be questioned and avoided if it cannot be justified in this light.</p>
+<p><em>Enabling The Next Effort Is Your Secondary Goal</em></p>
+<p>Your project can still be considered a failure even when your team delivers a working system to your users – part of fulfilling the needs of your project stakeholders is to ensure that your system robust enough so that it can beextended over time. As Alistair Cockburn likes to say, when you are playing the software development game your secondary goal is to setup to play the next game. Your next effort may be the development of the next major release of your system or it may simply be the operations and support of the current version you are building. To enable it you will not only want to develop quality software but also create just enough documentation and supporting materials so that the people playing the next game can be effective. Factors that you need to consider include whether members of your existing team will be involved with the next effort, the nature of the next effort itself, and the importance of the next effort to your organization. In short, when you are working on your system you need to keep an eye on the future.</p>
+<h2 id="understand-that-you-need-good-documentation">Understand that you need good documentation</h2>
+<blockquote>
+<p>Bad documentation is worse than no documentation</p>
+</blockquote>
+<p><strong>Starting point</strong>
+The main requirement is that it must have a clear starting point.  It should be clear where you should start reading. Each entity such as project, system, domain should have a “homepage”. If somebody tells you that you should read something about claims because you’re likely to work on a claim project soon it shouldn’t take you much time to find it.  Ideally it should be a matter of typing “claims” to a search box.</p>
+<p>TBD obrazek vysledek hledani OVW Claims a PROJ Claims</p>
+<p><strong>Depth</strong>
+Next, the documentation should be layered and interconnected both it depth and in breadth. If you start reading about Claims you should be able to navigate from high-level introductions to more detail, from high-level descriptions to concrete screens where the process steps are performed for example - if this is documented of course. </p>
+<p>Similarly, Claims don’t exist in isolation so they are part of other processes. This means that very often you need to understand also the impacted processes, systems, people etc. Although they are documented by other people, it should have at least similar format following  the same standards so it is easy to navigate to it and understand it.</p>
+<h2 id="how-much-documentation">How much documentation</h2>
+<p>In the dream world we would document everything what was implemented from high-level features to the very last detail, we would also document all business processes involved, all business terms etc. and we would keep everything up to date as the reality changes. However, the reality is that the buddgets are low, deadlines are tight so we need to use our time wisely.</p>
+<p>So what is the compromise here? Most of the IT experts agree that the high-level rather permanent aspects should be captured alongside with the motivation for the decisions (the Why TBD). </p>
+<p>This will enable new people to understand the problem (domain, project, systems etc.) quickly without getting lost in the detail and since this information will not change frequently it will also not require much effort to keep it up to date.</p>
+<blockquote>
+<p><em>So, I think that a good starting point consist in thinking of your documentation more like something that you may use to introduce new developers to your project than an over detailed description of the inner workings of your software.</em></p>
+<p><em>Essentials are very useful and can be managed easier, details are only sometime useful and difficult to manage</em></p>
+<p>-- from the internet</p>
+</blockquote>
+<p>But what exactly is high-level or essential? From the newcomer’s point of view it is an easy to read summary. It might be explaining business process, business domain, project, system or application and it serves as a glue which keeps all the relevant information at one place, or to be precise linked to one place.(TBD practice coherence). They are also kind of “warm ups”. You need to first warm up you readers, put them in context and introduce the problem before diving into the details, listing artifacts and so on. It is also proved that there is a significant number of people who are unable to understand details if they don’t understand the big picture, motivation, context.</p>
+<p>We call such high-level essentials the Overviews. </p>
+<h3 id="overviews">Overviews</h3>
+<p>If you are introduced to a new project dealing with Claims, you should be able to find very quickly following overviews:</p>
+<ul>
+<li>Project overview - what is the goal and scope of the project</li>
+<li>Claims overview - what is the whole domain about including its business terms and relationships, what are the main processes</li>
+<li>Systems overview - which systems are involved in the flow, what are the core tasks and what users and user roles perform the tasks, how are the systems integrated to other systems
+If you look for a system overview you might be interested in </li>
+</ul>
+<p>For each system referenced in Systems overview you should be able to get high-level information about:</p>
+<ul>
+<li>&quot;Architecture&quot; of the system for the team to get a rough idea of the whole system structure.</li>
+<li>&quot;Domain Model&quot; to help the team to understand the concepts used in the problem domain.</li>
+<li>&quot;Key Use Cases&quot; to understand the typical users of the system, and how they benefit from the system.</li>
+</ul>
+<p>Overviews have its place both in analysis and in documentation. In both phases of the product lifecycle they need to understand the problem smother and in more comfortable way without long time-wasting workshops.</p>
+<p>The overviews are also the best place (but definitely not the only one) for including the whys (tbd practice) so they should include motivations, historical decisions which influence current state and behind the scenes information which help people to understand the context.</p>
+<blockquote>
+<p><em>I think the most important things to document are the decisions. This goes for everything from requirements to architectural choices.</em> </p>
+<p>-- from the internet TBD</p>
+</blockquote>
+<h3 id="more-details">More details</h3>
+<p>While the overviews are great helpers for all team members, both current and future, on most projects they are simply not enough. Documenting only facts which are not likely to change frequently is great in terms of not rewriting the documentation very often however it will not give you answers you need.</p>
+<p>If you say that clicking the button “calculates a product discount” it is true, it will not change much but does it help you understand what it really does without looking into the code? Even if you know C# code, and you find out how the discount is calculated, how do you know the context? Who is the business owner of the discount calculation algorithm? Whom should you ask if the algorithm will be valid even in the next calendar year? Is the algorithm used also in any other system?  And what if you work on a project impacting 5 different systems, are you going to learn 5 different programming languages, pull the code from repository and start digging what the buttons do?</p>
+<p>Systems need to be documented in more detail that just using overviews. But where is the line between useful and over-documented? Even though we’ve always tried to give concrete advices , in this case it really depends. Despite we can’t say what level of detail should be documented we are able to draw the line by telling you what should not be documented.</p>
+<ul>
+<li>You should never put source code into documentation. It is ok to document that the list of cars is retrieved from the table “Cars” but don’t put the actual SQL Select statement into the documentation. </li>
+<li>You should not work with the physical data formats. XMLs, JSONs and similar formats have their own languages for describing the data. Analysis and documentation should only work with abstract representations. TBD obr XML car vs. class Car</li>
+<li>You should not draw pixel perfect screen designs unless you’re a designer. During analysis use some wireframe/mockup tool or even just hand-drawn sketch. In the documentation include the real-world screenshot.</li>
+</ul>
+<h3 id="requirements-and-documentation">Requirements and documentation</h3>
+<p>Software requirements help analysts understand what capabilities the solution should have. The problem is that requirements simply don't document deployed system, they are here to help analysts understand what the system should do. System specification consists of requirements and of more or less worked out artifacts whose amount depends on the chosen software development process. Documentation on the other hand constitutes merely from the artifacts. After the system is deployed you are no longer interested in the information that &quot;List of customers shall be sortable by its name&quot;. You need to know that after clicking on the Name column in the customers table, it gets sorted by the this column.</p>
+<blockquote>
+<p>Software requirements tell you what needs be built. Documentation tells you what has been built.  </p>
+</blockquote>
+<p>This implies the need to desribe the artifects making up the system after deploying the system supposing that you plan to use, modify and extend the delivered solution.</p>
+<p><strong> Use cases and documentation </strong></p>
+<p>Use cases became one of the most popular techniques for requirements elicitation and analysis. The concept of use cases and its structure were created to be effective in the phase of requirements analysis, to manage the amount of information, to break the whole into more convenient smaller parts and to discover the main system goals.</p>
+<blockquote>
+<p><em>Use case analysis is an important and valuable <strong>requirement analysis</strong> technique.</em></p>
+<p>-- wikipedia TBD</p>
+</blockquote>
+<p>However, we see a lot of teams using them also as a documentation artifacts after the system is deployed to production. Since they represent requirements therefore the same as described above for requirements in general applies for use cases, user stories and other requirements engineering techniques. </p>
+<p>However, you still need to know the main system features after it’s done and deployed. But it should not be done using requirements and should be included in the system overview part of its documentation.</p>
+<p><strong>Example - Restaurant Ratings &amp; Reviews Application</strong></p>
+<p>Use case <em>Create restaurant review</em></p>
+<ol>
+<li>User searches a restaurant by selected criteria</li>
+<li>Systems displays restaurants according to the search criteria</li>
+<li>User selects one restaurant and opens restaurant detail</li>
+<li>User enters rating and review and saves it</li>
+</ol>
+<p>If you don’t know anything about the application you’re asked to build you start with this very high level scenario to get a basic idea what the customer tries to achieve. It sets a contract with the customer what the application should be capable of.</p>
+<p>But the use case is not sufficient itself because it doesn’t give you enough details. So you add additional requirements to it:</p>
+<ul>
+<li>It will be possible to search restaurants by restaurant name or in the selected region in the map</li>
+<li>Searching will take into account the selected city - if the user selected a particular city before searching only restaurants in this city will be shown</li>
+<li>Restaurant detail will include its name, address, website, phone and rating</li>
+<li>Rating will be on the range 1 to 5 stars, 5 is the best</li>
+</ul>
+<p>Then you start designing the solution and creating more detailed artifacts such as screens mockups, data structures, interfaces etc. Finally you build the app, push it to the application store and get paid from the customer. </p>
+<p>Now you need to create a documentation so that if the customer decides to change you for another vendor you won’t look like a garage company creating a software having a quality of a high school project.</p>
+<p>What is a great source of information and is worth keeping is the use case main scenario. It gives a high-level description of the functionality, it represents information which can’t be get from anywhere else and since these use cases are the core of the application they are not likely to change often so keeping them will not mean a big overhead for your team.</p>
+<p>On the other side, there are other low-level functionalities associated with the use case such as &quot;Restaurant detail will include its name, address, website, phone and rating&quot;. This functionality is covered by the screen artifact and keeping it in text form will duplicate it and will require an additional effort when it is changed.</p>
+<p>Another example is &quot;Rating will be on the range 1 to 5 stars, 5 is the best&quot;. Even though this information is kept under the use case, in documentation the best place to put it is the overview. It is a general rule and we would like to read about it in the introduction. Yes, it will duplicate the information and if the client changes the mind and replaces 5-star rating with only 3-star, it would need to be changed in the screen documentation and in the overview as well. That’s the price to pay for the fact that the overview can sometimes duplicate information for the sake of providing a readable introduction.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-02.png" alt="aa" /></p>
+<h2 id="user-interface">User interface</h2>
+<p>In most cases final design of the system is tuned throughout the whole project and is not finalized until its late stages. It is also common that analysts don’t work with graphic design at all since a “graphic manual” is created and the graphic standards (colors, fonts, backgrounds) are applied only by developers. This is why the system functionalities, especially use cases, should be written in neutral form, independent of UI design because not following this rule would mean rewriting the specification every time the design changes.</p>
+<p>Therefore, you shouldn’t spend much time playing with wireframes during analytical activities. Choose the approach which is both easy to use yet effective for you, readable for your stakeholders and provides enough detail for developers so that they can build the system. It may be anything from simple hand-drawn sketches, through Excel tables representing forms used very often in business applications to sophisticated wireframes tools such as Azure which allows you simulate the behaviour including page transitions, data mocking and animations.</p>
+<p>After the system is deployed a lot of teams try to keep the screen models and use them when modeling some change to the screen. This is as bad idea as keeping and updating the textual requirements after deployment. Remember that you have a production version of the system, you know exactly how the screen looks, so just capture the screenshot, highlight the change, have the new version built and update the documentation with the current production screenshot. Synchronizing the wireframe with the production version requires effort with no effect.</p>
+<p>Attaching a screenshot to the screen documentation is perfect to learn the system because newcomers are not familiar with the terminology yet and it’s great for them to identify the part of the system visually - “Oh yes, this is the screen I was shown yesterday.”</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/analdoc-03.png" alt="aa" /></p>
+<h2 id="change-requests">Change requests</h2>
+<p>When developing a system from scratch you’re in charge of following the practices to make your analysis effective such as writing proper requirements and creating quality artifacts.
+If you’re lucky to work on a change request for a system you or your team developed you have solid documentation and the workflow is straightforward:
+TBD Obrazek zadani, specka, dokumentace, cr zadani, specka, udpate dokumentace</p>
+<p>The important note is that the documentation always reflects the current state of the system. This implies that the change request specification is created isolated from the documentation, no artifacts describing the current state are not changed during the change request analysis
+and the documentation is updated not until the change request is deployed to the production version of the system. </p>
+<p>Example: When assigning a task to a new assignee, system will first verify that assignee is in the group “A12”. Currently, there’s no such check in place.</p>
+<p>Analyst learns that the only place where the tasks are assigned is a button “Assign” on Screen “Task list”. He reads that the button “Assigns task to the selected user and sends an email notification to the assignee.” Analysts updates this scenario, describes that the check is performed and that a warning is displayed to the user if the check was not successful.</p>
+<p>After the change was developed, analysts updates the production documentation. This is partly a copy paste work unfortunately. The documentation system records that the change to the documentation was done by this particular analyst so that it will be easy in the future for anybody to find out who performed the change to the documentation. Analyst also creates a relationship in the repository between the change request and the screen affected so that it will also be easy easy to find out why the documentation was changed, what was the requirements and other details such as who was the business owner driving the change etc.</p>
+<p>It is worth noting that use case or any other form of requirements are not needed here. To implement such change analyst needs just to update the button behaviour. Updating any other artifact would be needless overhead. It would be great to mention this check in appropriate overview at most.</p>
+<p>As you can see, having such documentation makes the change easy to perform easy to track.</p>
+<h2 id="user-manual">User manual</h2>
+<p>Another type of documentation is a user manual. This is not always required but if you’re asked to deliver it, remember that it is neither a system specification nor a documentation. Both artifacts are written from the IT delivery team point of view and include implementation details which are not useful to users such as diagrams for exmaple. User manuals are created for users so that they know how to work with the system as is created on top of the documentation not instead.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

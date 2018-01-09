@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="active">
+                    
+                                                               
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/01.html">
+                            State of the system analysis
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/02.html">
+                            Importance of the analyst
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/03.html">
+                            Analytical minimum
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/04.html">
+                            Frustrated analyst
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="state-of-the-system-analysis">State of the system analysis</h1>
+<p>Začít zesiroka co je analýza.... Analytici se nevzdelavaji, naučí se co je UC, někde už viděli scr a zdar.. Není žádné analytické minimum! = &gt; neni teorie, jen BA teorie</p>
+<p>Navic ani neexistuji nastroje.nekdo dela formalne requirementy, nekdo dela formalne  use casy..jak provazat, co obrazovky, jak volani sluzeb, traceability atd atd</p>
+<p>motivace</p>
+<ul>
+<li>co je na tom tak složitého, že se v tom musím vždycky tak dlouho plácat</li>
+<li>vždyť je to deterministické, není to gamesa, real time system, ani neuronová síť</li>
+<li>jen obrazovky, data, vstupy, vystupy, pořád dokola</li>
+<li>staci tak malo a mam vse hned.. vidim funkci, vim kde se to zadava, vidim validace, vidim kam to ukladam, vidim proc to v aplikace je a kdo to chtel</li>
+<li>tak to pojďme dělat jako lidi</li>
+</ul>
+<blockquote>
+<p>Computer system analysis is like child-rearing; you can do grievous damage, but you cannot ensure success</p>
+<p>-- Tom DeMarco</p>
+</blockquote>
+<pre><code> Proc to cele delam, pisu:
+
+    analyza je obsahla disciplina - pozadavky, uc, domenak, uml, databaze, procesy, soft skills
+    strelec vs. spravce - ruzne typy prace
+        http://honzajavorek.cz/blog/kolonizatori-a-spravci-kolonii
+    nedelam porad se vsema nastrojema a je tedy tezke se v tom zlepsovat a zazit si navyky
+    proto je dulezite z kazde casti mit zakladni pilire, ktere dodrzuju a vim je i kdyz me vzbudi o pulnoci :-)
+    chceme vse jednotne - nemuzu mit nekde Logika konektoru, nekde zase Popis konektoru - musi byt pravidla
+        mám sekci Administrace - Ciselniky..a pro jeden z nich v poznamce, ze cisleniky modulu XY jsou v samostatne analyze jinde..kurva proc? nastavim pravidla tak pak podle nich jedu
+        tak jako v kodu jsou code review, tak i tady v analyze musi byt
+            ale http://agilemodeling.com/essays/modelReviews.htm .. zas s nim nesouhlasim, mam juniory, nekteri neznaji nasi metodiku atd. A argument ze metodiku nemame, ze sme vsichni dobri a agilni, takze pouzijeme to co umime, to at si necha na koledu
+        nejlip kdyz je jeden co na pul uvazku dela tyto checky..nejaky senior…na malych projektech ne, ale od 5 tis MD to musi byt
+    v EA jsou k tomu požadavky a někde na disku Z bude ve složce Tomasovo piskoviste schvalena specifikace těch reportů - you never ever want to work in such a mess..so dont create it..</code></pre>
+<p>Videl sem hodne talentovanych analytiku, dricu, co vsechno rozmysli a managuji, ale kdyz nevi, jak to zaznamenat, strukturovat, jejich usili jde v nivec</p>
+<p>Business analyst is project driver. Sets the scope etc. PM is dependent oh BA's outputs. Successful BA is the keystone of successful project management - Spatne rizeni projektu,
+nikdo nevi rozsah - sekce „Proč potřebuju artefakty“. Mít krabičky!!! </p>
+<p>Je strasne drahy prijmout noveho analytika.nez se vsechno nauci. Protoze nema nikde ta overview, aby se odpichl. Nikde nema dokumentaci tlacitka, odkud se tahaji data,
+nema konkretni specifikaci rozhrani atd.</p>
+<p>3 stadia</p>
+<ul>
+<li>neni dokumentace</li>
+<li>je lživá</li>
+<li>
+<p>je lživá a tragicky strukturovaná</p>
+<ul>
+<li>Lepsi je kdyz neni. Neni nic vic frustrujiciho nez kdyz ti reknou podivej se do dokumentace a vidis ty sracky.</li>
+</ul>
+</li>
+<li>but we want to setup concepts which will help you come closer to the success</li>
+<li>why we cannot ensure success?
+<ul>
+<li>Software development is inherently complex. Keep things as simple as you can while still delivering successfully - ambler</li>
+<li>Ambler - &quot;One size does not fit all.&quot;</li>
+<li>wiegers - As with so many aspects of requirements engineering, there is no simple, perfect solution to managing business rules that works in all situations</li>
+<li>but no matter what methodology you use (rigorous, agile, etc.) there are key pillars of system analysis which should be built
+regardless the methodology. We saw many analysis outputs and bad..</li>
+</ul></li>
+<li>Every individual is unique. People are not replaceable parts. Each person has a different background, different preferences for the way in which they work,
+<ul>
+<li>and different cognitive style (e.g. are they visual or textual thinkers?). An approach that works incredibly well for you might be impossible for me to grasp, and vice versa.</li>
+<li>to sice jo, ale kurva aby nekdo popsal proces na 4 A4ky pac je „psavej“? :-) </li>
+<li>priklad viz IPS dat</li>
+</ul></li>
+</ul>
+<p>Jednotny pristup</p>
+<ul>
+<li>Single Source Information. Information should be stored in one place and one place only. In other words, not only should you apply the right artifact you should also model a concept
+once and once only, storing the information in the best place possible. When you are modeling you should always be asking the questions
+&quot;Do I need to retain this information permanently?&quot;, &quot;If so, where is the best place to store this information?&quot; and &quot;Is this information already captured elsewhere that I could
+simply reference?&quot;. Sometimes the best place to store information is in an agile document, often it's in source code. </li>
+<li>The primary challenge with traditional single sourcing is that it requires a fairly sophisticated approach to technical documentation.
+This is perfectly fine, but unfortunately many organizations aren't yet able to achieve this vision and find that they need to back away from the approach.
+This doesn't mean that you need to throw out the baby with the bath water: <strong>you should still strive to normalize all of your software development artifacts</strong>. </li>
+<li>
+<p>When you are modeling you should always be asking the questions „Do I need to retain this information permanently?“, „If so, where is the best place to store
+this information?“ and „Is this information already captured elsewhere that I could simply reference?“.</p>
+</li>
+<li>
+<p>But the basic point is that, the same requirements values, principles, and practices are equally applicable to any software project when thoughtfully adapted, scaled,
+and timed so as to enable the project to achieve its objectives. That’s why we just don’t get the idea that “agile requirements” are somehow different and special.</p>
+<ul>
+<li>je jedno, jakou meodiku, co rikam funguje vsude</li>
+</ul>
+</li>
+<li>
+<p>vsichni rikaji, mejte lehkou dokumentaci - ale co do ni dat..vsichni te nauci ze mas mit bus proces model, ale uz ti nereknou co rict sefovi kdyz se zepta, kde se
+tento krok dela…a k cemu je mi log. model, kdyz muzu rovnou bouchat tabulky? a kdyz ho udelam, co pak s nim? ….k cemu je use case, ale ten nidky nestoji sam, jak ho propojit,
+aby hledani a prace byla efektivnejsi..we need to connect the dots….a vy se topite a ptate se HOW.. jake nastroje, jake modely, atd. Jak kosticky mezi sebou pospojovat atd.</p>
+</li>
+<li>
+<p>IT je jednoduche, vse je deterministicke, proc to pusobi komplexne je protoze lidi smichaji vse dohromady..kdyz si udelas views tak je vse pevne dane, udelas si mezi
+nimi vazby a vypadnou ti diry..easy urcite ted sedite v korporaci, nemate info a cekate az vam vsichni info daji a jste frustrovani…nepomuzu vam ted hned ale reknu vam
+jak to delat aby ostatni byli min frustrovani a bylo to v cajku</p>
+</li>
+<li>It interesting to observe that when an agile team is made up of generalizing specialists, or at least people striving to become so, and when they are actively trying
+to do the best job possible, that the best place to store information often proves to be your source code.
+<ul>
+<li>kdyz se klienta zepta, kdy se zobrazi tohle tlacitko, tak mu to urcite reknu z javadocu :-D .. to je vuuul..ano, bude argumentovat Fitnessem a business driven developmentem..ze se podivam do testu co to ma delat…ale sakra, to je ideal world, pokud to tak mate, jste happy, v praze to tak nefunguje :-D</li>
+</ul></li>
+</ul>
+<p>For real-time or embedded systems the core diagrams are typically UML state machine diagrams, UML communication diagrams</p>
+<ul>
+<li>tady se bavime jenom o business aplikacich</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

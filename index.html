@@ -4,19 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Effective System Analysis</title>
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
 
-        <link rel="stylesheet" href="https://alfons12.github.io/metodika/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://alfons12.github.io/metodika/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://alfons12.github.io/metodika/css/highlight.dark.css">
-        <link rel="stylesheet" href="https://alfons12.github.io/metodika/css/main.css">
     </head>
     <body>
 
         <header class="navbar navbar-default navbar-fixed-top">
 
-            <a class="navbar-brand" href="https://alfons12.github.io/metodika/">
-                Effective System Analysis
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
                 <small class="hidden-xs hidden-sm">
                      
                 </small>
@@ -34,15 +35,35 @@
 
             <ul class="nav nav-pills nav-stacked">
                                 <li class="active">
-                    <a href="https://alfons12.github.io/metodika/index.html">
-                        Index
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
                     </a>
                 </li>
                                 <ul class="submenu nav nav-stacked nav-pills">
                                     </ul>
                                                 <li class="">
-                    <a href="https://alfons12.github.io/metodika/metoda/metoda.html">
-                        Metoda
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
                     </a>
                 </li>
                                             </ul>
@@ -50,65 +71,127 @@
         </nav>
 
         
-                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
-                    <h1 id="couscous-light-template">Couscous Light template</h1>
-<h2 id="usage">Usage</h2>
-<p>To use the template, set it up in your <code>couscous.yml</code> configuration file:</p>
-<pre><code class="language-yaml">template:
-    url: https://github.com/CouscousPHP/Template-Light</code></pre>
-<h2 id="configuration">Configuration</h2>
-<p>Here are all the variables you can set in your <code>couscous.yml</code>:</p>
-<pre><code class="language-yaml"># Base URL of the published website
-baseUrl: http://username.github.io/project
-
-# Used to link to the GitHub project
-github:
-    user: myself
-    repo: my-project
-
-title: My project
-subTitle: This is a great project.
-
-# The left menu bar
-menu:
-    items:
-        home:
-            text: Home page
-            # You can use relative urls
-            relativeUrl: doc/faq.html
-        foo:
-            text: Another link
-            # Or absolute urls
-            absoluteUrl: https://example.com</code></pre>
-<p>Note that the menu items can also contain HTML:</p>
-<pre><code class="language-yaml">home:
-    text: "&lt;i class=\"fa fa-github\"&gt;&lt;/i&gt; Home page"
-    relativeUrl: doc/faq.html</code></pre>
-<h2 id="menu">Menu</h2>
-<p>To set the current menu item (i.e. highlighted menu item), set the <code>currentMenu</code>
-key in the Markdown files:</p>
-<pre><code class="language-markdown">---
-currentMenu: home
----
-
-# Welcome</code></pre>
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="introduction">Introduction</h1>
+<p>The Effective Analysis provides a set of techniques, guidelines and tools to help analysts on IT projects to have a deeper understanding of what is their responsibility, what is the recommended approach to proceed with the commom analytical tasks and to have a confidence that the techniques they use are appropriate for the particular project and environment they work in.</p>
+<p>Although it introduces many original approaches to the analytical tasks its main value is in agregating the current knowledge and practices provided by other sources, filtering only what has been proven as working and demonstrating it on real examples on various types of projects, environments and organization types and sizes. </p>
+<p>There are a lot of excellent resources such as AgileModeling.com, Sowftware requirements book, UML and Unified Process or BABOK Guide.
+Each of them represents a slightly different view of what we generally call analysis in terms of IT projects.</p>
+<p>We suggest to read all of these materials because they give a solid knowledge of what the role of analyst covers and they all come with principles and techniques which are essential arsenal of all analysts. </p>
+<p>There are a couple of problems with all these resources though.</p>
+<p>First, despite being great all the books and articles require analysts to spend significant amount of time studing. Even though there are a lot of very motivated analysts which invest big effort to improve their anlaytical skills we also know that on many projects analyst is scarce goods and development team suffers by implementing according to analysis of a poor quality done by developers or testers who were given a short training &quot;How to do analysis with use case and class a diagram&quot;.
+Effective analysis should serve also as a quick overview of what is analysis, what are its main pillars, what are the analyst's responsibilities, what outputs they typically provide and what are the recommended approaches to make everybody's life on project easier - stakeholders will understand what the team is going to built and developers will understand what should be built.       </p>
+<p>Second, they are great each on its own, independently. The analysis is rather complex though and analysts need knowlege from all of them simultanously. However, there is no link between them.</p>
+<p>Third, they don't show readers how to use the principles and techniques in everyday life. They provide readers with templates and basic examples however they are mostly just illustrative and don't scale for enterprise environment.   </p>
+<p>We are more than aware that the pimary reason for not providing the specific guidelines how to implement the rules in real life is that the analysis is not done the same way in any two organization, teams and even on any two projects. Analysis is more of an art than a science a in analysis more than in any other discipline, there is no one-size-fit-all approach.</p>
+<p>These resources need to be applicable not just now but also in the furture so they present general approaches and principles and it is let on each team how they implement it to fit the needs of their organization or client.  </p>
+<p>Our aim on the other hand is to provide a cookbook which is sufficiently genereal to cover most of the scenarios analyst migh get into but in the same time is focused on how to proceed with concrete tasks on concrete project types in various project phases.   </p>
+<p>However, there is a moreorless finite number of project types e.g. implementation of legal requirement in a company, implemention of a new information system in a company or implementation of change the client requested for their system. Even projects of the same typology can greately differ but they always share something which is same, their nature.</p>
+<p>You can forsee what outputs will be needed, how you will probably communicate and with whom or skills will you need most on each type of the project.</p>
+<p>What is also typical for many resources tackling analysis is the statemant &quot;this depends on the project&quot;. Is it certainly true but Effective analysis tries to avoid and rather provide reader with a solution for most common scenarios. </p>
+<p>To sum it up, the goal of Effective analysis is to provide introduction to analysis discipline, show the main pillars which apply across various types of projects in various types of organizations and to show how the concepts might be implemented in the real world on real projects.</p>
+<p>It will become especially benefficial for teams or organizations where analysis is not managed at all, where analysts do the job the best way they can but have not TBDundergo any training and have no guarantee that the approach which is common in the organization is the best one.</p>
+<p>This was also a main motivation behind the Effective analysis. Unlike development which has its own best practices, methodologies and automation tools, analysis is in its infancy &quot;do it the best way you can&quot; phase.</p>
+<p>Our goal is to give analysts comprehensive yet easy to digest cookbook to give them confidence that the approach they've chosen have already worked in some big organization. </p>
+<p>On top of that, we come with tools for automting most common tasks and make analysts more efficient than before.</p>
+<p><img src="http://www.effective-analysis.com/generated/resources/bapm.jpg" alt="aa" /></p>
+<p>A project manager (PM) approaches a system analyst (SA) on a big project and asks.</p>
+<p><em>PM: &quot;We had a status meeting with our key stakeholders and I couldn't answer their question how we calculate the <strong>fee</strong>
+when the client is due with the payment for the service. The project gets bigger and bigger and I can't remember such details. Can you?&quot;</em></p>
+<p><em>SA: &quot;Mmm, this was analyzed by Mike which has already left the company. I heard that the requirements are of a poor quality. Let me check...&quot;</em></p>
+<p><em>SA: &quot;Got it. The requirement FR.039 states that 'Penalty fee for the late payment is calculated automatically. The algorithm is included in the overall calculation spreadsheet on the disk O:\'&quot;</em></p>
+<p><em>PM: &quot;Good job. Can you find the algorithm in the spreadsheet please?&quot;</em></p>
+<p><em>SA: &quot;The rule in the spreadsheet states that the fee is calclated like 0.5% from the price for the service and is calculated every day. The bad new is the spreadsheet was used during our requirements workshops and hasn't been updated since.&quot;</em></p>
+<p><em>PM: &quot;How is that possible?&quot;</em></p>
+<p><em>SA: &quot;The requirements were written by the business analyst. These requirements were then transformed to use cases by another analyst. After an hour of searching I found
+the right use case. It was named Calc <strong>penalty</strong> so it wasn't easy to identify it. It says the fee is 0.6 percent.&quot;</em></p>
+<p><em>PM: &quot;Ok, thanks. In addition, they asked me when we calculate the fee. I guess it is some nightly batch job processing it, right?&quot;</em></p>
+<p><em>SA (after another hour): &quot;The use case is apparently run every night. But it processes only low-value clients.&quot;</em></p>
+<p><em>PM: &quot;Who are low-value clients and how we charge the fee for the other clients? I can remember we had a Sharepoint page containing all the business terms, is low-value client there?&quot;</em></p>
+<p><em>SA: &quot;I already checked it and it contains only the term Client. Give me a minute.&quot;</em></p>
+<p><em>SA (after another hour): &quot;Ok, I checked with Steve, the team leader of the Client care department. He had a meeting so it took me an hour to get the information. According to him the low-value client
+is determined by the account ballance. So I searched through the analysis and found the definition in business rules. Low-value is under $250,000.&quot;</em></p>
+<p><em>PM: &quot;Allright. So the last question is how we charge the fee for the high-value clients.&quot;</em></p>
+<p><em>SA: &quot;I already tried to find this information but appart from the business rules I didn't find anything about high-value clients. I need to go to the 3rd floor and ask directly the people
+responsible for the fees.&quot;</em></p>
+<p><em>PM: &quot;Ok, but please hurry up, the project is delayed and this issue takes our valuable time. Thank you.&quot;</em></p>
+<p><em>SA (after another 40 minutes): &quot;Heureka! They told me that high-value clients are contacted directly by the bank employees via telephone. There is a report delivered to their e-mail address
+containing the list of the high-value clients who should be contacted. I found the report in our analysis, it's REP-028 and the reason why I couldn't find it is, because it says it is
+generated for the clients having account balance &gt; $250,000. Nothing about high-value clients.&quot;</em></p>
+<p><em>PM: &quot;Great job, I appreciate it. I will sum it up and send it to the stakeholders.&quot;</em></p>
+<p>Cruel story, isn't it? But definitely not a fiction. Many of us working on big IT projects with a lot of stakeholders got into this situation or at least felt frustrated when tried to
+modify some part of the system and need to first find how the affected function works. People on projects change, even stakeholders can leave the company during the project. Sometimes the
+processes and business logic is so complex that even stakeholders get lost and the eventually the IT project team might be asked by the business team how was the system defined. Sounds like a
+paradox that the people responsible for telling you what should be built asks you what they told you should build. But it is totaly natural. Replacing legacy system or making radical changes
+to it is almost always proceeded during the standard operation of the company and defining the requirements, workshops, consultations or user testing are tasks done alongside stakeholders'
+daily agenda which in long term might cause exhaustion of the business team, apathy and lack of drive. Then the project team is also considered a support to them, the holder of the detail.
+Unlike stakeholders who can see only in borders of their business unit, business analysts see the whole picture. Very often do they take over the role of the
+<a href="https://en.wikipedia.org/wiki/Subject-matter_expert">subject-matter expert</a> as they get a helicopter view of the business on one hand and sufficient detail view in all business areas on the other.
+It's then natural that in the late phases of the project they get very often asked: &quot;Do we &quot;        </p>
+<p>It gets even more interesting when the analyst is asked to do an <a href="https://en.wikipedia.org/wiki/Change_impact_analysis">impact analysis</a> for a new change request. Unless the analyst is a
+matador in the company and knows both the business side and all the company information systems she faces a tough task.</p>
+<p>In this book we would like to outline the common situations which we as analysts on IT projects need to handle on the daily basis, the traps we may encounter, how to deal with them but
+mainly how to prevent them. It's proved that the biggest troubles on IT projects stem from the poor analysis (TBD), that the most expensive part of the software development is
+modifing the legacy systems (TBD) and ... We believe we can minimize these facts by a couple of simple concepts which will help your projects in terms of analysis. But the pure theory
+has never saved any project, so we will demonstrate the concepts on a referential implementation, show you how these concepts will work on your projects and help you save time of both
+the stakeholders and your team.  </p>
+<p>!! Neni tady nic, co by uz Wiegers, Ambler nebo nekdo nerekli...jen to davam do kupy jako framework...wiegeres rika, ze existuje context diagram, ale malokdy ho uvidis, a kdyz jo tak pouzitej na uplne blbejch mistech. Ja rikam ze pro kazdej system ma smysl atd atd.</p>
+<h2 id="what-is-not-covered">What is not covered</h2>
+<p>First, it is fair to tell you what is this book is not about to save you from dissappointment. </p>
+<ul>
+<li>What SW development approach to choose (agile, waterfall, etc.)</li>
+<li>How to elicitate and develop requirements</li>
+<li>How to manage requirements, how to deal with change requests</li>
+<li>How to choose the right approach of the business analysis, how to facilitate requirements workshops or how to lead a team of analysts</li>
+<li>How to communicate during analysis</li>
+</ul>
+<h2 id="what-you-should-know-before-you-start-reading">What you should know before you start reading</h2>
+<ul>
+<li>babok - what is business analysis, requirements devel/mngmnt, requirements taxonomy</li>
+<li>wiegers - best practices for requirements engineering, writing specifications</li>
+<li>uml - use case, domain/class model, activity diagram, sequence diagram</li>
+<li>writing effective use cases - best practices, ! different types of use cases </li>
+<li>processes - purpose, bpmn syntax</li>
+<li>agilemodeling - general information, artifacts best practices etc.</li>
+</ul>
+<h2 id="so-who-is-this-book-for">So, who is this book for</h2>
+<ul>
+<li>If your a business/system analyst responsible for gathering requirements, preparing inputs for development team and system documentation</li>
+<li>If you're a project manager who wants to have a full controll over the scope of the project and who misses a tool to track the current state of the project</li>
+<li>If you read a lot of about UML, business analysis and system analysis books and articles, got a decent knowledge of what should be done during the analysis and when it
+shoudl be done but you still lack the &quot;HOW&quot; - how to do the analysis, how to connect each part you read about to a single coherent framework</li>
+<li>If you feel that outputs from the analysts have nothing in common, are  analytical activities on your projects need some rules and guidlines</li>
+<li>If you feel that outputs from the analysts have nothing in common, are of a poor quality and it's very hard to look back at them and find answers to business questions </li>
+<li>If you feel that analysing changes to the systems is more expensive that it should be</li>
+</ul>
+<p>In general, we will guide you through all the &quot;how&quot; aspects of the system analysis. We're going to show you what are the main causes of analysts' frustration which cause ineffectivness
+and delays during analytical work, what are the key concepts which all analysts should know and know how to implement them. </p>
+<p>(urcite ted sedite v korporaci, nemate info a cekate az vam vsichni info daji a jste frustrovani…nepomuzu vam ted hned ale reknu vam jak to delat aby ostatni byli min frustrovani a bylo to v cajku)</p>
+<p>Btw. you thought that our story from the beginning ended, right? The answers have been found, stakeholders are happy they know how the system work so all sorted. Well, kind of.
+Until the end of the month:</p>
+<p><em>PM: &quot;Hey Steve, I see 4 hours in your timesheet on the thursday the 2<sup>nd</sup> spent on some &quot;Administrative task&quot;. What was that?&quot;</em></p>
+<p><em>SA: &quot;It's the time spent on searching how we calculate the fee for the delayed payments, you remember?&quot;</em></p>
+<p><em>PM: &quot;Oh, yes. But I can't charge the customer for these 4 hours. Our company needs to pay for this. We definitely need to improve our documentation...&quot;</em> </p>
                 </section>
 
             </div>
         </main>
 
-        <footer>
+        <!-- <footer>
             <div class="container-fluid">
                 <p class="text-muted">
                     website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
                 </p>
             </div>
-        </footer>
+        </footer> -->
 
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
-
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
         <script>
             $(function() {
                 $("section>h1").wrap('<div class="page-header" />');

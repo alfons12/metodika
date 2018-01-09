@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Effective Analysis</title>
+        
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/highlight.dark.css">
+        <link rel="stylesheet" href="http://www.effective-analysis.com/generated/css/main.css">
+
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://www.effective-analysis.com/generated/">
+                Effective Analysis
+                <small class="hidden-xs hidden-sm">
+                     
+                </small>
+            </a>
+
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+ 
+
+        <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/index.html">
+                        Introduction
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/context/index.html">
+                        Analysis in context
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-1/index.html">
+                        PART I: Motivation for effective analysis
+                    </a>
+                </li>
+                                <ul class="submenu nav nav-stacked nav-pills">
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/01.html">
+                            State of the system analysis
+                        </a>
+                    </li>
+
+                                        <ul class="submenu nav nav-stacked nav-pills">
+                                            </ul>
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/02.html">
+                            Importance of the analyst
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/03.html">
+                            Analytical minimum
+                        </a>
+                    </li>
+
+                    
+                                        <li class="">
+                    
+                    
+
+                        <a href="http://www.effective-analysis.com/generated/part-1/04.html">
+                            Frustrated analyst
+                        </a>
+                    </li>
+
+                    
+                                    </ul>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-2/index.html">
+                        PART II Introducing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        PART III Implementing Effective system analysis
+                    </a>
+                </li>
+                                                <li class="">
+                    <a href="http://www.effective-analysis.com/generated/part-3/index.html">
+                        APPENDIX A xxx
+                    </a>
+                </li>
+                                            </ul>
+
+        </nav>
+
+        
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">                         
+                
+                    <div id="generated-toc" class="generate_from_h2"></div>
+                    <h1 id="existing-sources-and-whats-still-missing">Existing sources and what's still missing</h1>
+<ul>
+<li>wiegers
+<ul>
+<li>co je to pozadavek, jak je sbirat, jake artefakty, jake tooly</li>
+</ul></li>
+<li>effective use cases
+<ul>
+<li>vrstvy abstrakce, jak ho hezky napsat</li>
+</ul></li>
+<li>OOAD</li>
+<li>UML
+<ul>
+<li>jak modelovat </li>
+</ul></li>
+<li>Ambler <a href="http://agilemodeling.com/essays/agileAnalysis.htm">http://agilemodeling.com/essays/agileAnalysis.htm</a>
+<ul>
+<li>best practices, metodika</li>
+</ul></li>
+<li>clanky
+<ul>
+<li>Any documentation beyond what the development and test teams need (or that is required to satisfy regulations or standards) potentially represents wasted effort unless there’s a definite need for it down the road.</li>
+<li>ale co je ta hranice? :?::!::!:</li>
+</ul></li>
+<li>BABOK</li>
+</ul>
+<p>Agile Unified Process (AUP) in that it doesn't specify the type of model(s) to create. All AMDD suggests is that you apply the right artifact but it doesn't
+insist on what that artifact is.</p>
+<ul>
+<li>to je presne ono, ale konkretne nerekne nic</li>
+<li>ano, tohle je spravna volba, ale zaklad musi byt a tohle je zaklad, ktery „vetsinou“ v analyze je, proto se od nej odrazime</li>
+<li>(<a href="http://agilemodeling.com/principles.htm#ContentIsMoreImportantThanRepresentation">http://agilemodeling.com/principles.htm#ContentIsMoreImportantThanRepresentation</a> - delej to v cem chces, jen navrhuju co by mohlo fungovat)</li>
+</ul>
+<p>Oni nadhazujou jak by to melo byt, nadhazujou koncepty a ideal worldy - napr. <a href="http://agilemodeling.com/essays/singleSourceInformation.htm">http://agilemodeling.com/essays/singleSourceInformation.htm</a></p>
+<ul>
+<li>Co chybi je instance. Vse je abstraktni.. pro seniory fajn, vyberou si co potrebujou. </li>
+<li>Ale pokud nemate hvezdy, mate obyc lidi, co moc nectou a potrebuji voditko... neco hmatatelneho, jak by to mohlo fungovat a pak si to ladte dle sebe
+jinak to pytlikujou ve wordech, nevi co delaji a je to tragedie</li>
+<li><em>Or perhaps several diagrams drawn using a CASE tool is what you need. Or perhaps the same diagrams supported with detailed documentation is required.
+Different projects have different needs</em> - to je ono, vsichni reknou ze kazdej projekt to ma jinak, ale pak neexistuje navod a kazdej to bastli</li>
+</ul>
+<blockquote>
+<p>I can tolerate a map that is missing one or two streets but I can't tolerate one that is missing three quarters of the streets in my town.</p>
+<ul>
+<li>a porad jen hazou takove abstraktni hlasky</li>
+<li>hezky, ale ja rikam jakou informaci a kde :-)</li>
+<li>ale ja vam reknu, na jake artifakty to aplikovat</li>
+</ul>
+</blockquote>
+<p><strong> reknou vam jak se dela use case, jak vsechno tunit, ale nerekno jak to vse spojit dohromady aby to davalo smysl a v jakych nastrojich- priprava na sekci Nitka</strong></p>
+<h2 id="co-byste-meli-hrube-znat">Co byste meli hrube znat</h2>
+<ul>
+<li>rozpracovani z uvodu</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script> 
+                <script type="text/javascript" src="http://www.effective-analysis.com/generated/js/generated_toc.js">
+                
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
